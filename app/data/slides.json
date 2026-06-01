@@ -1,0 +1,60 @@
+[
+  {
+    "id": "slide-01",
+    "titleLight": "Azusa Hotel",
+    "titleBold": "Apartments",
+    "subtitle": "by Sonder-Living",
+    "ctaText": "Book Now",
+    "ctaHref": "/rooms",
+    "bgImage": "/img/MAP13548(1).webp",
+    "cards": [
+      {
+        "id": "card-1",
+        "title": "Azusa",
+        "subtitle": "Grand Suite",
+        "image": "/img/A2.webp"
+      },
+      {
+        "id": "card-2",
+        "title": "Azusa",
+        "subtitle": "Signature Studio",
+        "image": "/img/A7.webp"
+      },
+      {
+        "id": "card-3",
+        "title": "Azusa",
+        "subtitle": "Deluxe Suite",
+        "image": "/img/MAP13600.webp"
+      }
+    ]
+  },
+  {
+    "id": "slide-02",
+    "titleLight": "African culture and hospitality",
+    "titleBold": "Experience",
+    "subtitle": "Traditions of taste through the depths of time",
+    "ctaText": "Exhibitions",
+    "ctaHref": "/explore",
+    "bgImage": "/img/A12.webp",
+    "cards": [
+      {
+        "id": "card-4",
+        "title": "Azusa",
+        "subtitle": "Premier Royal",
+        "image": "/img/MAP13626(1).webp"
+      },
+      {
+        "id": "card-5",
+        "title": "Azusa",
+        "subtitle": "Vista Rio",
+        "image": "/img/A13.webp"
+      },
+      {
+        "id": "card-6",
+        "title": "Azusa",
+        "subtitle": "Cafe Rio",
+        "image": "/img/A14.webp"
+      }
+    ]
+  }
+]

@@ -8,13 +8,13 @@
   {
     "id": "dest-2",
     "title": "Magicland Park",
-    "image": "/images/azusa2.jpg",
+    "image": "/images/magiclandimg.webp",
     "href": "/destinations/magicland-park"
   },
   {
     "id": "dest-3",
     "title": "Farm City",
-    "image": "/images/hero-bg.jpg",
+    "image": "/img/farmcity.jpg",
     "href": "/destinations/farm-city"
   }
 ]

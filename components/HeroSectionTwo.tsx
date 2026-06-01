@@ -2,51 +2,52 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence, Variants } from "framer-motion";
-import { 
-  ArrowUpRight, 
-  Wifi, 
-  Waves, 
-  Sparkles, 
+import {
+  ArrowUpRight,
+  Wifi,
+  Waves,
+  Sparkles,
   Utensils,
-  MapPin 
+  MapPin,
 } from "lucide-react";
 
 // Carousel Slide Data Structure with individual locations
 const SLIDES = [
   {
     id: 1,
-    image: "/img/A1.webp",
+    image: "/img/ANNEXEXEC-6.webp",
     location: "8 Missouri St, Maitama, Abuja",
     title1: "A Hotel",
     accent: "Beyond",
     title2: "Stay A World of",
     title3: "Luxury.",
     tag: "Timeless Gateway",
-    desc: "Escape the ordinary with luxurious suites, gourmet dining, and serene surroundings."
+    desc: "Escape the ordinary with luxurious suites, gourmet dining, and serene surroundings.",
   },
   {
     id: 2,
-    image: "/img/A2.webp",
+    image: "/img/ANNEXEXEC-8.webp",
     location: "8 Missouri St, Maitama, Abuja",
     title1: "Bespoke",
     accent: "Spaces",
     title2: "Designed For The",
     title3: "Modern Elite.",
     tag: "Exclusive Living",
-    desc: "Immerse yourself in unparalleled elegance, quiet architectural luxury, and personalized hospitality."
+    desc: "Immerse yourself in unparalleled elegance, quiet architectural luxury, and personalized hospitality.",
   },
   {
     id: 3,
-    image: "/img/A3.webp",
+    image: "/img/_BOB9144.webp",
     location: "8 Missouri St, Maitama, Abuja",
     title1: "Serene",
     accent: "Retreat",
     title2: "Awaken In True",
     title3: "Coastal Peace.",
     tag: "Sanctuary Oasis",
-    desc: "Indulge your senses with panoramic views, restorative wellness therapies, and private terrace waters."
-  }
+    desc: "Indulge your senses with panoramic views, restorative wellness therapies, and private terrace waters.",
+  },
 ];
 
 export default function HeroSection() {
@@ -68,14 +69,13 @@ export default function HeroSection() {
       transition: {
         duration: 1.1,
         delay: delay,
-        ease: [0.215, 0.610, 0.355, 1.000] as const,
-      }
-    })
+        ease: [0.215, 0.61, 0.355, 1.0] as const,
+      },
+    }),
   };
 
   return (
     <section className="relative h-[85vh] min-h-[650px] w-full overflow-hidden bg-black font-sans text-white">
-      
       {/* LAYER 1: BACKGROUND IMAGES */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -87,7 +87,7 @@ export default function HeroSection() {
           className="absolute inset-0 z-0"
         >
           <Image
-            src={SLIDES[currentSlide].image} 
+            src={SLIDES[currentSlide].image}
             alt="Luxury Resort Accommodations"
             fill
             priority
@@ -121,26 +121,27 @@ export default function HeroSection() {
       {/* LAYER 2: INTERVALLIC CONTENT UNITS */}
       <div className="relative z-20 flex h-full w-full items-center">
         <div className="mx-auto w-full max-w-7xl px-6 md:px-12 flex flex-col justify-center h-full pt-12">
-          
-          <div key={currentSlide} className="grid w-full grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-end pb-10">
-            
+          <div
+            key={currentSlide}
+            className="grid w-full grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-end pb-10"
+          >
             {/* LEFT COLUMN */}
             <div className="lg:col-span-7 flex flex-col justify-end">
               <h1 className="font-serif tracking-tight text-white leading-[1.05]">
-                <motion.span 
+                <motion.span
                   custom={0.4}
                   initial="hidden"
                   animate="visible"
                   variants={slideUpVariants}
                   className="block text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] font-light"
                 >
-                  {SLIDES[currentSlide].title1} 
+                  {SLIDES[currentSlide].title1}
                   <span className="text-[#cba865] font-sans italic font-normal ml-3">
                     {SLIDES[currentSlide].accent}
                   </span>
                 </motion.span>
-                
-                <motion.span 
+
+                <motion.span
                   custom={0.6}
                   initial="hidden"
                   animate="visible"
@@ -149,8 +150,8 @@ export default function HeroSection() {
                 >
                   {SLIDES[currentSlide].title2}
                 </motion.span>
-                
-                <motion.span 
+
+                <motion.span
                   custom={0.8}
                   initial="hidden"
                   animate="visible"
@@ -184,7 +185,7 @@ export default function HeroSection() {
 
               {/* Benefits & Unified Horizon Pill Container */}
               <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-6">
-                <motion.div 
+                <motion.div
                   custom={1.0}
                   initial="hidden"
                   animate="visible"
@@ -204,10 +205,10 @@ export default function HeroSection() {
                   className="flex items-center gap-4 bg-white/5 border border-white/10 backdrop-blur-md rounded-full px-4 py-2"
                 >
                   {[
-                    <Wifi size={14} key="wifi" />, 
-                    <Waves size={14} key="pool" />, 
-                    <Sparkles size={14} key="spa" />, 
-                    <Utensils size={14} key="dining" />
+                    <Wifi size={14} key="wifi" />,
+                    <Waves size={14} key="pool" />,
+                    <Sparkles size={14} key="spa" />,
+                    <Utensils size={14} key="dining" />,
                   ].map((icon, idx) => (
                     <div
                       key={idx}
@@ -238,16 +239,19 @@ export default function HeroSection() {
                 </p>
 
                 {/* Updated Action Button with Up-Right Arrow Icon */}
-                <button className="group mt-6 flex items-center gap-2 rounded-full bg-[#cba865] px-6 py-3.5 text-xs font-medium uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#b8965a] hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#cba865]/50 focus:ring-offset-2">
+                {/* Updated Action Button converted to a Next.js Link */}
+                <Link
+                  href="/rooms" // <-- Change this to your actual route or page path
+                  className="group mt-6 inline-flex items-center gap-2 rounded-full bg-[#cba865] px-6 py-3.5 text-xs font-medium uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#b8965a] hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#cba865]/50 focus:ring-offset-2"
+                >
                   <span>Discover Now</span>
                   <ArrowUpRight
                     size={14}
                     className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   />
-                </button>
+                </Link>
               </motion.div>
             </div>
-
           </div>
         </div>
       </div>
@@ -261,10 +265,12 @@ export default function HeroSection() {
             className="group relative flex h-8 w-2 items-center justify-center"
             aria-label={`Go to slide ${index + 1}`}
           >
-            <div 
+            <div
               className={`w-[2px] transition-all duration-500 rounded-full ${
-                currentSlide === index ? "h-6 bg-[#cba865]" : "h-3 bg-white/40 group-hover:bg-white"
-              }`} 
+                currentSlide === index
+                  ? "h-6 bg-[#cba865]"
+                  : "h-3 bg-white/40 group-hover:bg-white"
+              }`}
             />
           </button>
         ))}

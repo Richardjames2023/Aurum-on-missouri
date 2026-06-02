@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from "next/image";
 import SubNav, { SubNavItem } from "../SubNav";
 
 
@@ -30,11 +31,12 @@ export const MeetingHero: React.FC = () => {
     <div className="w-full font-sans">
       
       {/* Visual Canvas Block */}
-      <div className="w-full h-[460px] relative flex flex-col justify-center items-center px-6 text-center overflow-hidden bg-stone-900">
-        <img 
-          src="/images/meeting-hero.jpg" 
-          alt="Premium Meeting Spaces" 
-          className="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.45]"
+      <div className="w-full h-[560px] relative flex flex-col justify-center items-center px-6 text-center overflow-hidden bg-stone-900">
+        <Image
+          src="/img/RESTAURANT-2.webp"
+          alt="Azusa Luxury Conference Theater Auditorium"
+          className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
+          fill
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40 z-10" />
         

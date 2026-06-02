@@ -15,7 +15,7 @@ export default function BlogArchivePage() {
     title: "The Four Best Places for Vacation in October",
     category: "Destination",
     description: "Whether you are looking for a vibrant cultural experience in Abuja, a relaxing stay near the scenic Jabi Lake, golden afternoons at Millennium Park, or an adventurous hike up Zuma Rock, October is the ideal month to explore the capital. Keep reading to find out which are the best places to visit in October with Azusa Hotels as the perfect base for your Nigerian getaway.",
-    image: "/images/hero-bg.jpg",
+    image: "/img/AoM-21.webp",
     date: "19 Jul 2026",
     readTime: "5 min to read",
     href: "/blog/four-best-places-vacation-october"
@@ -27,7 +27,7 @@ export default function BlogArchivePage() {
       id: "arc-1",
       title: "Auckland Tips from a Local",
       category: "Destination",
-      image: "/images/azusa2.jpg",
+      image: "/img/AoM-21.webp",
       readTime: "5 min to read",
       href: "/blog/auckland-tips-local"
     },
@@ -35,7 +35,7 @@ export default function BlogArchivePage() {
       id: "arc-2",
       title: "What are carbon removal credits?",
       category: "#LifeAtRadisson",
-      image: "/images/suite_main.png",
+      image: "/img/AoM-21.webp",
       readTime: "5 min to read",
       href: "/blog/carbon-removal-credits"
     },
@@ -43,7 +43,7 @@ export default function BlogArchivePage() {
       id: "arc-3",
       title: "Discovering Lyon: A Journey Through History, Silk, and Cour des Loges Lyon, ...",
       category: "Destination",
-      image: "/images/suite_bed_side.png",
+      image: "/img/AoM-21.webp",
       readTime: "5 min to read",
       href: "/blog/discovering-lyon-journey"
     },
@@ -51,7 +51,7 @@ export default function BlogArchivePage() {
       id: "arc-4",
       title: "Kebabs in India: A Flavourful Journey Through Time, Tradition & Taste",
       category: "Food & Drink",
-      image: "/images/suite_bed_front.png",
+      image: "/img/AoM-21.webp",
       readTime: "7 min to read",
       href: "/blog/kebabs-india-flavourful-journey"
     },
@@ -59,7 +59,7 @@ export default function BlogArchivePage() {
       id: "arc-5",
       title: "Noida International Airport: India's New Global Gateway Taking Shape",
       category: "Destination",
-      image: "/images/hero-bg.jpg",
+      image: "/img/AoM-21.webp",
       readTime: "6 min to read",
       href: "/blog/noida-international-airport"
     },
@@ -67,7 +67,7 @@ export default function BlogArchivePage() {
       id: "arc-6",
       title: "Top 10 Cricket Stadiums in India Every Fan Should Visit At least Once",
       category: "#LifeAtRadisson",
-      image: "/images/azusa2.jpg",
+      image: "/img/AoM-11.webp",
       readTime: "7 min to read",
       href: "/blog/top-10-cricket-stadiums-india",
       isLargeFeatured: true // Triggers full horizontal column width match natively
@@ -76,7 +76,7 @@ export default function BlogArchivePage() {
       id: "arc-7",
       title: "Less is more: Verified Net Zero Hotels embrace minimal waste operations",
       category: "#LifeAtRadisson",
-      image: "/images/suite_main.png",
+      image: "/img/AoM-21.webp",
       readTime: "5 min to read",
       href: "/blog/less-is-more-net-zero-hotels"
     },
@@ -84,7 +84,7 @@ export default function BlogArchivePage() {
       id: "arc-8",
       title: "Day trips from Amsterdam: discover hidden gems",
       category: "Destination",
-      image: "/images/suite_bed_side.png",
+      image: "/img/AoM-11.webp",
       readTime: "5 min to read",
       href: "/blog/day-trips-amsterdam-hidden-gems"
     }

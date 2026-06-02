@@ -1,13 +1,14 @@
 [
   {
     "id": "room-01",
-    "title": "Executive Sovereign Suite",
+    "title": "Executive (one bedroom)",
     "category": "Luxury Suites",
     "image": "/img/A15.webp",
     "images": [
-      "/img/A16.webp",
-      "/img/A17.webp",
-      "/img/A18.webp"
+      "/img/ANNEXEXEC-18.webp",
+      "/img/ANNEXEXEC-6.webp",
+      "/img/ANNEXEXEC-8.webp",
+      "/img/ANNEXEXEC-13.webp"
     ],
     "size": "65 m²",
     "occupancy": "Max 3 Guests",
@@ -36,13 +37,13 @@
   },
   {
     "id": "room-02",
-    "title": "Premium Diplomatic Apartment",
+    "title": "Super deluxe (one bedroom)",
     "category": "Apartments",
     "image": "/img/A1.webp",
     "images": [
-      "/img/A2.webp",
-      "/img/A3.webp",
-      "/img/A4.webp"
+      "/img/SUPER-DELUXE-9.webp",
+      "/img/SUPER-DELUXE-18.webp",
+      "/img/SUPER-DELUXE-25.webp"
     ],
     "size": "98 m²",
     "occupancy": "Max 5 Guests",
@@ -50,7 +51,7 @@
     "currency": "NGN",
     "features": [
       {
-        "label": "2 Bedrooms",
+        "label": "1 Bedrooms",
         "icon": "key"
       },
       {
@@ -62,7 +63,7 @@
         "icon": "sunset"
       },
       {
-        "label": "Private Chef Opt.",
+        "label": "PS5 Opt.",
         "icon": "chef"
       }
     ],
@@ -71,13 +72,13 @@
   },
   {
     "id": "room-03",
-    "title": "Signature Royal Penthouse",
+    "title": "Standard room",
     "category": "Penthouse",
     "image": "/img/A5.webp",
     "images": [
-      "/img/A6.webp",
-      "/img/A7.webp",
-      "/img/A8.webp"
+      "/img/STANDARD--2.webp",
+      "/img/STANDARD--28.webp",
+      "/img/STANDARD-.webp"
     ],
     "size": "145 m²",
     "occupancy": "Max 6 Guests",

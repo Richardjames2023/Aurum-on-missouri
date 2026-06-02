@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from "next/image";
 
 export const AboutHero: React.FC = () => {
   return (
@@ -8,10 +9,11 @@ export const AboutHero: React.FC = () => {
       
       {/* Background Hero Asset Window */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://unsplash.com" 
-          alt="Azusa Luxury Conference Theater Auditorium" 
+        <Image
+          src="/img/_BOB9008.webp"
+          alt="Azusa Luxury Conference Theater Auditorium"
           className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
+          fill
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#4A0A15]/40" />
       </div>

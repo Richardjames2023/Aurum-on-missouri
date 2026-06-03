@@ -3,6 +3,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+// 1. IMPORT YOUR GLOBAL HEADER COMPONENT
+// (Adjust the path if your Header is in a different directory, e.g., "../components/Header")
+import { Header } from "@/components/Header"; 
+import { Footer } from "@/components/Footer";
+
 // GOOGLE FONT IMPORTS
 import {
   Cormorant_Garamond,
@@ -72,7 +77,14 @@ export default function RootLayout({
           font-inter
         `}
       >
-        {children}
+        {/* 2. RENDERED GLOBALLY ACROSS ALL PAGES */}
+        <Header />
+
+        {/* Semantic main tag wraps individual page modules safely */}
+        <main>{children}</main>
+
+        {/* 3. FUTURE FOOTER PLACEMENT */}
+        <Footer />
       </body>
     </html>
   );

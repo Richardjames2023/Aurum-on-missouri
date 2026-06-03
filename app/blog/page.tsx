@@ -1,8 +1,6 @@
 "use client";
 
 import React from 'react';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { BlogFeatured } from '@/components/blog/BlogFeatured';
 import { BlogGridCard } from '@/components/blog/BlogGridCard';
 import { BlogPostCard } from '@/app/types/blog';
@@ -92,9 +90,6 @@ export default function BlogArchivePage() {
 
   return (
     <main className="min-h-screen bg-white w-full flex flex-col overflow-x-hidden relative">
-      
-      {/* Global Top Navbar */}
-      <Header />
 
       {/* 1. Upper Dynamic Editorial Hero Banner */}
       <BlogFeatured article={featuredArticle} />
@@ -131,9 +126,6 @@ export default function BlogArchivePage() {
 
         </div>
       </section>
-
-      {/* Global Sticky App Footer */}
-      <Footer />
 
     </main>
   );

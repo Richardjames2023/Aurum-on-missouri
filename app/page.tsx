@@ -1,5 +1,3 @@
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
 import { PopularDestinations } from "../components/PopularDestinations";
 import { BrandShowcase } from "../components/BrandShowcase";
 import {RoomShowcaseMatrix}from "../components/RoomShowcaseMatrix";
@@ -28,15 +26,13 @@ export interface FooterSection {
 export default function HomePage() {
   return (
     <main>
-      <Header />
       <HeroSectionTwo />
       <PopularDestinations />
           <Suspense fallback={<div className="h-40 bg-stone-900 animate-pulse" />}>
       <RoomShowcaseMatrix />
       </Suspense>
       <FacilitiesShowcase/>
-        <BankBenefitSection />
-      <Footer />
+      <BankBenefitSection />
     </main>
   );
 }

@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Header } from '../../../components/Header';
-import { Footer } from '../../../components/Footer';
 import { DetailsHero } from '../../../components/room-details/DetailsHero';
 import { BookingWidget } from '../../../components/room-details/BookingWidget';
 import { ActivitiesSlider } from '../../../components/room-details/ActivitiesSlider';
@@ -61,7 +59,6 @@ export default function RoomDetailsPage() {
         BRAND DESKTOP NAVHEADER 
         Mounted cleanly matching global app architectural boundaries
       */}
-      <Header />
       
       {/* 1. Upper Image Mosaic Banner Frame */}
       <DetailsHero 
@@ -135,7 +132,6 @@ export default function RoomDetailsPage() {
         GLOBAL STICKY APPRECIATION NAVFOOTER SHIELD 
         Appends nicely at root boundary baseline limits
       */}
-      <Footer />
 
       {/* 
         PRODUCTION GRADE STATEFUL BOOKING FORM MODAL INTERFACE

@@ -10,7 +10,7 @@ export const DiningHero: React.FC = () => {
         {/* Left Column Aspect: Premium Image Carousel Window */}
         <div className="lg:col-span-6 w-full h-[320px] md:h-[420px] relative overflow-hidden bg-stone-100 rounded-2xl shadow-md group isolate">
           <img 
-            src="/images/suite_main.png" 
+            src="/img/RESTAURANT-11.webp" 
             alt="Vitas Rio Dining Atmosphere Experience" 
             className="w-full h-full object-cover object-center transform-gpu scale-100 group-hover:scale-102 transition-transform duration-[1200ms]"
           />

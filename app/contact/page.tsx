@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { CorporateFormSection } from '../../components/contact/ContactFormMatrix';
 import SubNav, { SubNavItem } from "../../components/SubNav";
 import { ContactMap } from '../../components/contact/ContactMap';
@@ -29,9 +27,6 @@ export default function CorporateContactPage() {
 
   return (
     <main className="min-h-screen bg-[#FCFBF9] w-full flex flex-col overflow-x-hidden relative">
-      
-      {/* Global Application Top Header Navigation */}
-      <Header />
 
       {/* 1. Production Stateful Corporate Form Section Grid Block */}
       <CorporateFormSection />
@@ -41,9 +36,6 @@ export default function CorporateContactPage() {
 
       {/* 2. Full-bleed Property Geo Location Mapping Layout Frame */}
       <ContactMap />
-
-      {/* Global Application Stacking Base Footer */}
-      <Footer />
 
     </main>
   );

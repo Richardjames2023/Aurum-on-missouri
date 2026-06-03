@@ -6,9 +6,9 @@ import { LuInstagram, LuChevronLeft, LuChevronRight } from 'react-icons/lu';
 
 export const DiningGalleryMap: React.FC = () => {
   const horizontalGallery: DiningImageGridItem[] = [
-    { id: "g1", image: "/images/hero-bg.jpg", altText: "Vitas Rio Fine Dining Table Arrangement" },
-    { id: "g2", image: "/images/suite_main.png", altText: "Luxury Restaurant Seating Architecture Layout" },
-    { id: "g3", image: "/images/azusa2.jpg", altText: "Premium Drinks Lounge Bar Coordinates" }
+    { id: "g1", image: "/img/AoM-40.webp", altText: "Vitas Rio Fine Dining Table Arrangement" },
+    { id: "g2", image: "/img/AoM-20.webp", altText: "Luxury Restaurant Seating Architecture Layout" },
+    { id: "g3", image: "/img/AoM-33.webp", altText: "Premium Drinks Lounge Bar Coordinates" }
   ];
 
   return (

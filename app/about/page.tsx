@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { AboutHero } from '@/components/meetings/AboutHero';
 import { AboutInstantBooking } from '@/components/meetings/AboutInstantBooking';
 import { AboutValueProps } from '@/components/meetings/AboutValueProps';
@@ -29,8 +27,6 @@ export default function MeetingsEventsPage() {
   return (
     <main className="min-h-screen bg-white w-full flex flex-col overflow-x-hidden relative">
       
-      {/* GLOBAL TOP NAVIGATION HEADER CONTROL */}
-      <Header />
 
       {/* 1. Immersive Theater Hall Hero Overlay Banner */}
       <AboutHero />
@@ -46,9 +42,6 @@ export default function MeetingsEventsPage() {
 
       {/* 6. Lower News Categories Segment Strip */}
       {/* <AboutNews /> */}
-
-      {/* GLOBAL BOTTOM STICKY APPLICATION NAVFOOTER */}
-      <Footer />
 
     </main>
   );

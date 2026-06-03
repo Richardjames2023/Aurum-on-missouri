@@ -1,7 +1,5 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { BlogDetailsView } from '@/components/blog/BlogDetailsView';
 import { DetailedBlogPost } from '@/app/types/blog-details';
 
@@ -206,10 +204,7 @@ export default async function DynamicBlogDetailsPage({ params }: { params: Promi
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
       />
-
-      <Header />
       <BlogDetailsView article={activePost} />
-      <Footer />
     </main>
   );
 }

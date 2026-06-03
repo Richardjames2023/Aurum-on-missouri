@@ -20,8 +20,9 @@ const DealImageCarousel: React.FC<{ initialImage: string; title: string }> = ({ 
 
   const galleryCollection = [
     initialImage,
-    "/images/azusa2.jpg",
-    "/images/hero-bg.jpg"
+    "/img/_BOB8854.webp",
+    "/img/_BOB8928.webp",
+    "/img/_BOB8961.webp",
   ];
 
   useEffect(() => {
@@ -45,7 +46,7 @@ const DealImageCarousel: React.FC<{ initialImage: string; title: string }> = ({ 
           onError={(e) => {
             const img = e.target as HTMLImageElement;
             img.onerror = null;
-            img.src = '/images/hero-bg.jpg';
+            img.src = '/img/AURUM_-2.webp';
           }}
         />
       ))}

@@ -110,7 +110,7 @@ const RoomCardImageGallery: React.FC<{ images: string[]; title: string; delay: n
             onError={(e) => {
               const imgElement = e.target as HTMLImageElement;
               imgElement.onerror = null;
-              imgElement.src = '/images/hero-bg.jpg';
+              imgElement.src = '/img/STANDARD-.webp';
             }}
           />
         );

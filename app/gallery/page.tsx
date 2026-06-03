@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -37,28 +35,28 @@ const GALLERY_ITEMS: GalleryItem[] = [
   // Exterior & Architecture
   {
     id: "ext-1",
-    src: "/img/MAP13548(1).webp",
+    src: "/img/DELUXE--5.webp",
     title: "Main Entrance & Architectural Façade",
     category: "Exterior & Architecture",
     description: "The striking contemporary architectural design of Azusa Hotels, blending modern engineering with welcoming luxury."
   },
   {
     id: "ext-2",
-    src: "/img/MAP13581.webp",
+    src: "/img/ANNEXEXEC-18.webp",
     title: "Grand Lobby Reception",
     category: "Exterior & Architecture",
     description: "Our grand reception area features custom book-matched marble, soaring ceilings, and warm bespoke lighting."
   },
   {
     id: "ext-3",
-    src: "/img/MAP13600.webp",
+    src: "/img/AURUM_-54.webp",
     title: "Sophisticated Lobby Lounge",
     category: "Exterior & Architecture",
     description: "An elegantly furnished sanctuary for guests to relax, network, or work while enjoying ambient music and premium refreshments."
   },
   {
     id: "ext-4",
-    src: "/img/MAP13626(1).webp",
+    src: "/img/ANNEXEXEC-13.webp",
     title: "Illuminated Facade - Night View",
     category: "Exterior & Architecture",
     description: "The glowing architectural silhouette of Azusa Hotels & Apartments illuminating the Abuja night sky."
@@ -66,35 +64,35 @@ const GALLERY_ITEMS: GalleryItem[] = [
   // Rooms & Suites
   {
     id: "room-1",
-    src: "/img/A16.webp",
+    src: "/img/ANNEXEXEC-18.webp",
     title: "Azusa Premier Royal Suite",
     category: "Rooms & Suites",
     description: "Our flagship suite offering unparalleled space, a plush king bed, and panoramic views of the city skyline."
   },
   {
     id: "room-2",
-    src: "/img/A2.webp",
+    src: "/img/SUPER-DELUXE-25.webp",
     title: "Grand Suite Living Space",
     category: "Rooms & Suites",
     description: "A beautifully appointed suite featuring minimalist chic decor and premium custom furnishings by Sonder-Living."
   },
   {
     id: "room-3",
-    src: "/img/A7.webp",
+    src: "/img/STANDARD-.webp",
     title: "Signature Studio Bedroom",
     category: "Rooms & Suites",
     description: "A refined space designed for comfort and focus, featuring high-end linen and ergonomic workstations."
   },
   {
     id: "room-4",
-    src: "/img/A8.webp",
+    src: "/img/CONFERENCEROOM-2.webp",
     title: "Deluxe Suite Comfort",
     category: "Rooms & Suites",
     description: "Relaxing neutral tones and soft ambient lighting define the sleeping quarters of our Deluxe Suite."
   },
   {
     id: "room-5",
-    src: "/img/A15.webp",
+    src: "/img/ANNEXEXEC-6.webp",
     title: "Standard Skyline Sanctuary",
     category: "Rooms & Suites",
     description: "A modern, spacious room overlooking Abuja's iconic landmarks and serene park spaces."
@@ -102,28 +100,28 @@ const GALLERY_ITEMS: GalleryItem[] = [
   // Dining & Lounges
   {
     id: "dining-1",
-    src: "/img/A12.webp",
+    src: "/img/RESTAURANT-2.webp",
     title: "Azusa Gourmet Restaurant",
     category: "Dining & Lounges",
     description: "Experience a culinary journey featuring a mix of local African flavors and international haute cuisine."
   },
   {
     id: "dining-2",
-    src: "/img/A9.webp",
+    src: "/img/AURUM_-44.webp",
     title: "Fine Dining Table Setting",
     category: "Dining & Lounges",
     description: "Meticulous table arrangements and premium dining setups for our private guests and banquets."
   },
   {
     id: "dining-3",
-    src: "/img/A10.webp",
+    src: "/img/RESTAURANT-11.webp",
     title: "The Wine Cellar Selection",
     category: "Dining & Lounges",
     description: "A curated collection of fine international and regional wines to pair perfectly with your culinary selection."
   },
   {
     id: "dining-4",
-    src: "/img/A11.webp",
+    src: "/img/AoM-11.webp",
     title: "Rooftop Mixology Bar",
     category: "Dining & Lounges",
     description: "Sip custom hand-crafted cocktails while enjoying panoramic views of the city from our sky lounge."
@@ -131,21 +129,21 @@ const GALLERY_ITEMS: GalleryItem[] = [
   // Amenities & Wellness
   {
     id: "well-1",
-    src: "/img/A13.webp",
+    src: "/img/AURUM_-51.webp",
     title: "Signature Wellness Spa",
     category: "Amenities & Wellness",
     description: "Rejuvenate your body and mind with our professional organic massage and steam therapy sessions."
   },
   {
     id: "well-2",
-    src: "/img/A14.webp",
+    src: "/img/SIGN.webp",
     title: "State-of-the-Art Fitness Center",
     category: "Amenities & Wellness",
     description: "Keep up with your fitness regime with our modern cardiorespiratory and strength training equipment."
   },
   {
     id: "well-3",
-    src: "/images/azusa2.jpg",
+    src: "/img/AURUM_-15.webp",
     title: "Spa Treatment Room",
     category: "Amenities & Wellness",
     description: "A tranquil sanctuary designed for deep relaxation, aromatherapy, and facial treatments."
@@ -209,7 +207,6 @@ export default function GalleryPage() {
 
   return (
     <div className="w-full min-h-screen bg-[#FCFBF9] flex flex-col overflow-x-hidden selection:bg-amber-200">
-      <Header />
 
       <main className="flex-grow flex flex-col">
         {/* HERO TITLE HEADER PANEL */}
@@ -218,7 +215,7 @@ export default function GalleryPage() {
           {/* Background Image Setup */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/img/MAP13548(1).webp"
+              src="/img/AoM-17.webp"
               alt="Azusa Hotels Architectural Façade"
               fill
               className="object-cover object-center opacity-40"
@@ -439,8 +436,6 @@ export default function GalleryPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

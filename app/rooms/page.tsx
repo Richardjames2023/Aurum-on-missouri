@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
 import RoomCard, { RoomData } from "../../components/RoomCard";
 import RoomDetailModal from "../../components/RoomDetailModal";
 import SubNav, { SubNavItem } from "../../components/SubNav";
@@ -47,14 +45,14 @@ export default function RoomsPage() {
     { label: "Overview", href: "#", active: false },
     { label: "Rooms", href: "#", active: true },
     { label: "Services", href: "#", active: false },
-    { label: "Dining", href: "#", active: false },
-    { label: "Meetings & Events", href: "#", active: false },
+    { label: "Dining", href: "/restaurant", active: false },
+    { label: "Meetings & Events", href: "/meetings-events", active: false },
     { label: "Activities", href: "#", active: false },
     { label: "Fitness & Wellness", href: "#", active: false },
     { label: "Deals", href: "#", active: false },
     { label: "Reviews", href: "#", active: false },
-    { label: "Nearby Attractions", href: "#", active: false },
-    { label: "Contact", href: "#", active: false },
+    { label: "Nearby Attractions", href: "/explore", active: false },
+    { label: "Contact", href: "/contact", active: false },
   ];
 
   // const dummyDesc = "These rooms offer ample space with stylish décor and relaxing tones that allow you to feel at ease. After a restful night's sleep on your plush mattress, wake up to a refreshing rain shower with thoughtful bathroom amenities. During your stay, appreciate picturesque skyline views of the city from the comfort of your room. Unwind in the evening with your preferred entertainment on the flat-screen TV. Keep connected with our free Wi-Fi and share memorable moments.";
@@ -63,7 +61,7 @@ export default function RoomsPage() {
     {
       title: "Standard Room",
       description: "Every detail here is designed to make calm feel luxurious. The décor is soft, neutral, and unpretentious. Perfect for solo travellers, business guests, or couples who appreciate simplicity done well.",
-      images: ["/img/A15.webp", "/img/A16.webp", "/img/A17.webp"],
+      images: ["/img/STANDARD-.webp", "/img/STANDARD--2.webp", "/img/STANDARD--38.webp"],
       specs: ["23 m²", "2 adults", "1 king or 2 twin"],
       amenities: [
         { icon: LuSnowflake, label: "Air Conditioning" },
@@ -77,7 +75,7 @@ export default function RoomsPage() {
     {
       title: "Executive (one bedroom)",
       description: "Sophistication is not merely in what you see. It is also about how you feel. The Black Onyx is a one-bedroom suite ideal choice for those who appreciate a private, well-appointed space that feels like a true home away from home.",
-      images: ["/img/A18.webp", "/img/A16.webp", "/img/A17.webp"],
+      images: ["/img/ANNEXEXEC-18.webp", "/img/ANNEXEXEC-8.webp", "/img/ANNEXEXEC-13.webp"],
       specs: ["23 m²", "2 adults", "1 king or 2 twin"],
       amenities: [
         { icon: FaDroplet, label: "Complimentary Water" },
@@ -91,7 +89,7 @@ export default function RoomsPage() {
     {
       title: "Super deluxe (one bedroom)",
       description: "Sophistication is not merely in what you see. It is also about how you feel. The Black Onyx is a one-bedroom suite ideal choice for those who appreciate a private, well-appointed space that feels like a true home away from home.",
-      images: ["/img/A6.webp", "/img/A7.webp", "/img/A8.webp"],
+      images: ["/img/SUPER-DELUXE-25.webp", "/img/SUPER-DELUXE-9.webp", "/img/SUPER-DELUXE-18.webp"],
       specs: ["27 m²", "3 adults", "1 king or 2 twin"],
       amenities: [
         { icon: LuSnowflake, label: "Air Conditioning" },
@@ -105,7 +103,7 @@ export default function RoomsPage() {
     {
       title: "Deluxe room (big studio)",
       description: "Perfect if you crave space, style, and serenity. Here you are guaranteed to simply enjoy the calm that makes Aurum",
-      images: ["/img/A1.webp", "/img/A2.webp", "/img/A3.webp"],
+      images: ["/img/DELUXE--14.webp", "/img/DELUXE.webp", "/img/DELUXE--10.webp"],
       specs: ["27 m²", "3 adults", "1 king or 2 twin"],
       amenities: [
         { icon: FaWheelchair, label: "Accessible Room" },
@@ -119,7 +117,7 @@ export default function RoomsPage() {
     {
       title: "Standard room",
       description: "Every detail here is designed to make calm feel luxurious. The décor is soft, neutral, and unpretentious. Perfect for solo travellers, business guests, or couples who appreciate simplicity done well.",
-      images: ["/img/A3.webp", "/img/A4.webp", "/img/A6.webp"],
+      images: ["/img/STANDARD-.webp", "/img/STANDARD--2.webp", "/img/STANDARD--2.webp"],
       specs: ["27 m²", "3 adults", "1 king or 2 twin"],
       amenities: [
         { icon: LuSnowflake, label: "Air Conditioning" },
@@ -133,7 +131,7 @@ export default function RoomsPage() {
     {
       title: "Suite - Park View",
       description: "Every detail here is designed to make calm feel luxurious. The décor is soft, neutral, and unpretentious. Perfect for solo travellers, business guests, or couples who appreciate simplicity done well.",
-      images: ["/img/A5.webp", "/img/A6.webp", "/img/A7.webp"],
+      images: ["/img/STANDARD--2.webp", "/img/SIGN.webp", "/img/SUPER-DELUXE-18.webp"],
       specs: ["42 m²", "3 adults", "1 king"],
       amenities: [
         { icon: LuSnowflake, label: "Air Conditioning" },
@@ -152,7 +150,6 @@ export default function RoomsPage() {
 
   return (
     <main className="min-h-screen bg-white w-full overflow-x-hidden relative">
-      <Header />
 
       {/* Title Section */}
       <section className="bg-[#f4f5f7] py-6 sm:py-8 lg:py-10 w-full">
@@ -168,7 +165,7 @@ export default function RoomsPage() {
         <div className="w-full lg:col-span-3 grid grid-cols-2 grid-rows-2 gap-1 h-[400px] md:h-[500px] lg:h-[600px]">
           <div className="relative row-span-2 col-span-1 h-full w-full bg-gray-200 overflow-hidden group cursor-pointer">
             <Image
-              src="/img/A16.webp"
+              src="/img/DELUXE--14.webp"
               alt="Azusa Premier Royal Suite Main"
               fill
               className="object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-out"
@@ -178,7 +175,7 @@ export default function RoomsPage() {
           </div>
           <div className="relative row-span-1 col-span-1 h-full w-full bg-gray-200 overflow-hidden group cursor-pointer">
             <Image
-              src="/img/A8.webp"
+              src="/img/DELUXE.webp"
               alt="Suite Bed View Side"
               fill
               className="object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-out"
@@ -187,7 +184,7 @@ export default function RoomsPage() {
           </div>
           <div className="relative row-span-1 col-span-1 h-full w-full bg-gray-200 overflow-hidden group cursor-pointer">
             <Image
-              src="/img/A7.webp"
+              src="/img/AURUM_-54.webp"
               alt="Suite Bed View Front"
               fill
               className="object-cover scale-110 group-hover:scale-100 transition-transform duration-700 ease-out"
@@ -246,8 +243,6 @@ export default function RoomsPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
 
       {/* {MOdal popup} */}
       <RoomDetailModal

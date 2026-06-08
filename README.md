@@ -1,5 +1,5 @@
 
-# Aurum Hotel and Apartments (Next.js)
+# Aurum on Missouri (Next.js)
 
 Production-ready starter scaffold built with:
 - Next.js 15

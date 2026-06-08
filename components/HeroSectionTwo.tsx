@@ -244,7 +244,7 @@ export default function HeroSection() {
                   href="/rooms" // <-- Change this to your actual route or page path
                   className="group mt-6 inline-flex items-center gap-2 rounded-full bg-[#cba865] px-6 py-3.5 text-xs font-medium uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#b8965a] hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#cba865]/50 focus:ring-offset-2"
                 >
-                  <span>Discover Now</span>
+                  <span>Reserve Your Stay</span>
                   <ArrowUpRight
                     size={14}
                     className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

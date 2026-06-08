@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { FaqHero } from '../../components/faq/FaqHero';
 import { FaqAccordionList } from '../../components/faq/FaqAccordionList';
@@ -18,7 +17,7 @@ export default function FaqPage() {
 
   return (
     <div className="w-full min-h-screen bg-[#FCFBF9] flex flex-col overflow-x-hidden">
-        <Header />
+        
       <main className="flex-grow flex flex-col">
         {/* Upper visual identity banner handling parameters state changes */}
         <FaqHero 

@@ -9,13 +9,13 @@ export const MeetingPerksGrid: React.FC = () => {
         {/* Top Solution Pitch Module */}
         <div className="max-w-4xl flex flex-col space-y-4">
           <h2 className="text-xl md:text-2xl font-bold text-stone-900 tracking-tight leading-snug">
-            Flexible, functional, and impactful Meeting & Event solutions
+            The right space. The right people. The kind of event that guests do not forget 
           </h2>
           <p className="text-[#cba865] text-sm md:text-[15px] font-medium leading-relaxed tracking-wide">
-            As a partner, moment maker, and solution-finder, we understand that flexibility and functionality are key to ensuring we can seamlessly deliver exactly what our M&E partners need to create impactful events.
+            We understand the demands of a well-hosted event. We exist to ease that burden for you. 
           </p>
           <p className="text-gray-500 text-sm md:text-[15px] font-medium leading-relaxed tracking-wide">
-            We aim to offer the most dynamic, flexible, and functional solutions in the modern meetings and events marketplace—making sure every M&E planner enjoys peace of mind when they partner with Radisson Meetings, whether they are co-creating truly impactful meeting & event or arranging group accommodation.
+            When you choose our conference hall, you can leave the logistics to us, while you focus on making your event memorable. 
           </p>
         </div>
 

@@ -25,20 +25,20 @@ export const DiningHero: React.FC = () => {
           <div className="flex items-center space-x-2 mb-3 select-none">
             <span className="text-xl text-[#4A0A15]">🍽️</span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-stone-900 font-serif leading-none">
-              Aurum restaurant
+              Aurum Restaurant & Bar 
             </h1>
           </div>
           
           <div className="flex flex-col space-y-1 text-xs font-bold text-stone-500 uppercase tracking-wider mb-6">
-            <span>Type of cuisine: <strong className="text-stone-800">International • Signature Cuisine</strong></span>
+            <span>Type of cuisine: <strong className="text-stone-800">International Cuisine · Local Cuisine · Signature Cuisine </strong></span>
           </div>
 
           <p className="text-stone-600 text-sm font-medium leading-relaxed tracking-wide mb-8 pl-4 border-l-2 border-stone-200 max-w-xl">
-            Experience the art of gastronomy grilled on a wood fire at Aurum restaurant. Savor the rich, smoky depth of our signature Spaghetti Bolognese, slow-simmered to perfection over an open flame.
+            Taste your way across the map. Explore a curated menu of traditional Nigerian favourites and other rich flavours from around the world.
           </p>
 
           <button className="bg-[#cba865] hover:bg-slate-900 text-white font-extrabold text-xs tracking-widest uppercase px-10 py-4 shadow-sm transition-all focus:outline-none rounded-none cursor-pointer">
-            See Our Menus
+            Explore Our Menus
           </button>
         </div>
 

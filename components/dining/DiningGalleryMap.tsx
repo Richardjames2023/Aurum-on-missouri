@@ -47,8 +47,8 @@ export const DiningGalleryMap: React.FC = () => {
         {/* 3. Static Contact Information Block Title Panel Section */}
         <div className="w-full">
           <div className="w-full bg-black border border-[#DCB286]/30 px-8 py-6 flex flex-col items-start rounded-t-xl text-left">
-            <h4 className="text-lg font-bold font-serif text-white tracking-wide mb-1 select-none">Contact Information</h4>
-            <p className="text-xs font-medium text-stone-500 tracking-wide">For private group dining enquiries or luxury lounge events table reservations.</p>
+            <h4 className="text-lg font-bold font-serif text-white tracking-wide mb-1 select-none">Find your way to us </h4>
+            <p className="text-xs font-medium text-stone-500 tracking-wide">We are easy to reach, and far more rewarding once you arrive.</p>
           </div>
         </div>
 

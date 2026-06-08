@@ -12,20 +12,20 @@ export default function ExclusiveBenefits() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pb-10">
           <div className="max-w-3xl">
             <h2 className="text-4xl md:text-4xl font-semibold tracking-tight text-[#cba865]">
-              Enjoy the exclusive benefits
+              The Aurum Elites — Enjoy the Benefits of Exclusivity 
             </h2>
             <p className="mt-3 text-sm md:text-base text-slate-600 font-normal leading-relaxed">
-              As a Aurum on missouri member, you enjoy exclusive benefits. Join for free and elevate your stay
+              Join for free and unlock a world of privileges reserved for special guests.
             </p>
           </div>
           
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <button className="border border-black bg-white hover:bg-slate-50 text-slate-900 text-[11px] font-bold tracking-wider uppercase px-6 py-3 rounded-full transition-colors duration-200">
-              Discover More Benefits
+              Discover All Benefits
             </button>
             <button className="bg-black hover:bg-slate-800 text-white text-[11px] font-bold tracking-wider uppercase px-6 py-3 rounded-full transition-colors duration-200">
-              Become a Member
+              Join the Aurum Elite 
             </button>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function ExclusiveBenefits() {
                 Member Only Rate
               </h3>
               <p className="text-sm text-slate-500 mt-1 font-normal">
-                Get membership discount
+                Why pay full price when loyalty has its privileges? As a member, you get first access to our best rates on rooms, suites, and extended stays. 
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function ExclusiveBenefits() {
                 Discount on Food and Beverages
               </h3>
               <p className="text-sm text-slate-500 mt-1 font-normal">
-                Discount on food and beverages
+                Your membership follows you to the table. As a member, you enjoy special pricing across our bar and dining room. 
               </p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function ExclusiveBenefits() {
                 Priority Line
               </h3>
               <p className="text-sm text-slate-500 mt-1 font-normal leading-normal">
-                Save waiting time during check-in and check-out
+                As a member, your check-in is handled before you even arrive, and your exit is handled seamlessly.
               </p>
             </div>
           </div>

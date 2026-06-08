@@ -20,11 +20,18 @@ export const MeetingCoreValues: React.FC = () => {
   ];
 
   const benefits = [
-    "Real-time availability",
-    "360 views of our meeting spaces and bedrooms",
-    "The best available rate guarantee",
-    "Instant booking confirmation",
-    "Easy and secure online payment"
+    "Business conferences",
+    "Annual general meetings (AGMs)",
+    "Board meetings",
+    "Product launches",
+    "Corporate seminars",
+    "Workshops and training sessions",
+    "Networking events",
+    "Press conferences",
+    "Company retreats",
+    "Award ceremonies",
+    "Public lectures and Academic Seminars",
+    "... And More"
   ];
 
   return (
@@ -54,16 +61,19 @@ export const MeetingCoreValues: React.FC = () => {
           </div>
           <div className="lg:col-span-7 flex flex-col items-start justify-center">
             <h3 className="text-xl md:text-2xl font-bold tracking-tight text-white font-serif leading-snug mb-5">
-              Save valuable time with instant online booking for groups, meetings and events
+              What Events Do We Host? 
             </h3>
-            <ul className="flex flex-col space-y-2.5 mb-8 text-xs md:text-[13px] font-bold text-gray-600 tracking-wide">
+            
+            {/* UPDATED: Two-Column Grid List Layout Container */}
+            <ul className="w-full grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-6 mb-8 text-xs md:text-[13px] font-bold text-gray-600 tracking-wide">
               {benefits.map((benefit, i) => (
                 <li key={i} className="flex items-center space-x-2.5">
-                  <span className="text-white text-sm">✦</span>
+                  <span className="text-white text-sm shrink-0">✦</span>
                   <span className="text-white">{benefit}</span>
                 </li>
               ))}
             </ul>
+            
             <button className="border border-stone-900 text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#4A0A15] hover:text-white transition-all shadow-xs">
               SEE MORE
             </button>

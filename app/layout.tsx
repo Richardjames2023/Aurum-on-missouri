@@ -55,7 +55,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Azusa Hotels & Luxury Apartments",
+  title: "Aurum on Missouri - Luxury Hotel in Abuja",
   description: "Experience premium hospitality sanctuary spaces in Abuja.",
 };
 

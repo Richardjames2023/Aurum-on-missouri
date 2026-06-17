@@ -19,10 +19,10 @@ const SLIDES = [
     id: 1,
     image: "/img/ANNEXEXEC-6.webp",
     location: "8 Missouri St, Maitama, Abuja",
-    title1: "A Hotel",
-    accent: "Beyond",
-    title2: "Stay A World of",
-    title3: "Luxury.",
+    title1: "Welcome to",
+    accent: "Aurum",
+    title2: "Designed with you",
+    title3: "in mind.",
     tag: "Timeless Gateway",
     desc: "Escape the ordinary with luxurious suites, gourmet dining, and serene surroundings.",
   },
@@ -133,7 +133,7 @@ export default function HeroSection() {
                   initial="hidden"
                   animate="visible"
                   variants={slideUpVariants}
-                  className="block text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] font-light"
+                  className="block text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-light"
                 >
                   {SLIDES[currentSlide].title1}
                   <span className="text-[#cba865] font-sans italic font-normal ml-3">
@@ -179,7 +179,7 @@ export default function HeroSection() {
                   </div>
                 </div>
                 <span className="text-[10px] uppercase tracking-wider text-white/90 font-medium">
-                  Trusted by 2000+ Customer
+                  Trusted by 200+ Customer
                 </span>
               </motion.div>
 

@@ -35,7 +35,7 @@ export const AboutValueProps: React.FC = () => {
             Why Choose Aurum On Missouri?
           </h2>
           <p className="text-stone-600 text-xs md:text-sm font-medium leading-relaxed tracking-wide">
-            At Aurum On Missouri Meetings, it's personal using our expertise and adaptability, we work closely together and adaptability, we work closely together with our M & E clients as a true partner, making everything easy every step of the way.
+            At Aurum on Missouri, hospitality is personal. Using our dedication to comfort and bespoke service, we work as a true partner to our corporate and leisure guests, ensuring an effortless, high-end experience from check-in to check-out.
           </p>
         </div>
 

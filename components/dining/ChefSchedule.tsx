@@ -29,10 +29,10 @@ export const ChefSchedule: React.FC = () => {
           {/* Chef Media Asset Slots Panel */}
           <div className="lg:col-span-5 grid grid-cols-12 gap-3 items-stretch order-1 lg:order-2 w-full h-[280px]">
             <div className="col-span-7 relative overflow-hidden bg-stone-50 border border-gray-100 shadow-sm rounded-xl">
-              <img src="/images/suite_bed_front.png" alt="Chef Tunde Okoro plating signature cuisine" className="w-full h-full object-cover" />
+              <img src="/img/Aom-15.webp" alt="Chef Tunde Okoro plating signature cuisine" className="w-full h-full object-cover" />
             </div>
             <div className="col-span-5 relative overflow-hidden bg-stone-50 border border-gray-100 shadow-sm rounded-xl">
-              <img src="/images/suite_bed_side.png" alt="Signature grilled fire steak dish look" className="w-full h-full object-cover" />
+              <img src="/img/Aom-13.webp" alt="Signature grilled fire steak dish look" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

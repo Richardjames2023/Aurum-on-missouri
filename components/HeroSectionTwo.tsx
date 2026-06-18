@@ -39,7 +39,7 @@ const SLIDES = [
   },
   {
     id: 3,
-    image: "/img/_BOB9144.webp",
+    image: "/img/AoM-10.webp",
     location: "8 Missouri St, Maitama, Abuja",
     title1: "Serene",
     accent: "Retreat",
@@ -192,7 +192,7 @@ export default function HeroSection() {
                   variants={slideUpVariants}
                   className="text-xs uppercase tracking-widest text-white/70 font-medium leading-relaxed border-l-2 border-[#cba865] pl-4"
                 >
-                  <p>23+ Exclusive</p>
+                  <p>many Exclusive</p>
                   <p>Benefit for you</p>
                 </motion.div>
 
@@ -206,7 +206,6 @@ export default function HeroSection() {
                 >
                   {[
                     <Wifi size={14} key="wifi" />,
-                    <Waves size={14} key="pool" />,
                     <Sparkles size={14} key="spa" />,
                     <Utensils size={14} key="dining" />,
                   ].map((icon, idx) => (

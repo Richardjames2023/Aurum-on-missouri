@@ -459,14 +459,11 @@ import Link from 'next/link';
 
 export const Header: React.FC = () => {
   // --- STATE ENGINES ---
-  const [destination, setDestination] = useState('');
-  const [showDestSuggestions, setShowDestSuggestions] = useState(false);
-
   // Custom Date System States
-  const [checkInDate, setCheckInDate] = useState<Date | null>(new Date(2026, 3, 14)); // Tue 14 Apr 2026
-  const [checkOutDate, setCheckOutDate] = useState<Date | null>(new Date(2026, 3, 15)); // Wed 15 Apr 2026
+  const [checkInDate, setCheckInDate] = useState<Date | null>(new Date(2026, 6, 14)); // Tue 14 Apr 2026
+  const [checkOutDate, setCheckOutDate] = useState<Date | null>(new Date(2026, 6, 15)); // Wed 15 Apr 2026
   const [activeCalendarSelector, setActiveCalendarSelector] = useState<'in' | 'out' | null>(null);
-  const [currentCalendarView, setCurrentCalendarView] = useState<Date>(new Date(2026, 3, 1)); // Default view set to April 2026
+  const [currentCalendarView, setCurrentCalendarView] = useState<Date>(new Date(2026, 6, 1)); // Default view set to April 2026
 
   // Interface Toggle UI States
   const [showLocalization, setShowLocalization] = useState(false);
@@ -478,18 +475,10 @@ export const Header: React.FC = () => {
   // --- REFS FOR OUTSIDE CLICK CLOSURES ---
   const localizationRef = useRef<HTMLDivElement>(null);
   const moreMenuRef = useRef<HTMLDivElement>(null);
-  const destRef = useRef<HTMLDivElement>(null);
   const calendarRef = useRef<HTMLDivElement>(null);
   const drawerRef = useRef<HTMLDivElement>(null);
 
   // --- MOCK DATABASE DATA ---
-  const sampleDestinations = [
-    'London, United Kingdom',
-    'Paris, France',
-    'Amsterdam, Netherlands',
-    'Dubai, United Arab Emirates',
-    'Abuja, Nigeria'
-  ];
   const languages = ['ENGLISH', 'FRANÇAIS', 'DEUTSCH', 'ESPAÑOL'];
   const currencies = ['NGN', 'USD', 'GBP', 'EUR'];
 
@@ -502,9 +491,6 @@ export const Header: React.FC = () => {
       }
       if (moreMenuRef.current && !moreMenuRef.current.contains(target)) {
         setShowMoreMenu(false);
-      }
-      if (destRef.current && !destRef.current.contains(target)) {
-        setShowDestSuggestions(false);
       }
       if (calendarRef.current && !calendarRef.current.contains(target)) {
         setActiveCalendarSelector(null);
@@ -576,7 +562,7 @@ export const Header: React.FC = () => {
   };
 
   const handleSearchExecution = () => {
-    alert(`Searching availability for:\n📍 Destination: ${destination || 'Not specified'}\n📅 Check-in: ${checkInDate?.toDateString() || 'Empty'}\n📅 Check-out: ${checkOutDate?.toDateString() || 'Empty'}\n🌐 Language: ${currentLang} | Currency: ${currentCurrency}`);
+    alert(`Searching availability for:\n📅 Check-in: ${checkInDate?.toDateString() || 'Empty'}\n📅 Check-out: ${checkOutDate?.toDateString() || 'Empty'}\n🌐 Language: ${currentLang} | Currency: ${currentCurrency}`);
   };
 
   return (
@@ -725,7 +711,8 @@ export const Header: React.FC = () => {
 
         {/* Right Section: Utility Tools & CTA */}
         <div className="flex items-center space-x-3 relative z-50">
-          <div className="relative" ref={localizationRef}>
+
+          {/* <div className="relative" ref={localizationRef}>
             <button
               onClick={() => setShowLocalization(!showLocalization)}
               className="flex items-center space-x-2 border border-black rounded-full px-4 py-2 text-[11px] font-bold text-black hover:bg-gray-50 transition-colors focus:outline-none"
@@ -768,10 +755,13 @@ export const Header: React.FC = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <Link href="/signin" className="hidden sm:inline-block bg-[#CAA664] text-white px-6 py-2.5 rounded-full text-[11px] font-bold tracking-widest uppercase hover:bg-[#36070E] transition-all shadow-sm">
+          {/* <Link href="/signin" className="hidden sm:inline-block bg-[#CAA664] text-white px-6 py-2.5 rounded-full text-[11px] font-bold tracking-widest uppercase hover:bg-[#36070E] transition-all shadow-sm">
             Sign In
+          </Link> */}
+          <Link href="/explore" className="hidden sm:inline-block bg-[#CAA664] text-white px-6 py-2.5 rounded-full text-[11px] font-bold tracking-widest uppercase hover:bg-[#36070E] transition-all shadow-sm">
+            Explore
           </Link>
         </div>
       </div>
@@ -780,46 +770,11 @@ export const Header: React.FC = () => {
       <div className="w-full bg-black py-3.5 px-6 relative z-10">
         <div className="max-w-[1320px] mx-auto bg-white rounded-lg shadow-md flex flex-col md:flex-row items-center divide-y md:divide-y-0 md:divide-x divide-gray-200 p-1 relative">
 
-          {/* Section 1: Target Destination Vector Input */}
-          <div className="w-full md:w-5/12 flex items-center px-4 py-2.5 relative" ref={destRef}>
-            <div className="text-gray-500 mr-3">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
-            <div className="flex flex-col w-full">
-              <span className="text-[10px] text-gray-400 font-bold tracking-tight">Choose your next adventure</span>
-              <input
-                type="text"
-                placeholder="Destination or hotel"
-                value={destination}
-                onFocus={() => { setShowDestSuggestions(true); setActiveCalendarSelector(null); }}
-                onChange={(e) => setDestination(e.target.value)}
-                className="w-full bg-transparent text-[13px] text-gray-800 placeholder-gray-400 font-bold focus:outline-none mt-0.5"
-              />
-            </div>
-
-            <div className={`absolute top-full left-0 w-full bg-white mt-2 border border-gray-100 rounded-xl shadow-2xl py-1.5 z-40 transform transition-all duration-200 origin-top ${showDestSuggestions ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-              {sampleDestinations
-                .filter(d => d.toLowerCase().includes(destination.toLowerCase()))
-                .map((destName, i) => (
-                  <button
-                    key={i}
-                    onClick={() => { setDestination(destName); setShowDestSuggestions(false); }}
-                    className="block w-full text-left px-4 py-2.5 text-xs text-gray-700 hover:bg-amber-50 font-bold transition-colors"
-                  >
-                    {destName}
-                  </button>
-                ))}
-            </div>
-          </div>
-
-          {/* Section 2 & 3 Combined Ref Context for Custom Floating Calendar Panel */}
-          <div className="w-full md:w-6/12 grid grid-cols-2 divide-x divide-gray-200 relative" ref={calendarRef}>
+          {/* Section 1 & 2 Combined Ref Context for Custom Floating Calendar Panel */}
+          <div className="w-full md:w-10/12 grid grid-cols-2 divide-x divide-gray-200 relative" ref={calendarRef}>
 
             <div
-              onClick={() => { setActiveCalendarSelector('in'); setShowDestSuggestions(false); }}
+              onClick={() => setActiveCalendarSelector('in')}
               className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors ${activeCalendarSelector === 'in' ? 'bg-amber-50/50' : ''}`}
             >
               <div className="flex items-center">
@@ -828,14 +783,14 @@ export const Header: React.FC = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[10px] text-gray-400 font-bold tracking-tight">Check-in</span>
-                  <span className="text-[13px] text-gray-800 font-bold mt-0.5">{formatDisplayDate(checkInDate, 'Tue 14 Apr')}</span>
+                  <span className="text-[13px] text-gray-800 font-bold mt-0.5">{formatDisplayDate(checkInDate, 'Tue 14 Aug')}</span>
                 </div>
               </div>
               <svg className="w-3 h-3 text-gray-400 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
             </div>
 
             <div
-              onClick={() => { setActiveCalendarSelector('out'); setShowDestSuggestions(false); }}
+              onClick={() => setActiveCalendarSelector('out')}
               className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors ${activeCalendarSelector === 'out' ? 'bg-amber-50/50' : ''}`}
             >
               <div className="flex items-center">
@@ -844,7 +799,7 @@ export const Header: React.FC = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[10px] text-gray-400 font-bold tracking-tight">Check-out</span>
-                  <span className="text-[13px] text-gray-800 font-bold mt-0.5">{formatDisplayDate(checkOutDate, 'Wed 15 Apr')}</span>
+                  <span className="text-[13px] text-gray-800 font-bold mt-0.5">{formatDisplayDate(checkOutDate, 'Wed 15 Aug')}</span>
                 </div>
               </div>
               <svg className="w-3 h-3 text-gray-400 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
@@ -891,7 +846,7 @@ export const Header: React.FC = () => {
             </div>
           </div>
 
-          {/* Section 4: Query Engine Execution Component */}
+          {/* Section 3: Query Engine Execution Component */}
           <div className="w-full md:w-2/12 p-1">
             <button onClick={handleSearchExecution} className="w-full bg-[#CAA664] text-white py-3 px-6 rounded-md font-bold text-[13px] tracking-wide hover:bg-[#36070E] transition-colors whitespace-nowrap">
               Search

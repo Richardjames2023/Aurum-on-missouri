@@ -8,12 +8,10 @@ export default function ExplorePage() {
   return (
     <div className="w-full min-h-screen bg-white flex flex-col overflow-x-hidden">
       {/* Modular segment block sequence execution */}
-        <Header />
       <main className="flex-grow flex flex-col">
         <ExploreHero />
         <AttractionsExplorer />
       </main>
-      <Footer />
     </div>
   );
 }

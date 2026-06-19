@@ -181,7 +181,7 @@ export default function RoomsPage() {
           <div className="flex flex-col space-y-1">
             <span className="text-[10px] text-gray-400 font-extrabold uppercase tracking-widest">Pricing Structure</span>
             <div className="flex items-baseline space-x-1.5">
-              <span className="text-2xl font-black text-[#4A0A15]">₦180,000</span>
+              <span className="text-2xl font-black text-[#4A0A15]">₦120,000</span>
               <span className="text-xs text-gray-400 font-bold">/ night starting rate</span>
             </div>
           </div>

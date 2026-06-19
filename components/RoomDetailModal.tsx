@@ -73,7 +73,10 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailMod
   const amenitiesList = 'features' in room ? room.features : room.amenities;
 
   // Safely extract pricing variables from the union types with smart default fallbacks
-  const dynamicPrice = 'pricePerNight' in room ? room.pricePerNight : 180000;
+  const rawPrice = 'pricePerNight' in room ? room.pricePerNight : 180000;
+  const dynamicPrice = typeof rawPrice === 'string'
+    ? parseFloat(rawPrice.replace(/,/g, ''))   // remove commas and convert to number
+    : rawPrice;
   const dynamicCurrency = 'currency' in room ? room.currency : 'NGN';
 
   // Safely extract specifications based on the union type structure

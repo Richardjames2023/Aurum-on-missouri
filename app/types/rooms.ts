@@ -13,7 +13,7 @@ export interface RoomSuite {
   images?: string[]; // Made optional to prevent strict compilation snags
   size: string;
   occupancy: string;
-  pricePerNight: number;
+  pricePerNight: string | number; // Made flexible to handle both raw numbers and formatted strings
   currency: string;
   features: RoomFeature[];
   href: string;

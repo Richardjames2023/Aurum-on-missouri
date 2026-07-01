@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { CorporateFormSection } from '../../components/contact/ContactFormMatrix';
-import SubNav, { SubNavItem } from "../../components/SubNav";
+import SubNav from "../../components/SubNav";
 import { ContactMap } from '../../components/contact/ContactMap';
 
 export const metadata: Metadata = {
@@ -11,19 +11,6 @@ export const metadata: Metadata = {
 
 
 export default function CorporateContactPage() {
-  const subnavItems: SubNavItem[] = [
-    { label: "Overview", href: "#", active: false },
-    { label: "Rooms", href: "#", active: true },
-    { label: "Services", href: "#", active: false },
-    { label: "Dining", href: "#", active: false },
-    { label: "Meetings & Events", href: "#", active: false },
-    { label: "Activities", href: "#", active: false },
-    { label: "Fitness & Wellness", href: "#", active: false },
-    { label: "Deals", href: "#", active: false },
-    { label: "Reviews", href: "#", active: false },
-    { label: "Nearby Attractions", href: "#", active: false },
-    { label: "Contact", href: "#", active: false },
-  ];
 
   return (
     <main className="min-h-screen bg-[#FCFBF9] w-full flex flex-col overflow-x-hidden relative">
@@ -32,7 +19,7 @@ export default function CorporateContactPage() {
       <CorporateFormSection />
 
       {/* Sub Navigation Bar */}
-      <SubNav items={subnavItems} ctaText="Book" />
+      <SubNav />
 
       {/* 2. Full-bleed Property Geo Location Mapping Layout Frame */}
       <ContactMap />

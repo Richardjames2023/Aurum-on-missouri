@@ -684,7 +684,7 @@ export const Header: React.FC = () => {
         <nav className="hidden lg:flex items-center space-x-6 text-[13px] font-bold text-black tracking-tight">
           <Link href="/rooms" className="hover:opacity-70 transition-opacity">Rooms</Link>
           <Link href="/restaurant" className="hover:opacity-70 transition-opacity">Restaurant</Link>
-          <Link href="/blog" className="hover:opacity-70 transition-opacity">Blog</Link>
+          {/* <Link href="/blog" className="hover:opacity-70 transition-opacity">Blog</Link> */}
           <Link href="/meetings-events" className="hover:opacity-70 transition-opacity">Meetings & Events</Link>
           <Link href="/rewards" className="hover:opacity-70 transition-opacity">Aurum Rewards</Link>
 

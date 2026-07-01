@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { LuCalendar, LuClock, LuChevronLeft, LuChevronRight } from 'react-icons/lu';
 import { BlogPostCard } from '@/app/types/blog';
-import SubNav, { SubNavItem } from "../SubNav";
+import SubNav from "../SubNav";
 
 interface BlogFeaturedProps {
   article: BlogPostCard;
@@ -12,19 +12,7 @@ interface BlogFeaturedProps {
 
 export const BlogFeatured: React.FC<BlogFeaturedProps> = ({ article }) => {
 
-      const subnavItems: SubNavItem[] = [
-        { label: "Overview", href: "#", active: false },
-        { label: "Rooms", href: "#", active: true },
-        { label: "Services", href: "#", active: false },
-        { label: "Dining", href: "#", active: false },
-        { label: "Meetings & Events", href: "#", active: false },
-        { label: "Activities", href: "#", active: false },
-        { label: "Fitness & Wellness", href: "#", active: false },
-        { label: "Deals", href: "#", active: false },
-        { label: "Reviews", href: "#", active: false },
-        { label: "Nearby Attractions", href: "#", active: false },
-        { label: "Contact", href: "#", active: false },
-      ];
+      
   return (
     <section className="w-full bg-[#FCFBF9] py-8 md:py-12 border-b border-stone-100 flex flex-col items-center">
       <div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-16 flex flex-col mb-8">
@@ -96,7 +84,7 @@ export const BlogFeatured: React.FC<BlogFeaturedProps> = ({ article }) => {
         </div>
       </div>
        {/* Sub Navigation Bar */}
-       <SubNav items={subnavItems} ctaText="Book" />
+       <SubNav />
     </section>
   );
 };

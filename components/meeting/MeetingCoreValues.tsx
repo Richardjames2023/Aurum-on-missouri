@@ -15,7 +15,7 @@ export const MeetingCoreValues: React.FC = () => {
     {
       title: "Memorable",
       desc: "We strive to deliver unforgettable meetings and events by crafting positive experiences full of memorable moments to surprise and delight every attendee.",
-      image: "/img/A8.webp"
+      image: "/img/BOB6809.webp"
     }
   ];
 

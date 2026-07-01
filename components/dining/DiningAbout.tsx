@@ -21,9 +21,9 @@ export const DiningAbout: React.FC = () => {
           <p>
             Savor vibrant flavors at the all-day restaurant, Aurumm On Missouri. Our wood-fired cooking creates an unforgettable culinary experience with delightful meat, fish, and veggie dishes prepared to perfection.
           </p>
-          <p className="text-gray-400">
+          {/* <p className="text-gray-400">
             Unwind and appreciate the sophisticated decor and welcoming atmosphere. With ambient live music and calming window views of the surrounding nature, a visit to Aurum On Missouri ensures memorable moments.
-          </p>
+          </p> */}
         </div>
 
       </div>

@@ -22,7 +22,7 @@ export const MeetingChoiceGrid: React.FC = () => {
       <div className="w-full max-w-[1440px] flex flex-col space-y-16">
         
         {/* Core Differentiation Proposition Grid Section */}
-        <div>
+        {/* <div>
           <h2 className="text-xl md:text-2xl font-bold tracking-tight text-stone-900 mb-2">Why Choose Aurum On Missouri Meeting halls?</h2>
           <p className="text-xs md:text-[13px] font-bold text-gray-400 uppercase tracking-widest mb-10 border-b border-gray-100 pb-4">
             At Aurum On Missouri Meetings, it&apos;s personal: using our expertise and adaptability, we work closely together with our M&E clients as a true partner.
@@ -35,7 +35,7 @@ export const MeetingChoiceGrid: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Visual Gallery Section */}
         <div>

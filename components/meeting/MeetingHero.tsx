@@ -2,24 +2,12 @@
 
 import React, { useState } from 'react';
 import Image from "next/image";
-import SubNav, { SubNavItem } from "../SubNav";
+import SubNav from "../SubNav";
 
 
 
 export const MeetingHero: React.FC = () => {
-    const subnavItems: SubNavItem[] = [
-      { label: "Overview", href: "#", active: false },
-      { label: "Rooms", href: "#", active: true },
-      { label: "Services", href: "#", active: false },
-      { label: "Dining", href: "#", active: false },
-      { label: "Meetings & Events", href: "#", active: false },
-      { label: "Activities", href: "#", active: false },
-      { label: "Fitness & Wellness", href: "#", active: false },
-      { label: "Deals", href: "#", active: false },
-      { label: "Reviews", href: "#", active: false },
-      { label: "Nearby Attractions", href: "#", active: false },
-      { label: "Contact", href: "#", active: false },
-    ];
+    
   const [activeTab, setActiveTab] = useState('Overview');
   const subCategories = [
     'Overview', 'Book it easy', 'Industry Solutions', 
@@ -33,7 +21,7 @@ export const MeetingHero: React.FC = () => {
       {/* Visual Canvas Block */}
       <div className="w-full h-[560px] relative flex flex-col justify-center items-center px-6 text-center overflow-hidden bg-stone-900">
         <Image
-          src="/img/RESTAURANT-2.webp"
+          src="/img/BR-1.jpg"
           alt="Azusa Luxury Conference Theater Auditorium"
           className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
           fill
@@ -51,7 +39,7 @@ export const MeetingHero: React.FC = () => {
       </div>
 
       {/* Sub Navigation Bar */}
-      <SubNav items={subnavItems} ctaText="Book" />
+      <SubNav />
 
     </div>
   );

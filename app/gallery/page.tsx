@@ -27,7 +27,6 @@ const CATEGORIES = [
   { label: "All", icon: LuLayoutGrid },
   { label: "Rooms & Suites", icon: LuCoffee },
   { label: "Dining & Lounges", icon: LuUtensils },
-  { label: "Amenities & Wellness", icon: LuCompass },
   { label: "Exterior & Architecture", icon: LuImage }
 ];
 
@@ -119,35 +118,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     category: "Dining & Lounges",
     description: "A curated collection of fine international and regional wines to pair perfectly with your culinary selection."
   },
-  {
-    id: "dining-4",
-    src: "/img/AoM-11.webp",
-    title: "Rooftop Mixology Bar",
-    category: "Dining & Lounges",
-    description: "Sip custom hand-crafted cocktails while enjoying panoramic views of the city from our sky lounge."
-  },
-  // Amenities & Wellness
-  {
-    id: "well-1",
-    src: "/img/AURUM_-51.webp",
-    title: "Signature Wellness Spa",
-    category: "Amenities & Wellness",
-    description: "Rejuvenate your body and mind with our professional organic massage and steam therapy sessions."
-  },
-  {
-    id: "well-2",
-    src: "/img/SIGN.webp",
-    title: "State-of-the-Art Fitness Center",
-    category: "Amenities & Wellness",
-    description: "Keep up with your fitness regime with our modern cardiorespiratory and strength training equipment."
-  },
-  {
-    id: "well-3",
-    src: "/img/AURUM_-15.webp",
-    title: "Spa Treatment Room",
-    category: "Amenities & Wellness",
-    description: "A tranquil sanctuary designed for deep relaxation, aromatherapy, and facial treatments."
-  }
+  
 ];
 
 export default function GalleryPage() {

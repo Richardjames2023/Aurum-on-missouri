@@ -7,22 +7,10 @@ import { DiningSubNav } from '@/components/dining/DiningSubNav';
 import { DiningAbout } from '@/components/dining/DiningAbout';
 import { ChefSchedule } from '@/components/dining/ChefSchedule';
 import { DiningGalleryMap } from '@/components/dining/DiningGalleryMap';
-import SubNav, { SubNavItem } from '@/components/SubNav';
+import SubNav from '@/components/SubNav';
 
 export default function RestaurantPage() {
-    const subnavItems: SubNavItem[] = [
-      { label: "Overview", href: "#", active: false },
-      { label: "Rooms", href: "#", active: true },
-      { label: "Services", href: "#", active: false },
-      { label: "Dining", href: "#", active: false },
-      { label: "Meetings & Events", href: "#", active: false },
-      { label: "Activities", href: "#", active: false },
-      { label: "Fitness & Wellness", href: "#", active: false },
-      { label: "Deals", href: "#", active: false },
-      { label: "Reviews", href: "#", active: false },
-      { label: "Nearby Attractions", href: "#", active: false },
-      { label: "Contact", href: "#", active: false },
-    ];
+   
   return (
     <main className="min-h-screen bg-white w-full flex flex-col overflow-x-hidden relative">
 
@@ -33,7 +21,7 @@ export default function RestaurantPage() {
       {/* <DiningSubNav /> */}
 
       {/* Sub Navigation Bar */}
-      <SubNav items={subnavItems} ctaText="Book" />
+      <SubNav />
 
       {/* Narrative Copy Segment Description */}
       <DiningAbout />

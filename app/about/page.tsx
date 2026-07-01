@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { AboutHero } from '@/components/meetings/AboutHero';
 import { AboutInstantBooking } from '@/components/meetings/AboutInstantBooking';
 import { AboutValueProps } from '@/components/meetings/AboutValueProps';
-import SubNav, { SubNavItem } from '@/components/SubNav';
+import SubNav from '@/components/SubNav';
 
 export const metadata: Metadata = {
   title: 'Luxury Meeting Rooms & Event Venues Booking | Azusa Hotels Abuja',
@@ -11,19 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function MeetingsEventsPage() {
-        const subnavItems: SubNavItem[] = [
-          { label: "Overview", href: "#", active: false },
-          { label: "Rooms", href: "#", active: true },
-          { label: "Services", href: "#", active: false },
-          { label: "Dining", href: "#", active: false },
-          { label: "Meetings & Events", href: "#", active: false },
-          { label: "Activities", href: "#", active: false },
-          { label: "Fitness & Wellness", href: "#", active: false },
-          { label: "Deals", href: "#", active: false },
-          { label: "Reviews", href: "#", active: false },
-          { label: "Nearby Attractions", href: "#", active: false },
-          { label: "Contact", href: "#", active: false },
-        ];
+        
   return (
     <main className="min-h-screen bg-white w-full flex flex-col overflow-x-hidden relative">
       
@@ -32,7 +20,7 @@ export default function MeetingsEventsPage() {
       <AboutHero />
 
       {/* Sub Navigation Bar */}
-      <SubNav items={subnavItems} ctaText="Book" />
+      <SubNav />
 
       {/* 5. 3-Column Granular Proposition Feature Matrix Grid */}
       <AboutValueProps />

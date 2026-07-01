@@ -3,7 +3,7 @@
 import { useState } from "react";
 import RoomCard, { RoomData } from "../../components/RoomCard";
 import RoomDetailModal from "../../components/RoomDetailModal";
-import SubNav, { SubNavItem } from "../../components/SubNav";
+import SubNav from "../../components/SubNav";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -40,20 +40,6 @@ export default function RoomsPage() {
     setIsModalOpen(false);
     setSelectedRoom(null);
   };
-
-  const subnavItems: SubNavItem[] = [
-    { label: "Overview", href: "#", active: false },
-    { label: "Rooms", href: "#", active: true },
-    { label: "Services", href: "#", active: false },
-    { label: "Dining", href: "/restaurant", active: false },
-    { label: "Meetings & Events", href: "/meetings-events", active: false },
-    { label: "Activities", href: "#", active: false },
-    { label: "Fitness & Wellness", href: "#", active: false },
-    { label: "Deals", href: "#", active: false },
-    { label: "Reviews", href: "#", active: false },
-    { label: "Nearby Attractions", href: "/explore", active: false },
-    { label: "Contact", href: "/contact", active: false },
-  ];
 
   // const dummyDesc = "These rooms offer ample space with stylish décor and relaxing tones that allow you to feel at ease. After a restful night's sleep on your plush mattress, wake up to a refreshing rain shower with thoughtful bathroom amenities. During your stay, appreciate picturesque skyline views of the city from the comfort of your room. Unwind in the evening with your preferred entertainment on the flat-screen TV. Keep connected with our free Wi-Fi and share memorable moments.";
 
@@ -190,9 +176,8 @@ export default function RoomsPage() {
 
       {/* Sub Navigation Bar */}
        <SubNav 
-        items={subnavItems} 
-        ctaText="Book" 
-        onCtaClick={handleBooking} 
+       
+        
       />
 
       {/* Main Suite Matrix Cards Grid Section */}

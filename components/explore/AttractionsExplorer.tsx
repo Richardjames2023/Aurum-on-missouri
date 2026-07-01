@@ -9,7 +9,7 @@ const ATTRACTIONS_DATABASE: AttractionItem[] = [
     title: "Farm City",
     description: "Live music, good drinks and a lively crowd, Varuna is the spot to be when you want a proper night out.",
     category: "Culture",
-    image: "/img/A1.webp",
+    image: "/img/farmcityabj.webp",
     iconType: "drink"
   },
   {
@@ -17,7 +17,7 @@ const ATTRACTIONS_DATABASE: AttractionItem[] = [
     title: "Magic Park",
     description: "A world of shopping right at your doorstep, from fashion and lifestyle pieces to home essentials.",
     category: "Shopping",
-    image: "/img/A2.webp",
+    image: "/img/magiclandabj.webp",
     iconType: "shop"
   },
   {
@@ -25,7 +25,7 @@ const ATTRACTIONS_DATABASE: AttractionItem[] = [
     title: "Museeum",
     description: "From local favourites to global flavours, dining options are closer than you imagine, just steps away.",
     category: "Culture",
-    image: "/img/A3.webp",
+    image: "/img/museumaaabj.jpg",
     iconType: "food"
   }
 ];

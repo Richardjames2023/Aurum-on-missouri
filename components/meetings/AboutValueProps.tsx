@@ -9,7 +9,7 @@ export const AboutValueProps: React.FC = () => {
       id: "vp-1",
       title: "Premium Culinary Experience",
       description: "Nestled in the tranquil heart of Maitama, Abuja, Aurum on Missouri is a boutique haven where elegance, comfort, and contemporary design come together in perfect harmony.",
-      image: "../img/A1.webp"
+      image: "../img/AoM-15.webp"
     },
     {
       id: "vp-2",

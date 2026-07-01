@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { RedemptionPerk, LoyaltyTier } from "../../app/types/rewards";
 import REWARDS_JSON from "../../app/data/rewards.json";
-import SubNav, { SubNavItem } from "../SubNav";
+import SubNav from "../SubNav";
 
 // Import crisp semantic vector graphics from your newly installed package
 import {
@@ -35,19 +35,7 @@ const RedemptionIconRenderer: React.FC<{ category: string }> = ({
 };
 
 export const RewardsDashboard: React.FC = () => {
-  const subnavItems: SubNavItem[] = [
-    { label: "Overview", href: "#", active: false },
-    { label: "Rooms", href: "#", active: true },
-    { label: "Services", href: "#", active: false },
-    { label: "Dining", href: "#", active: false },
-    { label: "Meetings & Events", href: "#", active: false },
-    { label: "Activities", href: "#", active: false },
-    { label: "Fitness & Wellness", href: "#", active: false },
-    { label: "Deals", href: "#", active: false },
-    { label: "Reviews", href: "#", active: false },
-    { label: "Nearby Attractions", href: "#", active: false },
-    { label: "Contact", href: "#", active: false },
-  ];
+  
   // Mock active user tier states matching luxury project tokens
   const [userTier] = useState<LoyaltyTier>({
     name: "Premium",
@@ -191,7 +179,7 @@ export const RewardsDashboard: React.FC = () => {
         </div>
 
         {/* Sub Navigation Bar */}
-        <SubNav items={subnavItems} ctaText="Book" />
+        <SubNav />
 
         {/* LOWER SEGMENT: Interactive Redemption Marketplace Grid */}
         <div className="max-w-[1440px] mx-auto w-full border-t border-gray-100 pt-10 px-6 md:px-12">

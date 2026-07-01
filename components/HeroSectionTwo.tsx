@@ -44,9 +44,9 @@ const SLIDES = [
     title1: "Serene",
     accent: "Retreat",
     title2: "Awaken In True",
-    title3: "Coastal Peace.",
+    title3: "Peace.",
     tag: "Sanctuary Oasis",
-    desc: "Indulge your senses with panoramic views, restorative wellness therapies, and private terrace waters.",
+    desc: "Indulge your senses with breathtaking panoramic views. Relax, unwind, and take in the stunning scenery from the comfort of Aurum.",
   },
 ];
 

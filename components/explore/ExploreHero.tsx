@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SubNav, { SubNavItem } from "@/components/SubNav";
+import SubNav from "@/components/SubNav";
 
 export const ExploreHero: React.FC = () => {
   const tabs = [
@@ -18,19 +18,6 @@ export const ExploreHero: React.FC = () => {
     "Contact",
   ];
 
-  const subnavItems: SubNavItem[] = [
-    { label: "Overview", href: "#", active: false },
-    { label: "Rooms", href: "#", active: true },
-    { label: "Services", href: "#", active: false },
-    { label: "Dining", href: "#", active: false },
-    { label: "Meetings & Events", href: "#", active: false },
-    { label: "Activities", href: "#", active: false },
-    { label: "Fitness & Wellness", href: "#", active: false },
-    { label: "Deals", href: "#", active: false },
-    { label: "Reviews", href: "#", active: false },
-    { label: "Nearby Attractions", href: "#", active: false },
-    { label: "Contact", href: "#", active: false },
-  ];
 
   return (
     <div className="w-full bg-[#FCFBF9] font-sans flex flex-col items-center">
@@ -41,7 +28,7 @@ export const ExploreHero: React.FC = () => {
           {/* Main Portrait Frame Panel */}
           <div className="col-span-6 h-full rounded-2xl overflow-hidden shadow-md group relative border border-stone-200/40">
             <img
-              src="/img/A4.webp"
+              src="/img/explore2.webp"
               alt="Boutique Shopping"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95"
             />
@@ -51,14 +38,14 @@ export const ExploreHero: React.FC = () => {
           <div className="col-span-6 flex flex-col gap-4 h-full">
             <div className="h-1/2 rounded-2xl overflow-hidden shadow-md group relative border border-stone-200/40">
               <img
-                src="/img/A5.webp"
+                src="/img/explore1.webp"
                 alt="Varuna Lounge Vibe"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="h-1/2 rounded-2xl overflow-hidden shadow-md group relative border border-stone-200/40">
               <img
-                src="/img/A6.webp"
+                src="/img/farmcityabj.webp"
                 alt="Fine Dining Vitas Rio"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -85,7 +72,7 @@ export const ExploreHero: React.FC = () => {
       </div>
 
       {/* Sub Navigation Bar */}
-      <SubNav items={subnavItems} ctaText="Book" />
+      <SubNav  />
 
     </div>
   );

@@ -3,27 +3,27 @@
     "id": "fac-1",
     "title": "Experience modern comfort",
     "tagline": "CHIC ACCOMMODATIONS & LOCAL FLAVORS",
-    "description": "Plan your next getaway to the vibrant city of Abuja and make Azusa, Abuja your ultimate destination! With its chic accommodations, exceptional dining experiences infused with local flavors, and state-of-the-art amenities, our hotel invites you to immerse yourself in a world of indulgence and relaxation.",
-    "image": "/img/CONFERENCEROOM-2.webp",
+    "description": "Plan your next getaway to the vibrant city of Abuja and make Aurum, Abuja your ultimate destination! With its chic accommodations, exceptional dining experiences infused with local flavors, and state-of-the-art amenities, our hotel invites you to immerse yourself in a world of indulgence and relaxation.",
+    "image": "/img/SUPER-DELUXE-18.webp",
     "ctaHref": "/about",
-    "highlights": ["Local Flavors", "Chic Accommodations", "Fine Wine Cellar"]
+    "highlights": ["Local Flavors", "Chic Accommodations"]
   },
   {
     "id": "fac-2",
-    "title": "Signature Wellness Spa",
-    "tagline": "REVITALIZE YOUR MIND & BODY",
-    "description": "Indulge in tailored therapeutic massages, premium organic skincare treatments, and holistic wellness sessions designed entirely to restore clarity and balance. Complete with steam therapy paths and quiet ambient lounges, your ultimate rejuvenation awaits.",
-    "image": "/img/_BOB9311.webp",
+    "title": "Signature Dining Experience",
+    "tagline": "SATISFY YOUR APPETITE & SENSES",
+    "description": "Indulge in tailored culinary creations, premium seasonal ingredients, and curated dining experiences designed entirely to delight your palate. Complete with custom drink pairings and intimate ambient seating, your ultimate culinary escape awaits.",
+    "image": "/img/RESTAURANT-2.webp",
     "ctaHref": "/explore",
-    "highlights": ["Organic Skincare", "Therapeutic Massage", "Steam Therapy"]
+    "highlights": ["Locally Sourced Ingredients", "Handcrafted Culinary Creations", "Wood-Fired Artisanal Flavours"]
   },
   {
     "id": "fac-3",
-    "title": "The Panoramic Sky Lounge",
-    "tagline": "ELEVATED ROOFTOP MIXOLOGY",
-    "description": "Take in sweeping city skylines from our high-end rooftop destination. Sip handcrafted custom cocktails, sample globally inspired tapas plates, and relax in an ambient interior configuration tailored perfectly for networking, late evenings, or intimate escapes.",
-    "image": "/img/_BOB9065.webp",
+    "title": "The Aurum Boardroom",
+    "tagline": "HIGH-TECH EXECUTIVE BOARDROOM",
+    "description": "Take in sweeping city skylines from our high-end corporate destination. Utilize state-of-the-art presentation technology, sample premium catered refreshment packages, and work in an adjustable layout configuration tailored perfectly for networking, executive meetings, or private workshops.",
+    "image": "/img/CONFERENCEROOM-2.webp",
     "ctaHref": "/explore",
-    "highlights": ["Handcrafted Cocktails", "Panoramic Views", "Premium Tapas"]
+    "highlights": ["State-of-the-art Presentation Technology", "Adjustable Layout Configuration", "Premium Catered Refreshments"]
   }
 ]

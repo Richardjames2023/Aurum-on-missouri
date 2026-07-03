@@ -2,7 +2,6 @@
 
 import { useState, useEffect, MouseEvent } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { IconType } from "react-icons";
 
 export interface AmenityItem {
@@ -83,13 +82,13 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
                 </div>
 
                 {/* Info Block */}
-                <div className="p-5 lg:p-6 pb-2">
-                    <h3 className="text-xl lg:text-[22px] font-bold text-[#2d3748] tracking-tight leading-snug min-h-[64px] line-clamp-2 mb-4">
+                <div className="p-5 lg:p-6 pb-0">
+                    <h3 className="text-xl lg:text-[22px] font-bold text-[#2d3748] tracking-tight leading-snug line-clamp-2 mb-2">
                         {room.title}
                     </h3>
 
                     {/* Specification Pills */}
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    <div className="flex flex-wrap gap-2 mb-3">
                         {room.specs.map((spec, sIdx) => (
                             <span
                                 key={sIdx}
@@ -101,11 +100,11 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
                     </div>
 
                     {/* Amenities Row */}
-                    <div className="mb-4">
-                        <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold block mb-2">
+                    <div className="mb-3">
+                        <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold block mb-1.5">
                             Main amenities
                         </span>
-                        <div className="flex flex-wrap gap-4 text-gray-500 min-h-[32px] items-center">
+                        <div className="flex flex-wrap gap-4 text-gray-500 min-h-[28px] items-center">
                             {room.amenities.map((item, iIdx) => {
                                 const AmenityIcon = item.icon;
                                 return (
@@ -124,18 +123,11 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
             </div>
 
             {/* Card CTA Footer */}
-            <div className="px-5 lg:p-6 pt-0 mt-auto pb-4">
-                {/* <button
-                    onClick={onReadMore}
-                    className="inline-flex items-center text-xs font-bold tracking-widest text-[#8b1e2f] uppercase hover:text-[#4a0a0c] transition-colors mb-5 group/link bg-transparent border-none p-0 cursor-pointer"
-                >
-                    Read More
-                    <span className="ml-1 transform group-hover/link:translate-x-1 transition-transform inline-block">➔</span>
-                </button> */}
-
+            <div className="px-5 lg:px-6 pt-2 pb-5 mt-auto">
                 <button 
-                onClick={onReadMore}
-                className="w-full bg-slate-900 hover:bg-[#36070E] text-white py-3.5 px-4 rounded-full font-bold uppercase text-xs tracking-widest transition-colors duration-200 shadow-sm hover:shadow-md">
+                    onClick={onReadMore}
+                    className="w-full bg-slate-900 hover:bg-[#36070E] text-white py-3.5 px-4 rounded-full font-bold uppercase text-xs tracking-widest transition-colors duration-200 shadow-sm hover:shadow-md"
+                >
                     Book Now
                 </button>
             </div>

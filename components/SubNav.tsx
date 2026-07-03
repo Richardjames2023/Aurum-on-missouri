@@ -91,8 +91,9 @@ export default function SubNav() {
   return (
      <section className="bg-black border-b border-[#300508] sticky top-0 z-40 w-full">
       <div className="w-full px-4 sm:px-8 lg:px-16 xl:px-24 flex items-center justify-between">
+        
         {/* Navigation Items Area */}
-        <div className="flex flex-1 items-center overflow-x-auto scrollbar-hide py-3 space-x-1 sm:space-x-2 mr-4">
+        <div className="flex flex-1 items-center justify-start md:justify-center overflow-x-auto scrollbar-hide py-3 space-x-1 sm:space-x-2 mr-4">
           {subnavItems.map((item, index) => {
             const isActive = pathname === item.href;
 
@@ -112,7 +113,7 @@ export default function SubNav() {
           })}
         </div>
 
-        {/* CTA Area */}
+        {/* CTA */}
         <div className="py-3 flex-shrink-0">
           <button
             onClick={handleCtaClick}

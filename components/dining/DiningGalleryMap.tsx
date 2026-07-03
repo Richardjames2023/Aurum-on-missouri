@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import { DiningImageGridItem } from '../../app/types/dining';
-import { LuInstagram, LuChevronLeft, LuChevronRight } from 'react-icons/lu';
+import { LuInstagram, LuFacebook, LuYoutube, LuChevronLeft, LuChevronRight } from 'react-icons/lu';
 
 export const DiningGalleryMap: React.FC = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -86,9 +86,17 @@ export const DiningGalleryMap: React.FC = () => {
         <div className="w-full px-6 md:px-12 lg:px-16">
           <div className="w-full bg-[#cba865] p-5 text-slate-900 flex items-center justify-between shadow-md rounded-t-xl">
             <span className="text-xs font-extrabold uppercase tracking-[0.2em] block pl-2">Follow us on:</span>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all mr-2">
-              <LuInstagram className="w-4 h-4" />
-            </a>
+            <div className="flex items-center gap-3 mr-2">
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all">
+                <LuInstagram className="w-4 h-4" />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all">
+                <LuFacebook className="w-4 h-4" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all">
+                <LuYoutube className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
 

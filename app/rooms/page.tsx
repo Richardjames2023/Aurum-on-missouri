@@ -175,10 +175,7 @@ export default function RoomsPage() {
       </section>
 
       {/* Sub Navigation Bar */}
-       <SubNav 
-       
-        
-      />
+       <SubNav />
 
       {/* Main Suite Matrix Cards Grid Section */}
       <section className="w-full py-16 px-4 sm:px-8 lg:px-16 xl:px-24 bg-white">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'; // Added for optimized image rendering
+import Image from 'next/image'; 
 
 export const MeetingChoiceGrid: React.FC = () => {
   const pillars = [
@@ -18,7 +18,7 @@ export const MeetingChoiceGrid: React.FC = () => {
   ];
 
   return (
-    <div className="w-full bg-white py-16 px-6 lg:px-12 font-sans flex flex-col items-center border-b border-gray-100">
+    <div className="w-full bg-white py-10 px-6 lg:px-12 font-sans flex flex-col items-center border-b border-gray-100">
       <div className="w-full max-w-[1440px] flex flex-col space-y-16">
         
         {/* Core Differentiation Proposition Grid Section */}

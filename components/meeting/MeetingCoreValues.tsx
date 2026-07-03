@@ -1,6 +1,12 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 
 export const MeetingCoreValues: React.FC = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const youtubeVideoId = "qsNVM6VuM6A"; 
+
   const coreValues = [
     {
       title: "Personal",
@@ -51,20 +57,46 @@ export const MeetingCoreValues: React.FC = () => {
           ))}
         </div>
 
-        {/* Instant Booking Value Proposition Panel (Middle Parabola Accent Curve) */}
+        {/* Instant Booking Value Proposition Panel */}
         <div className="w-full bg-[#cba865] p-8 md:p-14 rounded-3xl border border-stone-200/40 grid grid-cols-1 lg:grid-cols-12 items-center gap-8 shadow-sm">
-          <div className="lg:col-span-5 flex items-center justify-center">
-            {/* Visual Media Play Mock Component */}
-            <div className="w-20 h-20 rounded-full border-2 border-stone-900 flex items-center justify-center cursor-pointer hover:bg-stone-900 hover:text-white transition-all text-xl pl-1 shadow-md bg-white">
-              ▶
-            </div>
+          
+          {/* Interactive Video Delivery Engine */}
+          <div className="lg:col-span-5 flex items-center justify-center w-full">
+            {!isPlaying ? (
+              /* Splash Poster View / Play Trigger Button */
+              <div 
+                onClick={() => setIsPlaying(true)}
+                className="w-full aspect-video md:h-64 rounded-2xl relative overflow-hidden bg-stone-900 border border-black/10 flex items-center justify-center cursor-pointer group shadow-lg bg-cover bg-center"
+                style={{ backgroundImage: `url('/img/BOB6809.webp')` }}
+              >
+                {/* Decorative Dark Mask Overlay */}
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
+                
+                {/* Fluid Pulse Animation Control Trigger Button */}
+                <div className="w-16 h-16 rounded-full border-2 border-stone-900 flex items-center justify-center text-xl pl-1 shadow-xl bg-white text-stone-950 group-hover:scale-110 group-hover:bg-stone-900 group-hover:text-white group-hover:border-white/20 transition-all duration-300 z-10 select-none">
+                  ▶
+                </div>
+              </div>
+            ) : (
+              /* Embedded YouTube Iframe Stream Engine */
+              <div className="w-full aspect-video md:h-64 rounded-2xl overflow-hidden bg-black shadow-inner border border-black/20">
+                <iframe
+                  src={`https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`}
+                  title="Aurum Events Video Showcase"
+                  className="w-full h-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+            )}
           </div>
+
           <div className="lg:col-span-7 flex flex-col items-start justify-center">
             <h3 className="text-xl md:text-2xl font-bold tracking-tight text-white font-serif leading-snug mb-5">
               What Events Do We Host? 
             </h3>
             
-            {/* UPDATED: Two-Column Grid List Layout Container */}
+            {/* Two-Column Grid List Layout Container */}
             <ul className="w-full grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-6 mb-8 text-xs md:text-[13px] font-bold text-gray-600 tracking-wide">
               {benefits.map((benefit, i) => (
                 <li key={i} className="flex items-center space-x-2.5">

@@ -5,19 +5,17 @@ import React from 'react';
 export const DiningAbout: React.FC = () => {
   return (
     <section className="w-full bg-[#FCFBF9] py-14 md:py-20 border-b border-gray-100 flex flex-col items-center">
-      <div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-16 flex flex-col space-y-6 items-start text-left">
         
-        {/* Left Aspect Header Panel Title (5/12 Width) */}
-        <div className="lg:col-span-5 flex flex-col items-start text-left">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal font-serif tracking-tight text-[#cba865] leading-tight">
-            Enjoy A Culinary Journey <br className="hidden md:inline"/>
-            at Aurum During Your Stay <br className="hidden md:inline"/>
-            in Abuja
-          </h2>
-        </div>
+        {/* Header Panel Title */}
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal font-serif tracking-tight text-[#cba865] leading-tight">
+          Enjoy A Culinary Journey <br className="hidden md:inline"/>
+          at Aurum During Your Stay <br className="hidden md:inline"/>
+          in Abuja
+        </h2>
 
-        {/* Right Aspect Meta Narrative Body Copy (7/12 Width) */}
-        <div className="lg:col-span-7 flex flex-col space-y-5 text-stone-900 text-sm font-medium leading-relaxed tracking-wide text-left lg:pl-6">
+        {/* Meta Narrative Body Copy */}
+        <div className="max-w-2xl flex flex-col space-y-5 text-stone-900 text-sm font-medium leading-relaxed tracking-wide">
           <p>
             Savor vibrant flavors at the all-day restaurant, Aurumm On Missouri. Our wood-fired cooking creates an unforgettable culinary experience with delightful meat, fish, and veggie dishes prepared to perfection.
           </p>

@@ -32,7 +32,7 @@ export const MeetingHero: React.FC = () => {
           <h1 className="text-3xl md:text-5xl font-bold tracking-widest text-[#cba865] uppercase font-sans mb-4 leading-tight">
             Searching for a modern meeting or conference facility?
           </h1>
-          <p className="text-gray-200 text-base md:text-lg font-medium max-w-2xl mx-auto tracking-wide leading-relaxed">
+          <p className="text-stone-400 text-base md:text-lg font-medium max-w-2xl mx-auto tracking-wide leading-relaxed">
             Our conference facilities are designed with the privacy, setup, and collaboration to help you accomplish exactly what you came for, whether you're hosting a boardroom presentation, a private meeting, or a work session. 
           </p>
         </div>

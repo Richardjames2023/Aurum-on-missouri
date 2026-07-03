@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import {
   ArrowUpRight,
@@ -50,8 +51,10 @@ const SLIDES = [
 ];
 
 export default function HeroSection() {
+  // --- NAVIGATION INSTANCE ---
+  const router = useRouter();
+
   // --- STATE ENGINES ---
-  // Carousel Slide State
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Booking Engine System States
@@ -131,8 +134,14 @@ export default function HeroSection() {
     return date > checkInDate && date < checkOutDate;
   };
 
+  // --- EXECUTE ROUTING SEARCH TRIGGER ---
   const handleSearchExecution = () => {
-    alert(`Searching availability for:\n📅 Check-in: ${checkInDate?.toDateString() || 'Empty'}\n📅 Check-out: ${checkOutDate?.toDateString() || 'Empty'}`);
+    // Constructing query string parameter metrics to feed selection criteria safely to the rooms interface page layout
+    const queryParams = new URLSearchParams();
+    if (checkInDate) queryParams.append("checkIn", checkInDate.toISOString());
+    if (checkOutDate) queryParams.append("checkOut", checkOutDate.toISOString());
+    
+    router.push(`/rooms?${queryParams.toString()}`);
   };
 
   const slideUpVariants: Variants = {

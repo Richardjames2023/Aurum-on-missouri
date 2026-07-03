@@ -528,8 +528,7 @@ export const Header: React.FC = () => {
               <div className="flex flex-col lg:hidden space-y-1">
                 {[
                   { label: 'Rooms', href: '/rooms' },
-                  { label: 'Blog', href: '/blog' },
-                  { label: 'Restaurants', href: '/restaurants' },
+                  { label: 'Restaurant', href: '/restaurant' },
                   { label: 'Meetings & Events', href: '/meetings-events' },
                   { label: 'Deals', href: '/deals' },
                   { label: 'Aurum Rewards', href: '/rewards' },

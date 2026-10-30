@@ -104,5 +104,40 @@
     ],
     "href": "/rooms/signature-royal-penthouse",
     "delay": 4000
+  },
+  {
+    "id": "room-04",
+    "title": "Deluxe room (big studio)",
+    "category": "Luxury Suites",
+    "image": "/img/DELUXE--14.webp",
+    "images": [
+      "/img/DELUXE--14.webp",
+      "/img/DELUXE.webp",
+      "/img/DELUXE--10.webp"
+    ],
+    "size": "27 m²",
+    "occupancy": "Max 3 Guests",
+    "pricePerNight": "200,000",
+    "currency": "NGN",
+    "features": [
+      {
+        "label": "King Bed",
+        "icon": "bed"
+      },
+      {
+        "label": "City View",
+        "icon": "view"
+      },
+      {
+        "label": "Free Wi-Fi",
+        "icon": "wifi"
+      },
+      {
+        "label": "Smart TV",
+        "icon": "tv"
+      }
+    ],
+    "href": "/rooms/deluxe-room",
+    "delay": 1000
   }
 ]

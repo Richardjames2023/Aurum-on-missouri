@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { RoomSuite } from '../app/types/rooms';
+import { calculateVat, parseRoomPrice } from '../app/utils/pricing';
 
 // IMPORT THE NEW SHARABLE INTERACTIVE DETAILED MODAL LAYER
 import RoomDetailModal from './RoomDetailModal';
@@ -259,9 +260,14 @@ export const RoomShowcaseMatrix: React.FC = () => {
                       <span className="text-[10px] text-gray-400 font-extrabold uppercase tracking-widest">From</span>
                       <div className="flex items-baseline space-x-1">
                         <span className="text-xl font-extrabold text-[#cba865]">
-                          {room.currency === 'NGN' ? '₦' : '$'}{room.pricePerNight}
-                        </span>
-                        <span className="text-xs text-gray-400 font-bold">/ night</span>
+                            {room.currency === 'NGN' ? '₦' : '$'}{(
+                              parseRoomPrice(room.pricePerNight) +
+                              calculateVat(parseRoomPrice(room.pricePerNight), room.currency)
+                            ).toLocaleString()}
+                          </span>
+                          <span className="text-xs text-gray-400 font-bold">
+                            / night{room.currency === 'NGN' ? ' incl. VAT' : ''}
+                          </span>
                       </div>
                     </div>
 
@@ -295,4 +301,3 @@ export const RoomShowcaseMatrix: React.FC = () => {
     </section>
   );
 };
-

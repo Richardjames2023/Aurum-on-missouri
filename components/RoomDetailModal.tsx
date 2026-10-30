@@ -8,6 +8,7 @@ import { RoomData } from "./RoomCard";
 
 // IMPORT THE PRODUCTION GRADE SECURE BOOKING FORM
 import { BookingFormModal } from "./booking/BookingFormModal";
+import { parseRoomPrice } from "../app/utils/pricing";
 
 interface RoomDetailModalProps {
   isOpen: boolean;
@@ -74,9 +75,7 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailMod
 
   // Safely extract pricing variables from the union types with smart default fallbacks
   const rawPrice = 'pricePerNight' in room ? room.pricePerNight : 180000;
-  const dynamicPrice = typeof rawPrice === 'string'
-    ? parseFloat(rawPrice.replace(/,/g, ''))   // remove commas and convert to number
-    : rawPrice;
+  const dynamicPrice = parseRoomPrice(rawPrice);
   const dynamicCurrency = 'currency' in room ? room.currency : 'NGN';
 
   // Safely extract specifications based on the union type structure

@@ -11,12 +11,12 @@ export const MeetingCoreValues: React.FC = () => {
     {
       title: "Personal",
       desc: "We believe in the invincible power of building close personal relationships, enabling us to act as a true partner.",
-      image: "/img/A9.webp"
+      image: "/img/AoM-6.webp"
     },
     {
       title: "Professional",
       desc: "We offer our exceptional professional expertise to drive fresh ideas in addition to supporting and guiding our M&E partners with seamless delivery.",
-      image: "/img/A7.webp"
+      image: "/img/DELUXE--4.webp"
     },
     {
       title: "Memorable",

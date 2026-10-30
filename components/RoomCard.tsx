@@ -3,6 +3,7 @@
 import { useState, useEffect, MouseEvent } from "react";
 import Image from "next/image";
 import { IconType } from "react-icons";
+import { calculateVat } from "../app/utils/pricing";
 
 export interface AmenityItem {
     icon: IconType;
@@ -15,6 +16,8 @@ export interface RoomData {
     images: string[];
     specs: string[];
     amenities: AmenityItem[];
+    pricePerNight: number;
+    currency: string;
 }
 
 interface RoomCardProps {
@@ -86,6 +89,13 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
                     <h3 className="text-xl lg:text-[22px] font-bold text-[#2d3748] tracking-tight leading-snug line-clamp-2 mb-2">
                         {room.title}
                     </h3>
+                    <p className="text-sm font-bold text-[#4A0A15] mb-3">
+                        {room.currency === "NGN" ? "₦" : "$"}
+                        {(room.pricePerNight + calculateVat(room.pricePerNight, room.currency)).toLocaleString()}
+                        <span className="ml-1 text-xs font-semibold text-gray-400">
+                            / night{room.currency === "NGN" ? " incl. VAT" : ""}
+                        </span>
+                    </p>
 
                     {/* Specification Pills */}
                     <div className="flex flex-wrap gap-2 mb-3">

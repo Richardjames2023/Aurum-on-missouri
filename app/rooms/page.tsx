@@ -46,6 +46,8 @@ export default function RoomsPage() {
   const rooms: RoomData[] = [
     {
       title: "Standard Room",
+      pricePerNight: 120000,
+      currency: "NGN",
       description: "Every detail here is designed to make calm feel luxurious. The décor is soft, neutral, and unpretentious. Perfect for solo travellers, business guests, or couples who appreciate simplicity done well.",
       images: ["/img/STANDARD-.webp", "/img/STANDARD--2.webp", "/img/STANDARD--38.webp"],
       specs: ["23 m²", "2 adults", "1 king or 2 twin"],
@@ -61,9 +63,11 @@ export default function RoomsPage() {
     },
     {
       title: "Executive (one bedroom)",
+      pricePerNight: 300000,
+      currency: "NGN",
       description: "Sophistication is not merely in what you see. It is also about how you feel. The Black Onyx is a one-bedroom suite ideal choice for those who appreciate a private, well-appointed space that feels like a true home away from home.",
       images: ["/img/ANNEXEXEC-18.webp", "/img/ANNEXEXEC-8.webp", "/img/ANNEXEXEC-13.webp"],
-      specs: ["23 m²", "2 adults", "1 king or 2 twin"],
+      specs: ["23 m²", "3 adults", "1 king or 2 twin"],
       amenities: [
         { icon: FaDroplet, label: "Complimentary Water" },
         { icon: LuTv, label: "Smart TV" },
@@ -75,6 +79,8 @@ export default function RoomsPage() {
     },
     {
       title: "Super deluxe (one bedroom)",
+      pricePerNight: 250000,
+      currency: "NGN",
       description: "Sophistication is not merely in what you see. It is also about how you feel. The Black Onyx is a one-bedroom suite ideal choice for those who appreciate a private, well-appointed space that feels like a true home away from home.",
       images: ["/img/SUPER-DELUXE-25.webp", "/img/SUPER-DELUXE-9.webp", "/img/SUPER-DELUXE-18.webp"],
       specs: ["27 m²", "3 adults", "1 king or 2 twin"],
@@ -89,9 +95,11 @@ export default function RoomsPage() {
     },
     {
       title: "Deluxe room (big studio)",
+      pricePerNight: 200000,
+      currency: "NGN",
       description: "Perfect if you crave space, style, and serenity. Here you are guaranteed to simply enjoy the calm that makes Aurum",
       images: ["/img/DELUXE--14.webp", "/img/DELUXE.webp", "/img/DELUXE--10.webp"],
-      specs: ["27 m²", "3 adults", "1 king or 2 twin"],
+      specs: ["27 m²", "2 adults", "1 king or 2 twin"],
       amenities: [
         { icon: FaDroplet, label: "Complimentary Water" },
         { icon: LuTv, label: "Smart TV" },
@@ -167,8 +175,8 @@ export default function RoomsPage() {
           <div className="flex flex-col space-y-1">
             <span className="text-[10px] text-gray-400 font-extrabold uppercase tracking-widest">Pricing Structure</span>
             <div className="flex items-baseline space-x-1.5">
-              <span className="text-2xl font-black text-[#4A0A15]">₦120,000</span>
-              <span className="text-xs text-gray-400 font-bold">/ night starting rate</span>
+              <span className="text-2xl font-black text-[#4A0A15]">₦129,000</span>
+              <span className="text-xs text-gray-400 font-bold">/ night incl. VAT</span>
             </div>
           </div>
         </div>

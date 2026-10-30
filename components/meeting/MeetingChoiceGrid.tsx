@@ -29,7 +29,7 @@ export const MeetingChoiceGrid: React.FC = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {pillars.map((p, i) => (
-              <div key={i} className="flex flex-col space-y-3 bg-[#FCFBF9] border border-gray-200/50 p-6 rounded-xl shadow-xs hover:shadow-md transition-shadow">
+              <div key={i} className="flex flex-col space-y-3 bg-[#ffffff] border border-gray-200/50 p-6 rounded-xl shadow-xs hover:shadow-md transition-shadow">
                 <h4 className="text-[15px] font-bold text-stone-900 tracking-tight">{p.title}</h4>
                 <p className="text-xs md:text-[13px] text-gray-500 font-medium leading-relaxed tracking-wide">{p.desc}</p>
               </div>
@@ -41,7 +41,7 @@ export const MeetingChoiceGrid: React.FC = () => {
         <div>
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-lg md:text-xl font-bold tracking-tight text-stone-900">Explore Our Spaces</h3>
-            <Link href="/gallery" className="text-[11px] font-bold tracking-widest uppercase text-[#CAA664] hover:text-[#36070E] transition-colors">
+            <Link href="/gallery" className="text-[11px] font-bold tracking-widest uppercase text-[#CAA664] hover:text-[#CAA664] transition-colors">
               View Full Gallery &rarr;
             </Link>
           </div>
@@ -57,7 +57,7 @@ export const MeetingChoiceGrid: React.FC = () => {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 {/* Subtle dark overlay on hover to make it feel interactive */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-[#343434]/0 group-hover:bg-[#343434]/10 transition-colors duration-300" />
               </div>
             ))}
           </div>

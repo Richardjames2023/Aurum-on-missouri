@@ -22,7 +22,7 @@ export const FaqHero: React.FC<FaqHeroProps> = ({ activeCategory, onCategoryChan
   return (
     <div className="w-full font-sans">
       {/* Editorial Content Stage Header Background Block Layer */}
-      <div className="w-full h-[320px] relative flex flex-col justify-center items-start px-6 md:px-16 overflow-hidden bg-stone-900 border-b border-gray-100">
+      <div className="w-full h-[320px] relative flex flex-col justify-center items-start px-6 md:px-16 overflow-hidden bg-[#343434] border-b border-gray-100">
         <img 
           src="/images/faq-hero.jpg" // Place your high-contrast close-up hand device asset here in public/images/
           alt="FAQ Support Hub" 
@@ -56,7 +56,7 @@ export const FaqHero: React.FC<FaqHeroProps> = ({ activeCategory, onCategoryChan
               onClick={() => onCategoryChange(cat)}
               className={`px-5 py-2.5 rounded-full text-xs font-extrabold tracking-wide uppercase transition-all shadow-xs border ${
                 activeCategory === cat 
-                  ? 'bg-stone-900 border-stone-900 text-white scale-[1.02]' 
+                  ? 'bg-[#343434] border-[#343434] text-white scale-[1.02]'
                   : 'bg-gray-50/50 border-gray-200 text-gray-500 hover:border-stone-400 hover:text-stone-900'
               }`}
             >

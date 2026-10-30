@@ -19,7 +19,7 @@ export const FaqAccordionList: React.FC<FaqAccordionListProps> = ({ items }) => 
 
   const renderSection = (title: string, sectionItems: FaqItem[]) => (
     <div className="w-full flex flex-col mb-12">
-      <h3 className="text-sm uppercase font-extrabold text-[#4A0A15] tracking-[0.2em] mb-6 border-b border-gray-100 pb-3">
+      <h3 className="text-sm uppercase font-extrabold text-[#343434] tracking-[0.2em] mb-6 border-b border-gray-100 pb-3">
         {title}
       </h3>
       <div className="flex flex-col border border-gray-100 rounded-2xl bg-white shadow-xs overflow-hidden divide-y divide-gray-100">
@@ -33,10 +33,10 @@ export const FaqAccordionList: React.FC<FaqAccordionListProps> = ({ items }) => 
                 onClick={() => toggleAccordion(item.id)}
                 className="w-full flex items-center justify-between text-left p-5 md:p-6 hover:bg-gray-50/50 transition-colors focus:outline-none group"
               >
-                <span className="text-[13px] md:text-sm font-bold text-stone-900 tracking-wide pr-4 leading-snug group-hover:text-[#4A0A15] transition-colors">
+                <span className="text-[13px] md:text-sm font-bold text-stone-900 tracking-wide pr-4 leading-snug group-hover:text-[#343434] transition-colors">
                   {item.question}
                 </span>
-                <span className={`text-lg font-light text-gray-400 group-hover:text-stone-900 transition-transform duration-300 ${isExpanded ? 'rotate-45 text-[#4A0A15]' : ''} select-none`}>
+                <span className={`text-lg font-light text-gray-400 group-hover:text-stone-900 transition-transform duration-300 ${isExpanded ? 'rotate-45 text-[#343434]' : ''} select-none`}>
                   ＋
                 </span>
               </button>

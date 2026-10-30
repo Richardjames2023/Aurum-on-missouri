@@ -158,7 +158,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative h-[100vh] min-h-[850px] w-full overflow-hidden bg-black font-sans text-white">
+    <section className="relative h-[100vh] min-h-[850px] w-full overflow-hidden bg-[#343434] font-sans text-white">
       
       {/* FLOATING HEADER SEARCH BAR */}
       <header className="absolute top-0 left-0 w-full z-40">
@@ -168,7 +168,7 @@ export default function HeroSection() {
             <div className="w-full md:w-10/12 grid grid-cols-2 divide-x divide-gray-200 relative" ref={calendarRef}>
               <div
                 onClick={() => setActiveCalendarSelector('in')}
-                className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors rounded-l-md ${activeCalendarSelector === 'in' ? 'bg-amber-50/50' : ''}`}
+                className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors rounded-l-md ${activeCalendarSelector === 'in' ? 'bg-white/50' : ''}`}
               >
                 <div className="flex items-center">
                   <div className="text-gray-500 mr-3">
@@ -184,7 +184,7 @@ export default function HeroSection() {
 
               <div
                 onClick={() => setActiveCalendarSelector('out')}
-                className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors ${activeCalendarSelector === 'out' ? 'bg-amber-50/50' : ''}`}
+                className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors ${activeCalendarSelector === 'out' ? 'bg-white/50' : ''}`}
               >
                 <div className="flex items-center">
                   <div className="text-gray-500 mr-3">
@@ -230,7 +230,7 @@ export default function HeroSection() {
                         key={index}
                         type="button"
                         onClick={() => handleDateCellSelection(dayDate)}
-                        className={`h-9 w-full text-xs font-bold rounded-lg flex items-center justify-center transition-all ${isStart || isEnd ? 'bg-[#4A0A15] text-white shadow-md scale-105' : isBetween ? 'bg-amber-50 text-amber-900 rounded-none' : 'text-gray-700 hover:bg-gray-100'}`}
+                        className={`h-9 w-full text-xs font-bold rounded-lg flex items-center justify-center transition-all ${isStart || isEnd ? 'bg-[#343434] text-white shadow-md scale-105' : isBetween ? 'bg-white text-[#343434] rounded-none' : 'text-gray-700 hover:bg-gray-100'}`}
                       >
                         {dayDate.getDate()}
                       </button>
@@ -241,7 +241,7 @@ export default function HeroSection() {
             </div>
 
             <div className="w-full md:w-2/12 p-1">
-              <button onClick={handleSearchExecution} className="w-full bg-[#CAA664] text-white py-3 px-6 rounded-md font-bold text-[13px] tracking-wide hover:bg-[#36070E] transition-colors whitespace-nowrap">
+              <button onClick={handleSearchExecution} className="w-full bg-[#CAA664] text-white py-3 px-6 rounded-md font-bold text-[13px] tracking-wide hover:bg-[#CAA664] transition-colors whitespace-nowrap">
                 Search
               </button>
             </div>
@@ -270,7 +270,7 @@ export default function HeroSection() {
       </AnimatePresence>
 
       {/* Atmospheric Cinema Gradient Overlays */}
-      <div className="absolute inset-0 z-10 bg-black/45" />
+      <div className="absolute inset-0 z-10 bg-[#343434]/45" />
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
       <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.5)_100%)]" />
 
@@ -293,9 +293,9 @@ export default function HeroSection() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
-                    className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.2em] text-white/80 uppercase bg-black/40 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10"
+                    className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.2em] text-white/80 uppercase bg-[#343434]/40 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10"
                   >
-                    <MapPin size={12} className="text-[#cba865]" />
+                    <MapPin size={12} className="text-[#CAA664]" />
                     <span>{SLIDES[currentSlide].location}</span>
                   </motion.div>
                 </AnimatePresence>
@@ -310,7 +310,7 @@ export default function HeroSection() {
                   className="block text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-light"
                 >
                   {SLIDES[currentSlide].title1}
-                  <span className="text-[#cba865] font-sans italic font-normal ml-3">
+                  <span className="text-[#CAA664] font-sans italic font-normal ml-3">
                     {SLIDES[currentSlide].accent}
                   </span>
                 </motion.span>
@@ -342,14 +342,14 @@ export default function HeroSection() {
                 initial="hidden"
                 animate="visible"
                 variants={slideUpVariants}
-                className="mt-4 inline-flex items-center gap-2.5 bg-black/30 border border-white/10 backdrop-blur-md rounded-full pl-2 pr-4 py-1 w-max"
+                className="mt-4 inline-flex items-center gap-2.5 bg-[#343434]/30 border border-white/10 backdrop-blur-md rounded-full pl-2 pr-4 py-1 w-max"
               >
                 <div className="flex -space-x-2">
-                  <div className="w-6 h-6 rounded-full border border-black bg-gray-600 overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-[#cba865] to-amber-200 opacity-40" />
+                  <div className="w-6 h-6 rounded-full border border-[#343434] bg-gray-600 overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-[#CAA664] to-[#CAA664] opacity-40" />
                   </div>
-                  <div className="w-6 h-6 rounded-full border border-black bg-gray-500 overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-amber-600 to-amber-300 opacity-40" />
+                  <div className="w-6 h-6 rounded-full border border-[#343434] bg-gray-500 overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-[#CAA664] to-[#CAA664] opacity-40" />
                   </div>
                 </div>
                 <span className="text-[10px] uppercase tracking-wider text-white/90 font-medium">
@@ -364,7 +364,7 @@ export default function HeroSection() {
                   initial="hidden"
                   animate="visible"
                   variants={slideUpVariants}
-                  className="text-xs uppercase tracking-widest text-white/70 font-medium leading-relaxed border-l-2 border-[#cba865] pl-4"
+                  className="text-xs uppercase tracking-widest text-white/70 font-medium leading-relaxed border-l-2 border-[#CAA664] pl-4"
                 >
                   <p>many Exclusive</p>
                   <p>Benefit for you</p>
@@ -384,7 +384,7 @@ export default function HeroSection() {
                   ].map((icon, idx) => (
                     <div
                       key={idx}
-                      className="text-white/70 hover:text-[#cba865] transition-colors duration-300 cursor-pointer"
+                      className="text-white/70 hover:text-[#CAA664] transition-colors duration-300 cursor-pointer"
                     >
                       {icon}
                     </div>
@@ -400,9 +400,9 @@ export default function HeroSection() {
                 initial="hidden"
                 animate="visible"
                 variants={slideUpVariants}
-                className="max-w-md lg:max-w-sm w-full bg-black/35 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-xl"
+                className="max-w-md lg:max-w-sm w-full bg-[#343434]/35 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-xl"
               >
-                <span className="mb-2 block text-xs uppercase tracking-[0.25em] text-[#cba865] font-semibold">
+                <span className="mb-2 block text-xs uppercase tracking-[0.25em] text-[#CAA664] font-semibold">
                   {SLIDES[currentSlide].tag}
                 </span>
 
@@ -412,7 +412,7 @@ export default function HeroSection() {
 
                 <Link
                   href="/rooms"
-                  className="group mt-6 inline-flex items-center gap-2 rounded-full bg-[#cba865] px-6 py-3.5 text-xs font-medium uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#b8965a] hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#cba865]/50"
+                  className="group mt-6 inline-flex items-center gap-2 rounded-full bg-[#CAA664] px-6 py-3.5 text-xs font-medium uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#343434] hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#CAA664]/50"
                 >
                   <span>Reserve Your Stay</span>
                   <ArrowUpRight
@@ -438,7 +438,7 @@ export default function HeroSection() {
             <div
               className={`w-[2px] transition-all duration-500 rounded-full ${
                 currentSlide === index
-                  ? "h-6 bg-[#cba865]"
+                  ? "h-6 bg-[#CAA664]"
                   : "h-3 bg-white/40 group-hover:bg-white"
               }`}
             />

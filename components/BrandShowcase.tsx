@@ -10,10 +10,10 @@ const BrandLogoRenderer: React.FC<{ type: string }> = ({ type }) => {
       return (
         <div className="flex items-center space-x-3.5 font-sans select-none scale-100 md:scale-110 transform-gpu">
           {/* Sonder Stylized Gold Icon Block */}
-          <div className="w-6 h-7 bg-[#C5A059] rounded-xs flex items-center justify-center text-[12px] text-white font-serif font-bold shadow-xs">S</div>
+          <div className="w-6 h-7 bg-[#CAA664] rounded-xs flex items-center justify-center text-[12px] text-white font-serif font-bold shadow-xs">S</div>
           <div className="flex flex-col text-left leading-tight">
-            <span className="text-[20px] font-medium text-[#A48243] tracking-tight">Sonder</span>
-            <span className="text-[5.5px] uppercase tracking-[0.25em] text-[#A48243]/70 -mt-0.5 font-black">L I V I N G</span>
+            <span className="text-[20px] font-medium text-[#CAA664] tracking-tight">Sonder</span>
+            <span className="text-[5.5px] uppercase tracking-[0.25em] text-[#CAA664]/70 -mt-0.5 font-black">L I V I N G</span>
           </div>
         </div>
       );
@@ -33,9 +33,9 @@ const BrandLogoRenderer: React.FC<{ type: string }> = ({ type }) => {
       );
     case 'vitas':
       return (
-        <div className="flex flex-col items-center justify-center font-serif tracking-[0.1em] text-[#917E5B] select-none text-center scale-100 md:scale-110 transform-gpu">
+        <div className="flex flex-col items-center justify-center font-serif tracking-[0.1em] text-[#CAA664] select-none text-center scale-100 md:scale-110 transform-gpu">
           <span className="text-[20px] font-medium tracking-widest uppercase">VITÀS RIO</span>
-          <span className="text-[5.5px] tracking-[0.2em] text-[#917E5B]/60 uppercase -mt-0.5 font-black">RESTAURANT AND BAR</span>
+          <span className="text-[5.5px] tracking-[0.2em] text-[#CAA664]/60 uppercase -mt-0.5 font-black">RESTAURANT AND BAR</span>
         </div>
       );
     default:

@@ -52,7 +52,7 @@ export const AttractionsExplorer: React.FC = () => {
             </h2>
           </div>
           <div className="md:col-span-7">
-            <p className="text-[#cba865] text-sm md:text-base font-medium leading-relaxed tracking-wide max-w-2xl">
+            <p className="text-[#CAA664] text-sm md:text-base font-medium leading-relaxed tracking-wide max-w-2xl">
               Explore the cobbled streets, lively cafes, and bustling art galleries in vibrant Abuja. Make sure not to miss top attractions such as Varuna and the Wonderland.
             </p>
           </div>
@@ -67,7 +67,7 @@ export const AttractionsExplorer: React.FC = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-full border transition-all ${
                   activeCategory === cat
-                    ? 'bg-stone-900 text-white border-[#4A0A15] shadow-xs'
+                    ? 'bg-[#343434] text-white border-[#343434] shadow-xs'
                     : 'border-gray-200 text-gray-500 hover:border-stone-400 hover:text-stone-900 bg-gray-50/50'
                 }`}
               >
@@ -120,10 +120,10 @@ export const AttractionsExplorer: React.FC = () => {
                 {/* Typography Information Sheet Panel */}
                 <div className="p-6 flex flex-col justify-between flex-grow">
                   <div>
-                    <h3 className="text-base md:text-lg font-bold font-serif text-stone-900 mb-2 leading-tight group-hover:text-[#4A0A15] transition-colors">
+                    <h3 className="text-base md:text-lg font-bold font-serif text-stone-900 mb-2 leading-tight group-hover:text-[#343434] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-xs md:text-[13px] font-bold text-[#cba865] leading-relaxed tracking-wide">
+                    <p className="text-xs md:text-[13px] font-bold text-[#CAA664] leading-relaxed tracking-wide">
                       {item.description}
                     </p>
                   </div>

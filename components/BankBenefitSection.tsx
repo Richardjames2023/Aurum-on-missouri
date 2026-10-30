@@ -11,7 +11,7 @@ export default function ExclusiveBenefits() {
         {/* Top Header Row */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pb-10">
           <div className="max-w-3xl">
-            <h2 className="text-4xl md:text-4xl font-semibold tracking-tight text-[#cba865]">
+            <h2 className="text-4xl md:text-4xl font-semibold tracking-tight text-[#CAA664]">
               The Aurum Elites — Enjoy the Benefits of Exclusivity 
             </h2>
             <p className="mt-3 text-sm md:text-base text-slate-600 font-normal leading-relaxed">
@@ -21,10 +21,10 @@ export default function ExclusiveBenefits() {
           
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3 shrink-0">
-            <button className="border border-black bg-white hover:bg-slate-50 text-slate-900 text-[11px] font-bold tracking-wider uppercase px-6 py-3 rounded-full transition-colors duration-200">
+            <button className="border border-[#343434] bg-white hover:bg-slate-50 text-slate-900 text-[11px] font-bold tracking-wider uppercase px-6 py-3 rounded-full transition-colors duration-200">
               Discover All Benefits
             </button>
-            <button className="bg-black hover:bg-slate-800 text-white text-[11px] font-bold tracking-wider uppercase px-6 py-3 rounded-full transition-colors duration-200">
+            <button className="bg-[#343434] hover:bg-[#CAA664] text-white text-[11px] font-bold tracking-wider uppercase px-6 py-3 rounded-full transition-colors duration-200">
               Join the Aurum Elite 
             </button>
           </div>

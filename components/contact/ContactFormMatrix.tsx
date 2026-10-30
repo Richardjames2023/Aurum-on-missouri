@@ -57,15 +57,15 @@ export const CorporateFormSection: React.FC = () => {
   };
 
     return (
-    <section className="w-full bg-[#FCFBF9] py-16 px-6 md:px-12 lg:px-16 flex flex-col items-center border-b border-stone-100">
+    <section className="w-full bg-[#ffffff] py-16 px-6 md:px-12 lg:px-16 flex flex-col items-center border-b border-stone-100">
       <div className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
         {/* LEFT COLUMN: Premium Editorial Info Plate (5/12 Width) */}
         <div className="lg:col-span-5 flex flex-col items-start text-left lg:pr-6">
-          <span className="text-[10px] font-black text-[#4A0A15] tracking-[0.25em] uppercase block mb-3">
+          <span className="text-[10px] font-black text-[#343434] tracking-[0.25em] uppercase block mb-3">
             Corporate Relations
           </span>
-          <h1 className="text-3xl md:text-4xl font-normal tracking-tight text-[#cba865] font-serif leading-tight mb-4">
+          <h1 className="text-3xl md:text-4xl font-normal tracking-tight text-[#CAA664] font-serif leading-tight mb-4">
             Boutique Enterprise <br />
             & Event Account Solutions
           </h1>
@@ -229,7 +229,7 @@ export const CorporateFormSection: React.FC = () => {
               )}
             </div>
 
-            <button type="submit" disabled={isSubmitting} className="self-start bg-[#cba865] hover:bg-[#36070E] text-white font-extrabold text-xs tracking-widest uppercase px-8 py-3.5 shadow-sm transition-colors duration-200 transform active:scale-98 rounded-none cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2">
+            <button type="submit" disabled={isSubmitting} className="self-start bg-[#CAA664] hover:bg-[#CAA664] text-white font-extrabold text-xs tracking-widest uppercase px-8 py-3.5 shadow-sm transition-colors duration-200 transform active:scale-98 rounded-none cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2">
               {isSubmitting ? (
                 <>
                   <LuSend className="w-4 h-4 animate-pulse" />

@@ -28,7 +28,7 @@
 //     router.push("/booking"); 
 //   };
 //   return (
-//     <section className="bg-black border-b border-[#300508] sticky top-0 z-40 w-full">
+//     <section className="bg-[#343434] border-b border-[#343434] sticky top-0 z-40 w-full">
 //       <div className="w-full px-4 sm:px-8 lg:px-16 xl:px-24 flex items-center justify-between">
 //         <div className="flex flex-1 items-center overflow-x-auto scrollbar-hide py-3 space-x-1 sm:space-x-2 mr-4">
 //           {items.map((item, index) => (
@@ -37,7 +37,7 @@
 //               href={item.href}
 //               className={`whitespace-nowrap px-4 sm:px-5 py-2 rounded-full text-[13px] sm:text-sm font-medium transition-all duration-200 ${
 //                 item.active
-//                   ? "bg-white text-[#4a0a0c] shadow-sm transform scale-105"
+//                   ? "bg-white text-[#343434] shadow-sm transform scale-105"
 //                   : "text-gray-300 hover:text-white hover:bg-white/10"
 //               }`}
 //             >
@@ -48,7 +48,7 @@
 //         <div className="py-3 flex-shrink-0">
 //           <button 
 //             onClick={onCtaClick}
-//             className="bg-[#d4b58e] hover:bg-[#c4a37a] text-[#4a0a0c] px-6 sm:px-8 py-2 md:py-2.5 rounded-full text-sm font-bold tracking-widest transition-all hover:shadow-lg uppercase transform hover:-translate-y-0.5"
+//             className="bg-[#CAA664] hover:bg-[#CAA664] text-[#343434] px-6 sm:px-8 py-2 md:py-2.5 rounded-full text-sm font-bold tracking-widest transition-all hover:shadow-lg uppercase transform hover:-translate-y-0.5"
 //           >
 //             {ctaText}
 //           </button>
@@ -89,7 +89,7 @@ export default function SubNav() {
   };
 
   return (
-     <section className="bg-black border-b border-[#300508] sticky top-0 z-40 w-full">
+     <section className="bg-[#343434] border-b border-[#343434] sticky top-0 z-40 w-full">
       <div className="w-full px-4 sm:px-8 lg:px-16 xl:px-24 flex items-center justify-between">
         
         {/* Navigation Items Area */}
@@ -103,7 +103,7 @@ export default function SubNav() {
                 href={item.href}
                 className={`whitespace-nowrap px-4 sm:px-5 py-2 rounded-full text-[13px] sm:text-sm font-medium transition-all duration-200 ${
                   isActive
-                    ? "bg-white text-[#4a0a0c] shadow-sm transform scale-105 font-semibold"
+                    ? "bg-white text-[#343434] shadow-sm transform scale-105 font-semibold"
                     : "text-gray-300 hover:text-white hover:bg-white/10"
                 }`}
               >
@@ -117,7 +117,7 @@ export default function SubNav() {
         <div className="py-3 flex-shrink-0">
           <button
             onClick={handleCtaClick}
-            className="bg-[#d4b58e] hover:bg-[#c4a37a] text-[#4a0a0c] px-6 sm:px-8 py-2 md:py-2.5 rounded-full text-sm font-bold tracking-widest transition-all hover:shadow-lg uppercase transform hover:-translate-y-0.5"
+            className="bg-[#CAA664] hover:bg-[#CAA664] text-[#343434] px-6 sm:px-8 py-2 md:py-2.5 rounded-full text-sm font-bold tracking-widest transition-all hover:shadow-lg uppercase transform hover:-translate-y-0.5"
           >
             Home
           </button>

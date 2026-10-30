@@ -46,7 +46,7 @@ export const SignInForm: React.FC = () => {
   return (
     <section className="w-full min-h-screen bg-white grid grid-cols-1 lg:grid-cols-12 items-stretch select-none font-sans">
       {/* LEFT COLUMN PANEL: Immersive Editorial Brand Frame (5/12 Width) */}
-      <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden bg-stone-900 flex-col justify-between p-12 text-[#F5E6C8] isolate">
+      <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden bg-[#343434] flex-col justify-between p-12 text-[#ffffff] isolate">
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
           <img
@@ -54,7 +54,7 @@ export const SignInForm: React.FC = () => {
             alt="Azusa Luxury Hotel Executive Lounge Interior"
             className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#4A0A15]/40 via-transparent to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#343434]/40 via-transparent to-black/80" />
         </div>
 
         {/* Top Branding Section */}
@@ -76,7 +76,7 @@ export const SignInForm: React.FC = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight font-serif uppercase mb-4 leading-tight">
             Your Sanctuary <br /> Awaits You
           </h2>
-          <div className="w-16 h-[2px] bg-[#D4AF37] mb-4" />
+          <div className="w-16 h-[2px] bg-[#CAA664] mb-4" />
           <p className="text-white/70 text-xs md:text-sm font-medium leading-relaxed tracking-wide">
             Access your secure executive guest account portal to customize
             upcoming stays, track active rewards, or request specialized
@@ -91,11 +91,11 @@ export const SignInForm: React.FC = () => {
       </div>
 
       {/* RIGHT COLUMN PANEL: High-Precision Customer Credentials Input Matrix (7/12 Width) */}
-      <div className="col-span-1 lg:col-span-7 flex flex-col justify-center items-center px-6 sm:px-12 md:px-20 lg:px-24 bg-[#FCFBF9]">
+      <div className="col-span-1 lg:col-span-7 flex flex-col justify-center items-center px-6 sm:px-12 md:px-20 lg:px-24 bg-[#ffffff]">
         {/* Form Main Container Core Card */}
         <div className="w-full max-w-md bg-white border border-gray-100 p-8 md:p-10 shadow-xl rounded-none relative">
           <div className="flex flex-col items-start text-left mb-8 w-full border-b border-gray-50 pb-4">
-            <span className="text-[10px] font-black text-[#4A0A15] tracking-[0.25em] uppercase block mb-1">
+            <span className="text-[10px] font-black text-[#343434] tracking-[0.25em] uppercase block mb-1">
               Guest Portal
             </span>
             <h1 className="text-2xl font-serif font-normal text-stone-900 tracking-tight">
@@ -149,7 +149,7 @@ export const SignInForm: React.FC = () => {
                 </label>
                 <Link
                   href="/forgot-password"
-                  className="text-[10px] font-bold text-[#4A0A15] uppercase tracking-wider hover:underline"
+                  className="text-[10px] font-bold text-[#343434] uppercase tracking-wider hover:underline"
                 >
                   Forgot?
                 </Link>
@@ -239,7 +239,7 @@ export const SignInForm: React.FC = () => {
                       rememberClient: e.target.checked,
                     })
                   }
-                  className="w-4 h-4 accent-[#4A0A15] cursor-pointer"
+                  className="w-4 h-4 accent-[#343434] cursor-pointer"
                 />
                 <span className="text-xs font-semibold text-stone-600">
                   Remember this device
@@ -251,7 +251,7 @@ export const SignInForm: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-stone-900 hover:bg-[#36070E] disabled:bg-stone-300 text-[#cba865] font-extrabold text-xs tracking-widest uppercase py-4 transition-all shadow-md transform active:scale-[0.99] flex items-center justify-center space-x-2 rounded-none cursor-pointer mt-2"
+              className="w-full bg-[#343434] hover:bg-[#CAA664] disabled:bg-stone-300 text-[#CAA664] font-extrabold text-xs tracking-widest uppercase py-4 transition-all shadow-md transform active:scale-[0.99] flex items-center justify-center space-x-2 rounded-none cursor-pointer mt-2"
             >
               <span>
                 {isSubmitting
@@ -265,7 +265,7 @@ export const SignInForm: React.FC = () => {
               Don&apos;t have an elite member account?{" "}
               <Link
                 href="/register"
-                className="text-[#4A0A15] font-bold hover:underline"
+                className="text-[#343434] font-bold hover:underline"
               >
                 Create Account
               </Link>

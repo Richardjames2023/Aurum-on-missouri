@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function RegistrationSuccessPage() {
   return (
-    <main className="w-full min-h-screen bg-[#FCFBF9] flex flex-col relative overflow-x-hidden">
+    <main className="w-full min-h-screen bg-[#ffffff] flex flex-col relative overflow-x-hidden">
       <RegistrationThankYou />
     </main>
   );

@@ -30,7 +30,7 @@ export const DiningSubNav: React.FC = () => {
     <div className="w-full flex flex-col items-center bg-white border-b border-gray-100">
       
       {/* Upper Main Directory Strip */}
-      <div className="w-full bg-[#4A0A15] overflow-x-auto scrollbar-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden h-14 flex items-center">
+      <div className="w-full bg-[#343434] overflow-x-auto scrollbar-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden h-14 flex items-center">
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex items-center space-x-6 whitespace-nowrap text-white text-xs font-bold uppercase tracking-wider h-full">
           {subnavItems.map((item, idx) => (
             <button 
@@ -53,7 +53,7 @@ export const DiningSubNav: React.FC = () => {
             onClick={() => setActiveCategory(cat.id)}
             className={`px-5 py-2.5 transition-all focus:outline-none cursor-pointer rounded-full ${
               activeCategory === cat.id 
-                ? 'bg-[#4A0A15] text-white shadow-xs' 
+                ? 'bg-[#343434] text-white shadow-xs'
                 : 'bg-stone-50 text-stone-500 border border-stone-200/60 hover:text-stone-900 hover:bg-stone-100'
             }`}
           >

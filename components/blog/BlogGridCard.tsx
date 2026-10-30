@@ -36,7 +36,7 @@ export const BlogGridCard: React.FC<BlogGridCardProps> = ({ post, isFullWidthRow
         />
         
         {/* Floating Read-Time Overlay Pill */}
-        <div className="absolute top-4 left-4 z-20 bg-black/30 backdrop-blur-md text-white px-3 py-1.5 text-[10px] font-bold flex items-center space-x-1.5 rounded-full border border-white/10 select-none">
+        <div className="absolute top-4 left-4 z-20 bg-[#343434]/30 backdrop-blur-md text-white px-3 py-1.5 text-[10px] font-bold flex items-center space-x-1.5 rounded-full border border-white/10 select-none">
           <LuClock className="w-3.5 h-3.5" />
           <span>{post.readTime}</span>
         </div>
@@ -47,17 +47,17 @@ export const BlogGridCard: React.FC<BlogGridCardProps> = ({ post, isFullWidthRow
         isFullWidthRow ? 'lg:col-span-5 lg:p-8 justify-center' : ''
       }`}>
         <div>
-          <span className="text-[9px] font-black text-[#4A0A15] uppercase tracking-[0.2em] block mb-2">
+          <span className="text-[9px] font-black text-[#343434] uppercase tracking-[0.2em] block mb-2">
             {post.category}
           </span>
-          <h3 className="text-base md:text-[17px] font-bold text-stone-900 leading-snug tracking-tight mb-4 group-hover:text-[#4A0A15] transition-colors line-clamp-3 font-serif">
+          <h3 className="text-base md:text-[17px] font-bold text-stone-900 leading-snug tracking-tight mb-4 group-hover:text-[#343434] transition-colors line-clamp-3 font-serif">
             {post.title}
           </h3>
         </div>
 
         {/* Bottom Interactive Arrow Node */}
-        <div className="pt-4 border-t border-gray-50 flex items-center justify-end text-stone-400 group-hover:text-[#4A0A15] transition-colors select-none mt-auto">
-          <div className="w-8 h-8 rounded-full border border-gray-200 group-hover:border-[#4A0A15]/20 flex items-center justify-center bg-stone-50/50 group-hover:bg-amber-50/40 transition-all transform group-hover:rotate-45">
+        <div className="pt-4 border-t border-gray-50 flex items-center justify-end text-stone-400 group-hover:text-[#343434] transition-colors select-none mt-auto">
+          <div className="w-8 h-8 rounded-full border border-gray-200 group-hover:border-[#343434]/20 flex items-center justify-center bg-stone-50/50 group-hover:bg-white/40 transition-all transform group-hover:rotate-45">
             <LuArrowUpRight className="w-4 h-4 stroke-[2.5]" />
           </div>
         </div>

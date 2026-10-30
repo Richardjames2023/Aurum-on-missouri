@@ -58,14 +58,14 @@ export const RegisterForm: React.FC = () => {
   return (
     <section className="w-full min-h-screen bg-white grid grid-cols-1 lg:grid-cols-12 items-stretch select-none font-sans">
       {/* LEFT COLUMN PANEL: Immersive Editorial Brand Frame (5/12 Width) */}
-      <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden bg-stone-900 flex-col justify-between p-12 text-[#F5E6C8] isolate">
+      <div className="hidden lg:flex lg:col-span-5 relative overflow-hidden bg-[#343434] flex-col justify-between p-12 text-[#ffffff] isolate">
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero-bg.jpg"
             alt="Azusa Luxury Hotel Suite Entrance"
             className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#4A0A15]/40 via-transparent to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#343434]/40 via-transparent to-black/80" />
         </div>
 
         <div className="relative w-[180px] h-[60px] z-10">
@@ -84,7 +84,7 @@ export const RegisterForm: React.FC = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight font-serif uppercase mb-4 leading-tight">
             Join The <br /> Elite Circle
           </h2>
-          <div className="w-16 h-[2px] bg-[#D4AF37] mb-4" />
+          <div className="w-16 h-[2px] bg-[#CAA664] mb-4" />
           <p className="text-white/70 text-xs md:text-sm font-medium leading-relaxed tracking-wide">
             Create your personalized hospitality account token to unlock
             preferred member-only booking frameworks and complimentary concierge
@@ -98,13 +98,13 @@ export const RegisterForm: React.FC = () => {
       </div>
 
       {/* RIGHT COLUMN PANEL: Account Creation Input Matrix (7/12 Width) */}
-      <div className="col-span-1 lg:col-span-7 flex flex-col justify-center items-center px-6 sm:px-12 md:px-20 lg:px-24 bg-[#FCFBF9] py-12 lg:py-0">
+      <div className="col-span-1 lg:col-span-7 flex flex-col justify-center items-center px-6 sm:px-12 md:px-20 lg:px-24 bg-[#ffffff] py-12 lg:py-0">
         <div className="w-full max-w-md bg-white border border-gray-100 p-8 md:p-10 shadow-xl rounded-none relative">
           <div className="flex flex-col items-start text-left mb-6 w-full border-b border-gray-50 pb-4">
-            <span className="text-[10px] font-black text-[#4A0A15] tracking-[0.25em] uppercase block mb-1">
+            <span className="text-[10px] font-black text-[#343434] tracking-[0.25em] uppercase block mb-1">
               Registration Portal
             </span>
-            <h1 className="text-2xl font-serif font-normal text-[#cba865] tracking-tight">
+            <h1 className="text-2xl font-serif font-normal text-[#CAA664] tracking-tight">
               Create Guest Account
             </h1>
           </div>
@@ -272,7 +272,7 @@ export const RegisterForm: React.FC = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, agreeToTerms: e.target.checked })
                   }
-                  className="w-4 h-4 accent-[#4A0A15] cursor-pointer"
+                  className="w-4 h-4 accent-[#343434] cursor-pointer"
                 />
                 <span className="text-xs font-semibold text-stone-600">
                   I accept the luxury terms & hospitality clauses
@@ -289,7 +289,7 @@ export const RegisterForm: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-stone-900 hover:bg-[#36070E] disabled:bg-stone-300 text-[#cba865] font-extrabold text-xs tracking-widest uppercase py-4 transition-all shadow-md transform active:scale-[0.99] flex items-center justify-center space-x-2 rounded-none cursor-pointer mt-2"
+              className="w-full bg-[#343434] hover:bg-[#CAA664] disabled:bg-stone-300 text-[#CAA664] font-extrabold text-xs tracking-widest uppercase py-4 transition-all shadow-md transform active:scale-[0.99] flex items-center justify-center space-x-2 rounded-none cursor-pointer mt-2"
             >
               <span>
                 {isSubmitting
@@ -303,7 +303,7 @@ export const RegisterForm: React.FC = () => {
               Already have an elite account?{" "}
               <Link
                 href="/signin"
-                className="text-[#4A0A15] font-bold hover:underline"
+                className="text-[#343434] font-bold hover:underline"
               >
                 Sign In
               </Link>

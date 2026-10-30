@@ -54,7 +54,7 @@ export default function RoomDetailsPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#FCFBF9] w-full flex flex-col overflow-x-hidden relative">
+    <main className="min-h-screen bg-[#ffffff] w-full flex flex-col overflow-x-hidden relative">
       {/* 
         BRAND DESKTOP NAVHEADER 
         Mounted cleanly matching global app architectural boundaries
@@ -74,7 +74,7 @@ export default function RoomDetailsPage() {
           
           {/* Left Text Block Partition Column */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            <h3 className="text-base uppercase font-extrabold text-[#4A0A15] tracking-[0.2em] mb-4 border-b border-gray-100 pb-2 w-full">
+            <h3 className="text-base uppercase font-extrabold text-[#343434] tracking-[0.2em] mb-4 border-b border-gray-100 pb-2 w-full">
               About the place
             </h3>
             <p className="text-stone-600 text-xs md:text-sm font-medium leading-relaxed tracking-wide mb-6">
@@ -90,7 +90,7 @@ export default function RoomDetailsPage() {
                 const FeatureIcon = item.icon;
                 return (
                   <div key={item.id} className="flex flex-col items-start select-none group">
-                    <FeatureIcon className="w-6 h-6 text-[#4A0A15] mb-2.5 transition-transform duration-300 group-hover:scale-115" />
+                    <FeatureIcon className="w-6 h-6 text-[#343434] mb-2.5 transition-transform duration-300 group-hover:scale-115" />
                     <div className="flex items-baseline space-x-1">
                       <span className="text-base font-black text-stone-900 font-serif">{item.value}</span>
                       <span className="text-xs text-gray-400 font-medium tracking-wide">{item.label}</span>
@@ -104,7 +104,7 @@ export default function RoomDetailsPage() {
             <div className="mt-12 pt-6 border-t border-gray-100 w-full flex">
               <button 
                 onClick={() => setIsBookingModalOpen(true)}
-                className="bg-[#4A0A15] hover:bg-[#36070E] text-white font-extrabold text-xs px-12 py-4 tracking-widest uppercase shadow-md transition-all duration-200 transform active:scale-[0.98] rounded-none cursor-pointer"
+                className="bg-[#343434] hover:bg-[#CAA664] text-white font-extrabold text-xs px-12 py-4 tracking-widest uppercase shadow-md transition-all duration-200 transform active:scale-[0.98] rounded-none cursor-pointer"
               >
                 Book This Suite Now
               </button>

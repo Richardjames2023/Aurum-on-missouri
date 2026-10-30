@@ -33,7 +33,7 @@ export const DiningHero: React.FC = () => {
   };
 
   return (
-    <section className="w-full bg-[#FCFBF9] py-10 md:py-14 border-b border-stone-100 flex flex-col items-center">
+    <section className="w-full bg-[#ffffff] py-10 md:py-14 border-b border-stone-100 flex flex-col items-center">
       <div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
         {/* Left Column Aspect: Premium Image Carousel Window */}
@@ -55,13 +55,13 @@ export const DiningHero: React.FC = () => {
           <div className="absolute inset-x-4 top-1/2 -translate-y-1/2 z-20 flex justify-between pointer-events-none">
             <button 
               onClick={handlePrev}
-              className="w-9 h-9 bg-black/30 backdrop-blur-md rounded-full text-white flex items-center justify-center hover:bg-[#4A0A15] transition-all pointer-events-auto cursor-pointer focus:outline-none text-xl"
+              className="w-9 h-9 bg-[#343434]/30 backdrop-blur-md rounded-full text-white flex items-center justify-center hover:bg-[#343434] transition-all pointer-events-auto cursor-pointer focus:outline-none text-xl"
             >
               ‹
             </button>
             <button 
               onClick={handleNext}
-              className="w-9 h-9 bg-black/30 backdrop-blur-md rounded-full text-white flex items-center justify-center hover:bg-[#4A0A15] transition-all pointer-events-auto cursor-pointer focus:outline-none text-xl"
+              className="w-9 h-9 bg-[#343434]/30 backdrop-blur-md rounded-full text-white flex items-center justify-center hover:bg-[#343434] transition-all pointer-events-auto cursor-pointer focus:outline-none text-xl"
             >
               ›
             </button>
@@ -85,7 +85,7 @@ export const DiningHero: React.FC = () => {
         {/* Right Column Aspect: Brand Identity Info Typography Sheet */}
         <div className="lg:col-span-6 flex flex-col items-start justify-center text-left lg:pl-6">
           <div className="flex items-center space-x-2 mb-3 select-none">
-            <span className="text-xl text-[#4A0A15]">🍽️</span>
+            <span className="text-xl text-[#343434]">🍽️</span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-stone-900 font-serif leading-none">
               Aurum Restaurant
             </h1>
@@ -99,7 +99,7 @@ export const DiningHero: React.FC = () => {
             Taste your way across the map. Explore a curated menu of traditional Nigerian favourites and other rich flavours from around the world.
           </p>
 
-          <button className="bg-[#cba865] hover:bg-slate-900 text-white font-extrabold text-xs tracking-widest uppercase px-10 py-4 shadow-sm transition-all focus:outline-none rounded-none cursor-pointer">
+          <button className="bg-[#CAA664] hover:bg-[#343434] text-white font-extrabold text-xs tracking-widest uppercase px-10 py-4 shadow-sm transition-all focus:outline-none rounded-none cursor-pointer">
             Explore Our Menus
           </button>
         </div>

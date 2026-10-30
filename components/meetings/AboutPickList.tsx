@@ -8,7 +8,7 @@ export const AboutPickList: React.FC = () => {
       <div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-16 flex flex-col items-center">
         
         {/* INNER GRID BLOCK CONTAINER */}
-        <div className="w-full max-w-4xl border border-gray-100 bg-[#FCFBF9] p-6 md:p-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center rounded-none shadow-sm">
+        <div className="w-full max-w-4xl border border-gray-100 bg-[#ffffff] p-6 md:p-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center rounded-none shadow-sm">
           
           {/* Left Side: Component Visual Representation */}
           <div className="md:col-span-5 w-full aspect-[4/3] relative overflow-hidden bg-stone-100 rounded-xl shadow-xs">
@@ -35,7 +35,7 @@ export const AboutPickList: React.FC = () => {
             </p>
             
             {/* CTA action trigger */}
-            <button className="bg-[#4A0A15] hover:bg-[#36070E] text-white font-extrabold text-[11px] tracking-widest uppercase px-8 py-3.5 shadow-sm transition-colors rounded-none cursor-pointer border-none">
+            <button className="bg-[#343434] hover:bg-[#CAA664] text-white font-extrabold text-[11px] tracking-widest uppercase px-8 py-3.5 shadow-sm transition-colors rounded-none cursor-pointer border-none">
               Explore Picklist
             </button>
           </div>

@@ -9,7 +9,7 @@ interface GuestReviewCardProps {
 
 export const GuestReviewCard: React.FC<GuestReviewCardProps> = ({ testimonial }) => {
   return (
-    <div className="w-full bg-[#FCFBF9] border-t border-gray-100 py-16 px-6 md:px-12 lg:px-16 flex flex-col items-center">
+    <div className="w-full bg-[#ffffff] border-t border-gray-100 py-16 px-6 md:px-12 lg:px-16 flex flex-col items-center">
       <div className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         {/* Left Aspect Side Frame Image Block */}
@@ -25,12 +25,12 @@ export const GuestReviewCard: React.FC<GuestReviewCardProps> = ({ testimonial })
 
         {/* Right Aspect Side Frame Text Plate Panel Section */}
         <div className="lg:col-span-8 flex flex-col items-start justify-center lg:pl-6">
-          <span className="text-xs font-extrabold text-[#4A0A15] tracking-[0.2em] uppercase block mb-3">
+          <span className="text-xs font-extrabold text-[#343434] tracking-[0.2em] uppercase block mb-3">
             Happy Family
           </span>
           
           {/* Static Star SVG Array Execution Loop Row */}
-          <div className="flex items-center space-x-1.5 mb-5 text-amber-500 text-sm">
+          <div className="flex items-center space-x-1.5 mb-5 text-[#CAA664] text-sm">
             {Array.from({ length: testimonial.rating }).map((_, starI) => (
               <span key={starI}>★</span>
             ))}
@@ -47,7 +47,7 @@ export const GuestReviewCard: React.FC<GuestReviewCardProps> = ({ testimonial })
           </span>
 
           {/* Action Trigger Button Pillar Anchor Link */}
-          <button className="bg-[#4A0A15] hover:bg-[#36070E] text-white font-extrabold text-[11px] tracking-widest uppercase px-8 py-3.5 shadow-md transition-colors focus:outline-none">
+          <button className="bg-[#343434] hover:bg-[#CAA664] text-white font-extrabold text-[11px] tracking-widest uppercase px-8 py-3.5 shadow-md transition-colors focus:outline-none">
             Read Their Story
           </button>
         </div>

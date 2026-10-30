@@ -10,7 +10,7 @@ const BENEFITS_DATA: ExclusiveBenefit[] = [
     title: "Member Only Rate",
     description: "Members get up to 15% discount",
     iconSvg: (
-      <svg className="w-5 h-5 text-[#3B0E17]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-[#343434]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2zM9 16h6M9 12h6" />
       </svg>
     )
@@ -20,7 +20,7 @@ const BENEFITS_DATA: ExclusiveBenefit[] = [
     title: "Discount on Food and Beverages",
     description: "Discount on food and beverages",
     iconSvg: (
-      <svg className="w-5 h-5 text-[#3B0E17]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-[#343434]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     )
@@ -30,7 +30,7 @@ const BENEFITS_DATA: ExclusiveBenefit[] = [
     title: "Priority Line",
     description: "Save waiting time during check-in and check-out",
     iconSvg: (
-      <svg className="w-5 h-5 text-[#3B0E17]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-[#343434]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     )
@@ -53,13 +53,13 @@ export const ExclusiveBenefitsSection: React.FC = () => {
           <div className="flex flex-wrap items-center gap-3">
             <Link 
               href="/benefits" 
-              className="inline-flex items-center justify-center border border-[#3B0E17] text-[#3B0E17] font-bold text-[11px] tracking-wider uppercase rounded-full px-6 py-2.5 hover:bg-stone-100 transition-all transform hover:-translate-y-0.5 duration-200 shadow-sm bg-white"
+              className="inline-flex items-center justify-center border border-[#343434] text-[#343434] font-bold text-[11px] tracking-wider uppercase rounded-full px-6 py-2.5 hover:bg-stone-100 transition-all transform hover:-translate-y-0.5 duration-200 shadow-sm bg-white"
             >
               Discover More Benefits
             </Link>
             <Link 
               href="/signup" 
-              className="inline-flex items-center justify-center bg-[#4A0A15] text-white font-bold text-[11px] tracking-widest uppercase rounded-full px-6 py-3 hover:bg-[#36070E] transition-all transform hover:-translate-y-0.5 duration-200 shadow-sm"
+              className="inline-flex items-center justify-center bg-[#343434] text-white font-bold text-[11px] tracking-widest uppercase rounded-full px-6 py-3 hover:bg-[#CAA664] transition-all transform hover:-translate-y-0.5 duration-200 shadow-sm"
             >
               Become a Member
             </Link>

@@ -53,7 +53,7 @@ const DealImageCarousel: React.FC<{ initialImage: string; title: string }> = ({ 
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-20 pointer-events-none" />
       
       {/* Sliding Page Micro Dot Indicators */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30 flex space-x-1.5 bg-black/30 backdrop-blur-xs px-2.5 py-1.5 rounded-full">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30 flex space-x-1.5 bg-[#343434]/30 backdrop-blur-xs px-2.5 py-1.5 rounded-full">
         {galleryCollection.map((_, i) => (
           <div
             key={i}
@@ -69,12 +69,12 @@ const DealImageCarousel: React.FC<{ initialImage: string; title: string }> = ({ 
 
 export const DealsRowGrid: React.FC = () => {
   return (
-    <section className="w-full bg-[#1E110E] font-sans flex flex-col items-center">
+    <section className="w-full bg-[#343434] font-sans flex flex-col items-center">
       <div className="w-full bg-white p-8 md:p-16 shadow-2xl overflow-hidden rounded-none">
         
         {/* Upper Heading Bar */}
         <div className="max-w-[1440px] mx-auto w-full border-b border-gray-100 pb-6 mb-12 px-6 md:px-12">
-          <span className="text-[11px] font-extrabold text-[#4A0A15] uppercase tracking-[0.25em] block mb-2">
+          <span className="text-[11px] font-extrabold text-[#343434] uppercase tracking-[0.25em] block mb-2">
             Curated Hospitality Packages
           </span>
           <h1 className="text-2xl md:text-4xl font-bold tracking-tight text-stone-900 font-serif leading-none">
@@ -89,7 +89,7 @@ export const DealsRowGrid: React.FC = () => {
             return (
               <div 
                 key={deal.id}
-                className="w-full border-b border-gray-100 last:border-b-0 bg-[#FCFBF9] odd:bg-white py-12 md:py-16 transition-colors duration-300"
+                className="w-full border-b border-gray-100 last:border-b-0 bg-[#ffffff] odd:bg-white py-12 md:py-16 transition-colors duration-300"
               >
                 {/* Content Alignment Lock Grid */}
                 <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-center px-6 md:px-12">
@@ -103,14 +103,14 @@ export const DealsRowGrid: React.FC = () => {
                     
                     {/* Dynamic Floating Action Badge Overlay */}
                     {deal.badgeText && (
-                      <span className="absolute top-4 left-4 bg-[#4A0A15] text-white font-extrabold text-[10px] tracking-widest uppercase px-3.5 py-1.5 rounded-md shadow-md z-30">
+                      <span className="absolute top-4 left-4 bg-[#343434] text-white font-extrabold text-[10px] tracking-widest uppercase px-3.5 py-1.5 rounded-md shadow-md z-30">
                         {deal.badgeText}
                       </span>
                     )}
 
                     {/* Percentage Discount Pill */}
                     {deal.discountPercentage && (
-                      <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-xs border border-white/20 text-[#4A0A15] font-black text-xs px-4 py-2 rounded-md shadow-md z-30">
+                      <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-xs border border-white/20 text-[#343434] font-black text-xs px-4 py-2 rounded-md shadow-md z-30">
                         {deal.discountPercentage}% OFF
                       </div>
                     )}
@@ -120,7 +120,7 @@ export const DealsRowGrid: React.FC = () => {
                   <div className={`lg:col-span-6 flex flex-col items-start justify-center relative z-20 ${
                     isEven ? 'lg:order-2 lg:pl-4' : 'lg:order-1 lg:pr-4'
                   }`}>
-                    <span className="text-[10px] font-extrabold text-[#4A0A15] tracking-[0.2em] uppercase block mb-2.5">
+                    <span className="text-[10px] font-extrabold text-[#343434] tracking-[0.2em] uppercase block mb-2.5">
                       {deal.tagline}
                     </span>
                     
@@ -136,7 +136,7 @@ export const DealsRowGrid: React.FC = () => {
                     <ul className="flex flex-col space-y-2 mb-8 text-xs md:text-[13px] font-bold text-gray-500 tracking-wide">
                       {deal.features.map((feat, fIdx) => (
                         <li key={fIdx} className="flex items-center space-x-2.5">
-                          <LuSparkles className="w-3.5 h-3.5 text-amber-600 flex-shrink-0" />
+                          <LuSparkles className="w-3.5 h-3.5 text-[#CAA664] flex-shrink-0" />
                           <span>{feat}</span>
                         </li>
                       ))}
@@ -150,7 +150,7 @@ export const DealsRowGrid: React.FC = () => {
                       
                       <Link 
                         href={deal.ctaHref}
-                        className="inline-flex items-center justify-center bg-[#4A0A15] text-white font-bold text-xs uppercase tracking-widest rounded-full px-8 py-3.5 hover:bg-[#36070E] transition-all transform active:scale-95 shadow-md hover:shadow-lg"
+                        className="inline-flex items-center justify-center bg-[#343434] text-white font-bold text-xs uppercase tracking-widest rounded-full px-8 py-3.5 hover:bg-[#CAA664] transition-all transform active:scale-95 shadow-md hover:shadow-lg"
                       >
                         Claim Offer
                       </Link>

@@ -43,8 +43,8 @@ export const ActivitiesSlider: React.FC<ActivitiesSliderProps> = ({ activities }
               </div>
 
               {/* Card Meta Content Info Sheet */}
-              <div className="p-4 flex flex-col items-start bg-[#FCFBF9] border-t border-gray-50">
-                <h4 className="text-sm font-bold text-stone-900 mb-1 leading-snug group-hover:text-[#4A0A15] transition-colors">
+              <div className="p-4 flex flex-col items-start bg-[#ffffff] border-t border-gray-50">
+                <h4 className="text-sm font-bold text-stone-900 mb-1 leading-snug group-hover:text-[#343434] transition-colors">
                   {act.title}
                 </h4>
                 <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">

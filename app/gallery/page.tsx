@@ -177,11 +177,11 @@ export default function GalleryPage() {
   }, [lightboxIndex]);
 
   return (
-    <div className="w-full min-h-screen bg-[#FCFBF9] flex flex-col overflow-x-hidden selection:bg-amber-200">
+    <div className="w-full min-h-screen bg-[#ffffff] flex flex-col overflow-x-hidden selection:bg-[#CAA664]">
 
       <main className="flex-grow flex flex-col">
         {/* HERO TITLE HEADER PANEL */}
-        <section className="relative w-full bg-[#1E110E] text-white py-24 sm:py-32 lg:py-40 px-6 md:px-12 flex flex-col items-center justify-center text-center overflow-hidden border-b border-amber-950/20 min-h-[40vh]">
+        <section className="relative w-full bg-[#343434] text-white py-24 sm:py-32 lg:py-40 px-6 md:px-12 flex flex-col items-center justify-center text-center overflow-hidden border-b border-[#343434]/20 min-h-[40vh]">
 
           {/* Background Image Setup */}
           <div className="absolute inset-0 z-0">
@@ -195,29 +195,29 @@ export default function GalleryPage() {
           </div>
 
           {/* Dark gradient overlay for text readability */}
-          {/* <div className="absolute inset-0 bg-gradient-to-b from-[#1E110E]/80 via-[#1E110E]/50 to-[#1E110E]/90 z-0 pointer-events-none" /> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-[#343434]/80 via-[#343434]/50 to-[#343434]/90 z-0 pointer-events-none" /> */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1E110E]/40 via-transparent to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#343434]/40 via-transparent to-black/20" />
 
           {/* Ambient radial accent overlay */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(74,10,21,0.3)_0%,transparent_70%)] pointer-events-none z-0" />
 
           <div className="max-w-3xl relative z-10">
-            <span className="text-[10px] sm:text-xs font-extrabold text-[#D4AF37] uppercase tracking-[0.3em] block mb-4 animate-fade-in drop-shadow-md">
+            <span className="text-[10px] sm:text-xs font-extrabold text-[#CAA664] uppercase tracking-[0.3em] block mb-4 animate-fade-in drop-shadow-md">
               A Visual Sanctuary
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white font-normal leading-tight tracking-tight mb-6 drop-shadow-lg">
              Aurum On Missouri in Pictures
             </h1>
-            <div className="w-16 h-0.5 bg-[#D4AF37]/80 mx-auto mb-6 shadow-sm" />
-            <p className="text-[#F5E6C8] text-xs sm:text-sm md:text-base font-light leading-relaxed max-w-2xl mx-auto tracking-wide drop-shadow-md">
+            <div className="w-16 h-0.5 bg-[#CAA664]/80 mx-auto mb-6 shadow-sm" />
+            <p className="text-[#ffffff] text-xs sm:text-sm md:text-base font-light leading-relaxed max-w-2xl mx-auto tracking-wide drop-shadow-md">
               Discover the architectural elegance, luxurious interiors, and serene wellness spaces of Aurum On Missouri Hotels & Apartments. A curated visual journey into Abuja's elite sanctuary.
             </p>
           </div>
         </section>
 
         {/* DYNAMIC CATEGORY FILTER SELECTOR */}
-        <section className="w-full bg-stone-900 border-b border-gray-100 py-5 sticky top-0 z-30 shadow-sm">
+        <section className="w-full bg-[#343434] border-b border-gray-100 py-5 sticky top-0 z-30 shadow-sm">
           <div className="max-w-[1440px] mx-auto px-6 md:px-12">
             <div className="flex items-center space-x-2 overflow-x-auto scrollbar-hide py-1.5 -my-1.5 justify-start lg:justify-center">
               {CATEGORIES.map((cat) => {
@@ -231,11 +231,11 @@ export default function GalleryPage() {
                       setLightboxIndex(null);
                     }}
                     className={`flex items-center space-x-2 whitespace-nowrap px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${isActive
-                      ? "bg-black text-white shadow-md transform scale-105"
-                      : "text-[#cba865] hover:text-white hover:bg-black"
+                      ? "bg-[#343434] text-white shadow-md transform scale-105"
+                      : "text-[#CAA664] hover:text-white hover:bg-[#343434]"
                       }`}
                   >
-                    <IconComponent className={`w-3.5 h-3.5 ${isActive ? "text-[#D4AF37]" : "text-gray-400"}`} />
+                    <IconComponent className={`w-3.5 h-3.5 ${isActive ? "text-[#CAA664]" : "text-gray-400"}`} />
                     <span>{cat.label}</span>
                   </button>
                 );
@@ -245,7 +245,7 @@ export default function GalleryPage() {
         </section>
 
         {/* INTERACTIVE MEDIA GRID */}
-        <section className="w-full py-16 px-6 md:px-12 bg-[#FCFBF9]">
+        <section className="w-full py-16 px-6 md:px-12 bg-[#ffffff]">
           <div className="max-w-[1440px] mx-auto w-full">
             {filteredItems.length === 0 ? (
               <div className="text-center py-20">
@@ -274,19 +274,19 @@ export default function GalleryPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
 
                     {/* Hover gold thin borders */}
-                    <div className="absolute inset-3 border border-[#D4AF37]/0 group-hover:border-[#D4AF37]/30 rounded-lg pointer-events-none transition-all duration-500" />
+                    <div className="absolute inset-3 border border-[#CAA664]/0 group-hover:border-[#CAA664]/30 rounded-lg pointer-events-none transition-all duration-500" />
 
                     {/* Micro-interaction Maximize Icon */}
-                    <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-sm border border-white/10 p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                      <LuMaximize2 className="w-3.5 h-3.5 text-[#D4AF37]" />
+                    <div className="absolute top-4 right-4 bg-[#343434]/60 backdrop-blur-sm border border-white/10 p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                      <LuMaximize2 className="w-3.5 h-3.5 text-[#CAA664]" />
                     </div>
 
                     {/* Content Section Panel */}
                     <div className="relative p-6 z-10 transform translate-y-3 group-hover:translate-y-0 transition-transform duration-300 ease-out">
-                      <span className="text-[9px] font-bold text-[#D4AF37] tracking-[0.2em] uppercase block mb-1">
+                      <span className="text-[9px] font-bold text-[#CAA664] tracking-[0.2em] uppercase block mb-1">
                         {item.category}
                       </span>
-                      <h3 className="text-sm font-semibold text-white tracking-wide font-sans mb-1 line-clamp-1 group-hover:text-amber-100 transition-colors">
+                      <h3 className="text-sm font-semibold text-white tracking-wide font-sans mb-1 line-clamp-1 group-hover:text-[#CAA664] transition-colors">
                         {item.title}
                       </h3>
                       <p className="text-[10px] text-gray-300 font-light leading-relaxed line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75">
@@ -303,13 +303,13 @@ export default function GalleryPage() {
         {/* PREMIUM LIGHTBOX SLIDER MODAL */}
         {lightboxIndex !== null && (
           <div
-            className="fixed inset-0 bg-black/95 backdrop-blur-md z-[999] flex flex-col justify-between items-center transition-all duration-300"
+            className="fixed inset-0 bg-[#343434]/95 backdrop-blur-md z-[999] flex flex-col justify-between items-center transition-all duration-300"
             onClick={handleCloseLightbox}
           >
             {/* Upper control row */}
             <div className="w-full flex items-center justify-between px-6 py-4 relative z-50">
               <div className="flex flex-col text-left">
-                <span className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-[0.25em]">
+                <span className="text-[10px] font-bold text-[#CAA664] uppercase tracking-[0.25em]">
                   {filteredItems[lightboxIndex].category}
                 </span>
                 <span className="text-[11px] text-gray-400 font-medium">
@@ -334,7 +334,7 @@ export default function GalleryPage() {
                   e.stopPropagation();
                   handlePrevImage();
                 }}
-                className="p-3.5 rounded-full bg-black/40 hover:bg-[#4A0A15] border border-white/5 text-white/80 hover:text-white transition-all transform hover:scale-105 focus:outline-none absolute left-4 md:left-8 z-50"
+                className="p-3.5 rounded-full bg-[#343434]/40 hover:bg-[#343434] border border-white/5 text-white/80 hover:text-white transition-all transform hover:scale-105 focus:outline-none absolute left-4 md:left-8 z-50"
                 aria-label="Previous image"
               >
                 <LuChevronLeft className="w-6 h-6" />
@@ -361,7 +361,7 @@ export default function GalleryPage() {
                   e.stopPropagation();
                   handleNextImage();
                 }}
-                className="p-3.5 rounded-full bg-black/40 hover:bg-[#4A0A15] border border-white/5 text-white/80 hover:text-white transition-all transform hover:scale-105 focus:outline-none absolute right-4 md:right-8 z-50"
+                className="p-3.5 rounded-full bg-[#343434]/40 hover:bg-[#343434] border border-white/5 text-white/80 hover:text-white transition-all transform hover:scale-105 focus:outline-none absolute right-4 md:right-8 z-50"
                 aria-label="Next image"
               >
                 <LuChevronRight className="w-6 h-6" />
@@ -370,14 +370,14 @@ export default function GalleryPage() {
 
             {/* Lower caption overlay details layout block */}
             <div
-              className="w-full bg-[#1E110E] border-t border-amber-950/20 px-6 py-8 relative z-50 flex justify-center text-center"
+              className="w-full bg-[#343434] border-t border-[#343434]/20 px-6 py-8 relative z-50 flex justify-center text-center"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="max-w-2xl flex flex-col items-center">
                 <h2 className="text-xl sm:text-2xl font-serif text-white font-normal mb-3 tracking-tight">
                   {filteredItems[lightboxIndex].title}
                 </h2>
-                <div className="w-10 h-0.5 bg-[#D4AF37]/50 mb-3" />
+                <div className="w-10 h-0.5 bg-[#CAA664]/50 mb-3" />
                 <p className="text-gray-300 text-xs sm:text-sm font-light leading-relaxed max-w-xl">
                   {filteredItems[lightboxIndex].description}
                 </p>
@@ -387,9 +387,9 @@ export default function GalleryPage() {
         )}
 
         {/* PLAN YOUR VISIT CALL TO ACTION */}
-        <section className="w-full py-16 sm:py-20 lg:py-24 px-6 md:px-12 bg-black flex justify-center text-center relative border-t border-gray-100">
+        <section className="w-full py-16 sm:py-20 lg:py-24 px-6 md:px-12 bg-[#343434] flex justify-center text-center relative border-t border-gray-100">
           <div className="max-w-xl flex flex-col items-center">
-            <span className="text-[10px] sm:text-xs font-extrabold text-[#cba865] tracking-[0.25em] uppercase block mb-3">
+            <span className="text-[10px] sm:text-xs font-extrabold text-[#CAA664] tracking-[0.25em] uppercase block mb-3">
               Elite Sanctuary Experience
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-white font-normal leading-tight mb-4 tracking-tight">
@@ -400,7 +400,7 @@ export default function GalleryPage() {
             </p>
             <Link
               href="/rooms"
-              className="bg-[#cba865] hover:bg-white text-black px-8 py-3.5 rounded-full text-xs font-bold tracking-widest uppercase hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+              className="bg-[#CAA664] hover:bg-white text-[#343434] px-8 py-3.5 rounded-full text-xs font-bold tracking-widest uppercase hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
             >
               Reserve Accommodation
             </Link>

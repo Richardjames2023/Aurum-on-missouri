@@ -12,7 +12,7 @@ interface BlogDetailsViewProps {
 export const BlogDetailsView: React.FC<BlogDetailsViewProps> = ({ article }) => {
 
   return (
-    <article className="w-full bg-[#FCFBF9] min-h-screen font-sans flex flex-col items-center pb-20 select-none">
+    <article className="w-full bg-[#ffffff] min-h-screen font-sans flex flex-col items-center pb-20 select-none">
       
       {/* HEADER META TRACKING BANNER */}
       <div className="w-full max-w-[1200px] px-6 md:px-12 pt-8 pb-10 flex flex-col items-start">
@@ -20,14 +20,14 @@ export const BlogDetailsView: React.FC<BlogDetailsViewProps> = ({ article }) => 
         {/* Back navigation line trigger */}
         <Link 
           href="/blog" 
-          className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-stone-500 hover:text-[#4A0A15] transition-colors mb-8 group"
+          className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-stone-500 hover:text-[#343434] transition-colors mb-8 group"
         >
           <LuArrowLeft className="w-4 h-4 transform group-hover:-translate-x-1 transition-transform" />
           <span>Back to Articles Portal</span>
         </Link>
 
         {/* Category Badge element */}
-        <span className="text-[10px] font-black text-[#4A0A15] tracking-[0.25em] uppercase block mb-4">
+        <span className="text-[10px] font-black text-[#343434] tracking-[0.25em] uppercase block mb-4">
           {article.category}
         </span>
 
@@ -39,15 +39,15 @@ export const BlogDetailsView: React.FC<BlogDetailsViewProps> = ({ article }) => 
         {/* Timeline Metrics Meta Strip */}
         <div className="flex flex-wrap items-center gap-6 text-[11px] font-bold text-stone-400 uppercase tracking-wider select-none border-b border-stone-200/60 pb-6 w-full">
           <div className="flex items-center space-x-1.5">
-            <LuCalendar className="w-3.5 h-3.5 text-[#4A0A15]" />
+            <LuCalendar className="w-3.5 h-3.5 text-[#343434]" />
             <span>{article.date}</span>
           </div>
           <div className="flex items-center space-x-1.5">
-            <LuClock className="w-3.5 h-3.5 text-[#4A0A15]" />
+            <LuClock className="w-3.5 h-3.5 text-[#343434]" />
             <span>{article.readTime}</span>
           </div>
           <div className="flex items-center space-x-1.5">
-            <LuUser className="w-3.5 h-3.5 text-[#4A0A15]" />
+            <LuUser className="w-3.5 h-3.5 text-[#343434]" />
             <span>By {article.authorName}</span>
           </div>
         </div>
@@ -80,7 +80,7 @@ export const BlogDetailsView: React.FC<BlogDetailsViewProps> = ({ article }) => 
                 );
               case 'quote':
                 return (
-                  <blockquote key={sIdx} className="bg-stone-50 border-l-4 border-[#4A0A15] p-6 italic font-serif text-lg md:text-xl text-stone-900 shadow-xs my-4 leading-relaxed">
+                  <blockquote key={sIdx} className="bg-stone-50 border-l-4 border-[#343434] p-6 italic font-serif text-lg md:text-xl text-stone-900 shadow-xs my-4 leading-relaxed">
                     "{section.value}"
                     {section.subValue && (
                       <span className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-400 mt-2 not-italic">— {section.subValue}</span>

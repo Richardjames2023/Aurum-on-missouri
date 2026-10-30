@@ -16,7 +16,7 @@ export default function FaqPage() {
   const filteredFaqs = FAQS_DATABASE.filter(faq => faq.category === activeCategory);
 
   return (
-    <div className="w-full min-h-screen bg-[#FCFBF9] flex flex-col overflow-x-hidden">
+    <div className="w-full min-h-screen bg-[#ffffff] flex flex-col overflow-x-hidden">
         
       <main className="flex-grow flex flex-col">
         {/* Upper visual identity banner handling parameters state changes */}

@@ -19,7 +19,7 @@ export const MeetingHero: React.FC = () => {
     <div className="w-full font-sans">
       
       {/* Visual Canvas Block */}
-      <div className="w-full h-[560px] relative flex flex-col justify-center items-center px-6 text-center overflow-hidden bg-stone-900">
+      <div className="w-full h-[560px] relative flex flex-col justify-center items-center px-6 text-center overflow-hidden bg-[#343434]">
         <Image
           src="/img/BR-1.jpg"
           alt="Azusa Luxury Conference Theater Auditorium"
@@ -29,7 +29,7 @@ export const MeetingHero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40 z-10" />
         
         <div className="relative z-20 max-w-4xl">
-          <h1 className="text-3xl md:text-5xl font-bold tracking-widest text-[#cba865] uppercase font-sans mb-4 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-widest text-[#CAA664] uppercase font-sans mb-4 leading-tight">
             Searching for a modern meeting or conference facility?
           </h1>
           <p className="text-stone-400 text-base md:text-lg font-medium max-w-2xl mx-auto tracking-wide leading-relaxed">

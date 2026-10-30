@@ -127,15 +127,15 @@
 //   };
 
 //   return (
-//     <header className="w-full bg-white font-sans selection:bg-amber-200">
+//     <header className="w-full bg-white font-sans selection:bg-[#CAA664]">
 
 //       {/* BACKGROUND DRAWER BACKDROP MASK PANEL */}
-//       <div className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] transition-opacity duration-300 ${showDrawer ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+//       <div className={`fixed inset-0 bg-[#343434]/50 backdrop-blur-sm z-[100] transition-opacity duration-300 ${showDrawer ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
 
 //         {/* INTERACTIVE COMPONENT DRAWER PANEL */}
 //         <div
 //           ref={drawerRef}
-//           className={`absolute top-0 left-0 h-full w-[340px] bg-stone-900 shadow-2xl p-8 flex flex-col justify-between transform transition-transform duration-300 ease-out z-[110] text-[#F5E6C8] ${showDrawer ? 'translate-x-0' : '-translate-x-full'}`}
+//           className={`absolute top-0 left-0 h-full w-[340px] bg-[#343434] shadow-2xl p-8 flex flex-col justify-between transform transition-transform duration-300 ease-out z-[110] text-[#ffffff] ${showDrawer ? 'translate-x-0' : '-translate-x-full'}`}
 //         >
 //           <div>
 //             {/* Header branding line within modular window */}
@@ -177,7 +177,7 @@
 //                     key={link.label}
 //                     onClick={() => setShowDrawer(false)}
 //                     href={link.href}
-//                     className="w-full px-4 py-3 rounded-lg text-[#F5E6C8]/90 hover:text-white hover:bg-white/10 transition-all block font-semibold"
+//                     className="w-full px-4 py-3 rounded-lg text-[#ffffff]/90 hover:text-white hover:bg-white/10 transition-all block font-semibold"
 //                   >
 //                     {link.label}
 //                   </Link>
@@ -186,7 +186,7 @@
 //               </div>
 
 //               {/* CORE UTILITY SUB-LINKS SYSTEM ACCESSIBLE VIA DESKTOP HAMBURGER */}
-//               <span className="text-[10px] text-[#D4AF37]/70 uppercase tracking-widest font-bold block mb-2 px-4">Explore More</span>
+//               <span className="text-[10px] text-[#CAA664]/70 uppercase tracking-widest font-bold block mb-2 px-4">Explore More</span>
 //               <div className="flex flex-col space-y-1">
 //                 {[
 //                   { label: 'About Us', href: '/about' },
@@ -197,7 +197,7 @@
 //                     key={link.label}
 //                     onClick={() => setShowDrawer(false)}
 //                     href={link.href}
-//                     className="w-full px-4 py-3 rounded-lg text-[#F5E6C8]/80 hover:text-white hover:bg-white/10 transition-all block"
+//                     className="w-full px-4 py-3 rounded-lg text-[#ffffff]/80 hover:text-white hover:bg-white/10 transition-all block"
 //                   >
 //                     {link.label}
 //                   </Link>
@@ -206,7 +206,7 @@
 //             </nav>
 //           </div>
 
-//           <div className="text-[10px] text-[#F5E6C8]/40 tracking-tight leading-relaxed border-t border-white/10 pt-4 px-4">
+//           <div className="text-[10px] text-[#ffffff]/40 tracking-tight leading-relaxed border-t border-white/10 pt-4 px-4">
 //             © 2026 Aurum On Missouri Hotels & Apartments.<br />All rights reserved portal.
 //           </div>
 //         </div>
@@ -229,7 +229,7 @@
 
 //           <Link
 //             href="/"
-//             className="text-[34px] tracking-tight text-[#D4AF37] font-serif font-normal lowercase relative bottom-0.5 select-none block w-36 h-10"
+//             className="text-[34px] tracking-tight text-[#CAA664] font-serif font-normal lowercase relative bottom-0.5 select-none block w-36 h-10"
 //           >
 //             <Image
 //               src="/img/AURUM.png"
@@ -242,7 +242,7 @@
 //         </div>
 
 //         {/* Center Section: Core Text Hyperlinks */}
-//         <nav className="hidden lg:flex items-center space-x-6 text-[13px] font-bold text-black tracking-tight">
+//         <nav className="hidden lg:flex items-center space-x-6 text-[13px] font-bold text-[#343434] tracking-tight">
 //           <Link href="/rooms" className="hover:opacity-70 transition-opacity">Rooms</Link>
 //           <Link href="/restaurant" className="hover:opacity-70 transition-opacity">Restaurant</Link>
 //           <Link href="/blog" className="hover:opacity-70 transition-opacity">Blog</Link>
@@ -256,16 +256,16 @@
 //               className="flex items-center space-x-1 hover:opacity-70 transition-opacity font-bold focus:outline-none"
 //             >
 //               <span>More</span>
-//               <svg className={`w-3 h-3 text-black stroke-[2.5] transition-transform duration-200 ${showMoreMenu ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//               <svg className={`w-3 h-3 text-[#343434] stroke-[2.5] transition-transform duration-200 ${showMoreMenu ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
 //                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
 //               </svg>
 //             </button>
 
 //             {/* Smooth Transition Menu Overlay */}
 //             <div className={`absolute left-0 mt-3 w-48 bg-white border border-gray-100 rounded-xl shadow-2xl py-1.5 transform transition-all duration-200 origin-top-left ${showMoreMenu ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'}`}>
-//               <Link href="/about" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-black font-semibold transition-colors">About Us</Link>
-//               <Link href="/gallery" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-black font-semibold transition-colors">Media Gallery</Link>
-//               <Link href="/contact" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-black font-semibold transition-colors">Contact & Support</Link>
+//               <Link href="/about" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#343434] font-semibold transition-colors">About Us</Link>
+//               <Link href="/gallery" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#343434] font-semibold transition-colors">Media Gallery</Link>
+//               <Link href="/contact" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#343434] font-semibold transition-colors">Contact & Support</Link>
 //             </div>
 //           </div>
 //         </nav>
@@ -275,15 +275,15 @@
 //           <div className="relative" ref={localizationRef}>
 //             <button
 //               onClick={() => setShowLocalization(!showLocalization)}
-//               className="flex items-center space-x-2 border border-black rounded-full px-4 py-2 text-[11px] font-bold text-black hover:bg-gray-50 transition-colors focus:outline-none"
+//               className="flex items-center space-x-2 border border-[#343434] rounded-full px-4 py-2 text-[11px] font-bold text-[#343434] hover:bg-gray-50 transition-colors focus:outline-none"
 //             >
-//               <svg className="w-3.5 h-3.5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+//               <svg className="w-3.5 h-3.5 text-[#343434]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
 //                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
 //                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.6 9h16.8M3.6 15h16.8" />
 //               </svg>
 //               <span className="tracking-wide">{currentLang}</span>
 //               <span className="text-gray-300 mx-0.5">|</span>
-//               <svg className="w-3.5 h-3.5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+//               <svg className="w-3.5 h-3.5 text-[#343434]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
 //                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
 //               </svg>
 //               <span className="tracking-wide">{currentCurrency}</span>
@@ -296,7 +296,7 @@
 //                   <button
 //                     key={lang}
 //                     onClick={() => { setCurrentLang(lang); setShowLocalization(false); }}
-//                     className={`block w-full text-left text-xs py-2 px-2.5 rounded-lg font-semibold transition-all ${currentLang === lang ? 'bg-[#4A0A15] text-white' : 'text-gray-700 hover:bg-gray-50'}`}
+//                     className={`block w-full text-left text-xs py-2 px-2.5 rounded-lg font-semibold transition-all ${currentLang === lang ? 'bg-[#343434] text-white' : 'text-gray-700 hover:bg-gray-50'}`}
 //                   >
 //                     {lang}
 //                   </button>
@@ -308,7 +308,7 @@
 //                   <button
 //                     key={curr}
 //                     onClick={() => { setCurrentCurrency(curr); setShowLocalization(false); }}
-//                     className={`block w-full text-left text-xs py-2 px-2.5 rounded-lg font-semibold transition-all ${currentCurrency === curr ? 'bg-[#4A0A15] text-white' : 'text-gray-700 hover:bg-gray-50'}`}
+//                     className={`block w-full text-left text-xs py-2 px-2.5 rounded-lg font-semibold transition-all ${currentCurrency === curr ? 'bg-[#343434] text-white' : 'text-gray-700 hover:bg-gray-50'}`}
 //                   >
 //                     {curr}
 //                   </button>
@@ -317,14 +317,14 @@
 //             </div>
 //           </div>
 
-//           <Link href="/signin" className="hidden sm:inline-block bg-[#CAA664] text-white px-6 py-2.5 rounded-full text-[11px] font-bold tracking-widest uppercase hover:bg-[#36070E] transition-all shadow-sm">
+//           <Link href="/signin" className="hidden sm:inline-block bg-[#CAA664] text-white px-6 py-2.5 rounded-full text-[11px] font-bold tracking-widest uppercase hover:bg-[#CAA664] transition-all shadow-sm">
 //             Sign In
 //           </Link>
 //         </div>
 //       </div>
 
 //       {/* Floating Header Booking Bar Wrap */}
-//       <div className="w-full bg-black py-3.5 px-6 relative z-10">
+//       <div className="w-full bg-[#343434] py-3.5 px-6 relative z-10">
 //         <div className="max-w-[1320px] mx-auto bg-white rounded-lg shadow-md flex flex-col md:flex-row items-center divide-y md:divide-y-0 md:divide-x divide-gray-200 p-1 relative">
 
 //           {/* Section 1: Target Destination Vector Input */}
@@ -354,7 +354,7 @@
 //                   <button
 //                     key={i}
 //                     onClick={() => { setDestination(destName); setShowDestSuggestions(false); }}
-//                     className="block w-full text-left px-4 py-2.5 text-xs text-gray-700 hover:bg-amber-50 font-bold transition-colors"
+//                     className="block w-full text-left px-4 py-2.5 text-xs text-gray-700 hover:bg-white font-bold transition-colors"
 //                   >
 //                     {destName}
 //                   </button>
@@ -367,7 +367,7 @@
 
 //             <div
 //               onClick={() => { setActiveCalendarSelector('in'); setShowDestSuggestions(false); }}
-//               className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors ${activeCalendarSelector === 'in' ? 'bg-amber-50/50' : ''}`}
+//               className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors ${activeCalendarSelector === 'in' ? 'bg-white/50' : ''}`}
 //             >
 //               <div className="flex items-center">
 //                 <div className="text-gray-500 mr-3">
@@ -383,7 +383,7 @@
 
 //             <div
 //               onClick={() => { setActiveCalendarSelector('out'); setShowDestSuggestions(false); }}
-//               className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors ${activeCalendarSelector === 'out' ? 'bg-amber-50/50' : ''}`}
+//               className={`flex items-center justify-between px-4 py-2.5 cursor-pointer group transition-colors ${activeCalendarSelector === 'out' ? 'bg-white/50' : ''}`}
 //             >
 //               <div className="flex items-center">
 //                 <div className="text-gray-500 mr-3">
@@ -428,7 +428,7 @@
 //                     <button
 //                       key={index}
 //                       onClick={() => handleDateCellSelection(dayDate)}
-//                       className={`h-9 w-full text-xs font-bold rounded-lg flex items-center justify-center transition-all ${isStart || isEnd ? 'bg-[#4A0A15] text-white shadow-md scale-105' : isBetween ? 'bg-amber-50 text-amber-900 rounded-none' : 'text-gray-700 hover:bg-gray-100'}`}
+//                       className={`h-9 w-full text-xs font-bold rounded-lg flex items-center justify-center transition-all ${isStart || isEnd ? 'bg-[#343434] text-white shadow-md scale-105' : isBetween ? 'bg-white text-[#343434] rounded-none' : 'text-gray-700 hover:bg-gray-100'}`}
 //                     >
 //                       {dayDate.getDate()}
 //                     </button>
@@ -440,7 +440,7 @@
 
 //           {/* Section 4: Query Engine Execution Component */}
 //           <div className="w-full md:w-2/12 p-1">
-//             <button onClick={handleSearchExecution} className="w-full bg-[#CAA664] text-white py-3 px-6 rounded-md font-bold text-[13px] tracking-wide hover:bg-[#36070E] transition-colors whitespace-nowrap">
+//             <button onClick={handleSearchExecution} className="w-full bg-[#CAA664] text-white py-3 px-6 rounded-md font-bold text-[13px] tracking-wide hover:bg-[#CAA664] transition-colors whitespace-nowrap">
 //               Search
 //             </button>
 //           </div>
@@ -492,15 +492,15 @@ export const Header: React.FC = () => {
   }, [showDrawer]);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white font-sans selection:bg-amber-200 shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-white font-sans selection:bg-[#CAA664] shadow-sm">
 
       {/* BACKGROUND DRAWER BACKDROP MASK PANEL */}
-      <div className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] transition-opacity duration-300 ${showDrawer ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+      <div className={`fixed inset-0 bg-[#343434]/50 backdrop-blur-sm z-[100] transition-opacity duration-300 ${showDrawer ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
 
         {/* INTERACTIVE COMPONENT DRAWER PANEL */}
         <div
           ref={drawerRef}
-          className={`absolute top-0 left-0 h-full w-[340px] bg-stone-900 shadow-2xl p-8 flex flex-col justify-between transform transition-transform duration-300 ease-out z-[110] text-[#F5E6C8] ${showDrawer ? 'translate-x-0' : '-translate-x-full'}`}
+          className={`absolute top-0 left-0 h-full w-[340px] bg-[#343434] shadow-2xl p-8 flex flex-col justify-between transform transition-transform duration-300 ease-out z-[110] text-[#ffffff] ${showDrawer ? 'translate-x-0' : '-translate-x-full'}`}
         >
           <div>
             <div className="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
@@ -537,7 +537,7 @@ export const Header: React.FC = () => {
                     key={link.label}
                     onClick={() => setShowDrawer(false)}
                     href={link.href}
-                    className="w-full px-4 py-3 rounded-lg text-[#F5E6C8]/90 hover:text-white hover:bg-white/10 transition-all block font-semibold"
+                    className="w-full px-4 py-3 rounded-lg text-[#ffffff]/90 hover:text-white hover:bg-white/10 transition-all block font-semibold"
                   >
                     {link.label}
                   </Link>
@@ -545,7 +545,7 @@ export const Header: React.FC = () => {
                 <div className="h-px bg-white/10 my-4" />
               </div>
 
-              <span className="text-[10px] text-[#D4AF37]/70 uppercase tracking-widest font-bold block mb-2 px-4">Explore More</span>
+              <span className="text-[10px] text-[#CAA664]/70 uppercase tracking-widest font-bold block mb-2 px-4">Explore More</span>
               <div className="flex flex-col space-y-1">
                 {[
                   { label: 'About Us', href: '/about' },
@@ -556,7 +556,7 @@ export const Header: React.FC = () => {
                     key={link.label}
                     onClick={() => setShowDrawer(false)}
                     href={link.href}
-                    className="w-full px-4 py-3 rounded-lg text-[#F5E6C8]/80 hover:text-white hover:bg-white/10 transition-all block"
+                    className="w-full px-4 py-3 rounded-lg text-[#ffffff]/80 hover:text-white hover:bg-white/10 transition-all block"
                   >
                     {link.label}
                   </Link>
@@ -565,7 +565,7 @@ export const Header: React.FC = () => {
             </nav>
           </div>
 
-          <div className="text-[10px] text-[#F5E6C8]/40 tracking-tight leading-relaxed border-t border-white/10 pt-4 px-4">
+          <div className="text-[10px] text-[#ffffff]/40 tracking-tight leading-relaxed border-t border-white/10 pt-4 px-4">
             © 2026 Aurum On Missouri Hotels & Apartments.<br />All rights reserved portal.
           </div>
         </div>
@@ -598,7 +598,7 @@ export const Header: React.FC = () => {
         </div>
 
         {/* Center Section: Core Text Hyperlinks */}
-        <nav className="hidden lg:flex items-center space-x-6 text-[13px] font-bold text-black tracking-tight">
+        <nav className="hidden lg:flex items-center space-x-6 text-[13px] font-bold text-[#343434] tracking-tight">
           <Link href="/rooms" className="hover:opacity-70 transition-opacity">Rooms</Link>
           <Link href="/restaurant" className="hover:opacity-70 transition-opacity">Restaurant</Link>
           <Link href="/meetings-events" className="hover:opacity-70 transition-opacity">Meetings & Events</Link>
@@ -611,22 +611,22 @@ export const Header: React.FC = () => {
               className="flex items-center space-x-1 hover:opacity-70 transition-opacity font-bold focus:outline-none"
             >
               <span>More</span>
-              <svg className={`w-3 h-3 text-black stroke-[2.5] transition-transform duration-200 ${showMoreMenu ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className={`w-3 h-3 text-[#343434] stroke-[2.5] transition-transform duration-200 ${showMoreMenu ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
 
             <div className={`absolute left-0 mt-3 w-48 bg-white border border-gray-100 rounded-xl shadow-2xl py-1.5 transform transition-all duration-200 origin-top-left ${showMoreMenu ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'}`}>
-              <Link href="/about" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-black font-semibold transition-colors">About Us</Link>
-              <Link href="/gallery" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-black font-semibold transition-colors">Media Gallery</Link>
-              <Link href="/contact" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-black font-semibold transition-colors">Contact & Support</Link>
+              <Link href="/about" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#343434] font-semibold transition-colors">About Us</Link>
+              <Link href="/gallery" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#343434] font-semibold transition-colors">Media Gallery</Link>
+              <Link href="/contact" className="block px-4 py-2.5 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#343434] font-semibold transition-colors">Contact & Support</Link>
             </div>
           </div>
         </nav>
 
         {/* Right Section: CTA Button */}
         <div className="flex items-center space-x-3 relative z-50">
-          <Link href="/explore" className="hidden sm:inline-block bg-[#CAA664] text-white px-6 py-2.5 rounded-full text-[11px] font-bold tracking-widest uppercase hover:bg-[#36070E] transition-all shadow-sm">
+          <Link href="/explore" className="hidden sm:inline-block bg-[#CAA664] text-white px-6 py-2.5 rounded-full text-[11px] font-bold tracking-widest uppercase hover:bg-[#CAA664] transition-all shadow-sm">
             Explore
           </Link>
         </div>

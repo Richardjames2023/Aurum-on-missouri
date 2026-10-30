@@ -20,7 +20,7 @@ export const ExploreHero: React.FC = () => {
 
 
   return (
-    <div className="w-full bg-[#FCFBF9] font-sans flex flex-col items-center">
+    <div className="w-full bg-[#ffffff] font-sans flex flex-col items-center">
       {/* Mosaic Hero Grid layout block */}
       <div className="w-full max-w-[1440px] px-6 py-12 md:py-16 mb-14 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* Left Aspect Side: Architectural Picture Grid Mosaic */}
@@ -58,7 +58,7 @@ export const ExploreHero: React.FC = () => {
           <span className="text-[11px] font-extrabold text-slate-800 tracking-[0.25em] uppercase block mb-3">
             Nearby Locations
           </span>
-          <h1 className="text-3xl md:text-5xl font-normal tracking-tight text-[#cba865] font-serif leading-tight mb-5">
+          <h1 className="text-3xl md:text-5xl font-normal tracking-tight text-[#CAA664] font-serif leading-tight mb-5">
             Explore the beautiful <br />
             city of Abuja
           </h1>

@@ -11,7 +11,7 @@ interface DetailsHeroProps {
 
 export const DetailsHero: React.FC<DetailsHeroProps> = ({ title, mainImage, galleryImages }) => {
   return (
-    <div className="w-full bg-[#FCFBF9] font-sans flex flex-col items-center border-b border-b-stone-100">
+    <div className="w-full bg-[#ffffff] font-sans flex flex-col items-center border-b border-b-stone-100">
       {/* EXPANDED MAXIMUM LAYOUT REAL ESTATE */}
       <div className="w-full max-w-[1600px] px-6 md:px-12 lg:px-16 pt-10 pb-14 flex flex-col">
 

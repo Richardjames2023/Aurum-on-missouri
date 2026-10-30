@@ -36,7 +36,7 @@ export const BestRateSection: React.FC = () => {
           
           <Link 
             href="/rate-guarantee" 
-            className="inline-flex items-center justify-center border border-[#3B0E17] text-[#3B0E17] font-bold text-[11px] tracking-wider uppercase rounded-full px-7 py-2 hover:bg-[#3B0E17] hover:text-white transition-all transform hover:-translate-y-0.5 duration-200 self-start sm:self-auto shadow-sm"
+            className="inline-flex items-center justify-center border border-[#343434] text-[#343434] font-bold text-[11px] tracking-wider uppercase rounded-full px-7 py-2 hover:bg-[#343434] hover:text-white transition-all transform hover:-translate-y-0.5 duration-200 self-start sm:self-auto shadow-sm"
           >
             See More
           </Link>
@@ -51,7 +51,7 @@ export const BestRateSection: React.FC = () => {
           {STEPS_DATA.map((step) => (
             <div 
               key={step.number}
-              className="bg-[#FCFBF9] border border-gray-200/50 rounded-2xl p-6 flex items-start space-x-5 shadow-sm transform transition-transform duration-300 hover:-translate-y-1"
+              className="bg-[#ffffff] border border-gray-200/50 rounded-2xl p-6 flex items-start space-x-5 shadow-sm transform transition-transform duration-300 hover:-translate-y-1"
             >
               {/* Step numeric indicator token circle badge */}
               <div className="w-10 h-10 rounded-full border-2 border-stone-900 flex items-center justify-center font-serif text-lg font-black text-stone-900 flex-shrink-0 select-none bg-white">

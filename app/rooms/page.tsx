@@ -161,8 +161,8 @@ export default function RoomsPage() {
         </div>
 
         {/* Right Info Section Block Panel */}
-        <div className="w-full lg:col-span-2 p-8 md:p-12 lg:p-16 flex flex-col justify-center items-start bg-[#FCFBF9]">
-          <span className="text-[10px] font-extrabold text-[#4A0A15] tracking-[0.25em] uppercase block mb-3">
+        <div className="w-full lg:col-span-2 p-8 md:p-12 lg:p-16 flex flex-col justify-center items-start bg-[#ffffff]">
+          <span className="text-[10px] font-extrabold text-[#343434] tracking-[0.25em] uppercase block mb-3">
             Elite Sanctuary Living
           </span>
           <h2 className="text-2xl md:text-3xl font-normal text-stone-900 font-serif tracking-tight leading-tight mb-4">
@@ -175,7 +175,7 @@ export default function RoomsPage() {
           <div className="flex flex-col space-y-1">
             <span className="text-[10px] text-gray-400 font-extrabold uppercase tracking-widest">Pricing Structure</span>
             <div className="flex items-baseline space-x-1.5">
-              <span className="text-2xl font-black text-[#4A0A15]">₦129,000</span>
+              <span className="text-2xl font-black text-[#343434]">₦129,000</span>
               <span className="text-xs text-gray-400 font-bold">/ night incl. VAT</span>
             </div>
           </div>

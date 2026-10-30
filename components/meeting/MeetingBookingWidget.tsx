@@ -8,26 +8,26 @@ export const MeetingBookingWidget: React.FC = () => {
   const [attendees, setAttendees] = useState('10');
 
   return (
-    <div className="w-full bg-[#FCFBF9] border-b border-gray-200 py-4 px-6 shadow-sm font-sans">
+    <div className="w-full bg-[#ffffff] border-b border-gray-200 py-4 px-6 shadow-sm font-sans">
       <div className="max-w-[1440px] mx-auto flex flex-col space-y-4">
         
         {/* Toggle Selector Tabs */}
         <div className="flex items-center space-x-6 text-xs font-bold uppercase tracking-wider border-b border-gray-100 pb-2">
           <button 
             onClick={() => setSpaceType('room')}
-            className={`pb-2 border-b-2 transition-colors ${spaceType === 'room' ? 'border-[#4A0A15] text-stone-900' : 'border-transparent text-gray-400'}`}
+            className={`pb-2 border-b-2 transition-colors ${spaceType === 'room' ? 'border-[#343434] text-stone-900' : 'border-transparent text-gray-400'}`}
           >
             Meeting Room
           </button>
           <button 
             onClick={() => setSpaceType('beds')}
-            className={`pb-2 border-b-2 transition-colors ${spaceType === 'beds' ? 'border-[#4A0A15] text-stone-900' : 'border-transparent text-gray-400'}`}
+            className={`pb-2 border-b-2 transition-colors ${spaceType === 'beds' ? 'border-[#343434] text-stone-900' : 'border-transparent text-gray-400'}`}
           >
             Bedrooms
           </button>
           <button 
             onClick={() => setSpaceType('both')}
-            className={`pb-2 border-b-2 transition-colors ${spaceType === 'both' ? 'border-[#4A0A15] text-stone-900' : 'border-transparent text-gray-400'}`}
+            className={`pb-2 border-b-2 transition-colors ${spaceType === 'both' ? 'border-[#343434] text-stone-900' : 'border-transparent text-gray-400'}`}
           >
             Meeting room + Bedrooms
           </button>
@@ -76,7 +76,7 @@ export const MeetingBookingWidget: React.FC = () => {
 
           {/* Execution Button */}
           <div className="md:col-span-1 p-0.5">
-            <button className="w-full bg-[#4A0A15] hover:bg-[#36070E] text-white py-3 px-4 rounded-lg font-bold text-xs uppercase tracking-widest transition-colors shadow-md">
+            <button className="w-full bg-[#343434] hover:bg-[#CAA664] text-white py-3 px-4 rounded-lg font-bold text-xs uppercase tracking-widest transition-colors shadow-md">
               Search
             </button>
           </div>

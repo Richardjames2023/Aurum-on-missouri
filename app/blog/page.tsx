@@ -95,7 +95,7 @@ export default function BlogArchivePage() {
       <BlogFeatured article={featuredArticle} />
 
       {/* 2. Structured Layout Archives Grid Section */}
-      <section className="w-full bg-[#FCFBF9] py-12 md:py-16 flex flex-col items-center">
+      <section className="w-full bg-[#ffffff] py-12 md:py-16 flex flex-col items-center">
         <div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
           
           {/* Row Block 1: First 3 Standard Grid Items */}

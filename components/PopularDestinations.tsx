@@ -18,7 +18,7 @@ export const PopularDestinations: React.FC = () => {
         {/* UPPER TITLE & NAVIGATION CALL TO ACTION BAR */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 border-b border-gray-100 pb-4">
         <div className="flex flex-col gap-1.5">
-          <h2 className="text-3xl font-bold tracking-tight text-black font-serif">
+          <h2 className="text-3xl font-bold tracking-tight text-[#343434] font-serif">
             Abuja, At Your Doorstep 
           </h2>
           <p className="text-xs md:text-sm text-gray-500 font-medium max-w-xl leading-relaxed">
@@ -29,7 +29,7 @@ export const PopularDestinations: React.FC = () => {
         {/* Right Side: Action Link */}
         <Link 
           href="/explore" 
-          className="inline-flex items-center justify-center border border-[#cba865] text-[#cba865] font-bold text-[11px] tracking-wider uppercase px-6 py-2 hover:bg-black hover:text-white transition-all transform hover:-translate-y-0.5 duration-200 self-start sm:self-auto rounded-full shadow-xs whitespace-nowrap sm:mb-1"
+          className="inline-flex items-center justify-center border border-[#CAA664] text-[#CAA664] font-bold text-[11px] tracking-wider uppercase px-6 py-2 hover:bg-[#343434] hover:text-white transition-all transform hover:-translate-y-0.5 duration-200 self-start sm:self-auto rounded-full shadow-xs whitespace-nowrap sm:mb-1"
         >
           See More
         </Link>
@@ -54,7 +54,7 @@ export const PopularDestinations: React.FC = () => {
               />
 
               <div className="absolute bottom-6 left-6 right-6 flex justify-start z-20">
-                <div className="bg-[#cba865] backdrop-blur-md text-stone-900 font-bold text-xs px-6 py-3 rounded-full shadow-lg border border-white/20 transform transition-all duration-300 group-hover:bg-[#cba865] group-hover:text-white tracking-wide">
+                <div className="bg-[#CAA664] backdrop-blur-md text-stone-900 font-bold text-xs px-6 py-3 rounded-full shadow-lg border border-white/20 transform transition-all duration-300 group-hover:bg-[#CAA664] group-hover:text-white tracking-wide">
                   {destination.title}
                 </div>
               </div>

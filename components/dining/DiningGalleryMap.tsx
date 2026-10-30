@@ -36,7 +36,7 @@ export const DiningGalleryMap: React.FC = () => {
   };
 
   return (
-    <section className="w-full bg-[#FCFBF9] pt-14 flex flex-col items-center">
+    <section className="w-full bg-[#ffffff] pt-14 flex flex-col items-center">
       <div className="w-full flex flex-col items-center relative">
         
         {/* Structural Viewport Wrapper (Handles Outer Layout Padding) */}
@@ -84,7 +84,7 @@ export const DiningGalleryMap: React.FC = () => {
 
         {/* 2. Follow Us Social Ribbon Banner */}
         <div className="w-full px-6 md:px-12 lg:px-16">
-          <div className="w-full bg-[#cba865] p-5 text-slate-900 flex items-center justify-between shadow-md rounded-t-xl">
+          <div className="w-full bg-[#CAA664] p-5 text-slate-900 flex items-center justify-between shadow-md rounded-t-xl">
             <span className="text-xs font-extrabold uppercase tracking-[0.2em] block pl-2">Follow us on:</span>
             <div className="flex items-center gap-3 mr-2">
               <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all">
@@ -102,7 +102,7 @@ export const DiningGalleryMap: React.FC = () => {
 
         {/* 3. Static Contact Information Block Title Panel Section */}
         <div className="w-full">
-          <div className="w-full bg-black border border-[#DCB286]/30 px-8 py-6 flex flex-col items-start rounded-t-xl text-left">
+          <div className="w-full bg-[#343434] border border-[#CAA664]/30 px-8 py-6 flex flex-col items-start rounded-t-xl text-left">
             <h4 className="text-lg font-bold font-serif text-white tracking-wide mb-1 select-none">Find your way to us </h4>
             <p className="text-xs font-medium text-stone-500 tracking-wide">We are easy to reach, and far more rewarding once you arrive.</p>
           </div>

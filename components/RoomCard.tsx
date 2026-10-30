@@ -89,7 +89,7 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
                     <h3 className="text-xl lg:text-[22px] font-bold text-[#2d3748] tracking-tight leading-snug line-clamp-2 mb-2">
                         {room.title}
                     </h3>
-                    <p className="text-sm font-bold text-[#4A0A15] mb-3">
+                    <p className="text-sm font-bold text-[#343434] mb-3">
                         {room.currency === "NGN" ? "₦" : "$"}
                         {(room.pricePerNight + calculateVat(room.pricePerNight, room.currency)).toLocaleString()}
                         <span className="ml-1 text-xs font-semibold text-gray-400">
@@ -121,7 +121,7 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
                                     <div
                                         key={iIdx}
                                         title={item.label}
-                                        className="hover:text-[#4A0A15] transition-colors cursor-help flex items-center justify-center"
+                                        className="hover:text-[#343434] transition-colors cursor-help flex items-center justify-center"
                                     >
                                         <AmenityIcon className="w-5 h-5 stroke-[1.8]" />
                                     </div>
@@ -136,7 +136,7 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
             <div className="px-5 lg:px-6 pt-2 pb-5 mt-auto">
                 <button 
                     onClick={onReadMore}
-                    className="w-full bg-slate-900 hover:bg-[#36070E] text-white py-3.5 px-4 rounded-full font-bold uppercase text-xs tracking-widest transition-colors duration-200 shadow-sm hover:shadow-md"
+                    className="w-full bg-[#343434] hover:bg-[#CAA664] text-white py-3.5 px-4 rounded-full font-bold uppercase text-xs tracking-widest transition-colors duration-200 shadow-sm hover:shadow-md"
                 >
                     Book Now
                 </button>

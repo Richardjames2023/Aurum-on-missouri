@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="w-full bg-black text-white pt-12 pb-8 px-6 md:px-12 lg:px-16 flex flex-col items-center border-t border-white/5 select-none font-sans">
+    <footer className="w-full bg-[#343434] text-white pt-12 pb-8 px-6 md:px-12 lg:px-16 flex flex-col items-center border-t border-white/5 select-none font-sans">
       <div className="w-full max-w-[1440px] flex flex-col items-start text-left">
         {/* BRAND LOGO SEGMENT */}
         <div className="w-full mb-10 pb-6 border-b border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
         
         {/* ROW 1: HOT DESTINATIONS PILL CLUSTER */}
         <div className="w-full flex flex-col mb-10">
-          <h4 className="text-base font-medium tracking-wide mb-5 text-[#F5E6C8]/90 font-serif">
+          <h4 className="text-base font-medium tracking-wide mb-5 text-[#ffffff]/90 font-serif">
             Hot Destinations
           </h4>
           <div className="flex flex-wrap gap-3">
@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
           
           {/* Column A: Quick Links */}
           <div className="flex flex-col space-y-3">
-            <h5 className="text-sm font-bold uppercase tracking-wider text-[#D4AF37] mb-2">Quick links</h5>
+            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Quick links</h5>
             <Link href="/rooms" className="text-xs text-white/70 hover:text-white transition-colors">Rooms</Link>
             <Link href="/benefits" className="text-xs text-white/70 hover:text-white transition-colors">Benefits</Link>
             <Link href="/terms" className="text-xs text-white/70 hover:text-white transition-colors">Terms and Conditions</Link>
@@ -76,23 +76,23 @@ export const Footer: React.FC = () => {
 
           {/* Column B: Corporate */}
           <div className="flex flex-col space-y-3">
-            <h5 className="text-sm font-bold uppercase tracking-wider text-[#D4AF37] mb-2">Corporate</h5>
+            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Corporate</h5>
             <Link href="/careers" className="text-xs text-white/70 hover:text-white transition-colors">Careers</Link>
           </div>
 
           {/* Column C: Legal */}
           <div className="flex flex-col space-y-3">
-            <h5 className="text-sm font-bold uppercase tracking-wider text-[#D4AF37] mb-2">Legal</h5>
+            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Legal</h5>
             <Link href="/modern-slavery" className="text-xs text-white/70 hover:text-white transition-colors">Modern Slavery Statement</Link>
           </div>
 
           {/* Column D: Help Line Center */}
           <div className="flex flex-col space-y-3">
-            <h5 className="text-sm font-bold uppercase tracking-wider text-[#D4AF37] mb-2">Help</h5>
+            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Help</h5>
             <Link href="/contact" className="text-xs text-white/70 hover:text-white transition-colors">Contact</Link>
             <Link href="/faq" className="text-xs text-white/70 hover:text-white transition-colors">FAQ</Link>
             <Link href="/sitemap" className="text-xs text-white/70 hover:text-white transition-colors">Sitemap</Link>
-            <a href="tel:+2349160683225" className="text-xs font-semibold text-[#F5E6C8] hover:underline transition-all mt-1">
+            <a href="tel:+2349160683225" className="text-xs font-semibold text-[#ffffff] hover:underline transition-all mt-1">
               +234 707 707 1117
             </a>
           </div>
@@ -101,7 +101,7 @@ export const Footer: React.FC = () => {
 
         {/* ROW 3: SOCIAL PLATFORMS MATRIX SECTION */}
         <div className="w-full flex flex-col border-t border-white/10 pt-8 mb-8">
-          <h5 className="text-xs font-bold uppercase tracking-wider text-[#D4AF37] mb-4">Socials</h5>
+          <h5 className="text-xs font-bold uppercase tracking-wider text-[#CAA664] mb-4">Socials</h5>
           <div className="flex flex-wrap gap-3">
             {socialPlatforms.map((social) => (
               <a 
@@ -109,7 +109,7 @@ export const Footer: React.FC = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white hover:bg-[#D4AF37] text-[#4A0A15] flex items-center justify-center transition-all shadow-md transform hover:scale-105"
+                className="w-8 h-8 rounded-full bg-white hover:bg-[#CAA664] text-[#343434] flex items-center justify-center transition-all shadow-md transform hover:scale-105"
                 aria-label={`Follow Azusa on ${social.id}`}
               >
                 <svg className="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">

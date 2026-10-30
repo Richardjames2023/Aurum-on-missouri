@@ -2,13 +2,51 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { LuX, LuChevronLeft, LuChevronRight, LuSparkles } from "react-icons/lu";
+import {
+  LuBath,
+  LuBed,
+  LuCar,
+  LuCastle,
+  LuChevronLeft,
+  LuChevronRight,
+  LuCookingPot,
+  LuEye,
+  LuGamepad2,
+  LuKey,
+  LuSparkles,
+  LuSunset,
+  LuTv,
+  LuUser,
+  LuWifi,
+  LuX,
+} from "react-icons/lu";
+import type { IconType } from "react-icons";
 import { RoomSuite } from "../app/types/rooms";
 import { RoomData } from "./RoomCard";
 
 // IMPORT THE PRODUCTION GRADE SECURE BOOKING FORM
 import { BookingFormModal } from "./booking/BookingFormModal";
 import { parseRoomPrice } from "../app/utils/pricing";
+
+const getAmenityIcon = (icon: string | IconType): IconType => {
+  if (typeof icon !== "string") return icon;
+
+  switch (icon) {
+    case "bed": return LuBed;
+    case "view": return LuEye;
+    case "wifi": return LuWifi;
+    case "tv": return LuTv;
+    case "key": return LuKey;
+    case "chef": return LuCookingPot;
+    case "gamepad": return LuGamepad2;
+    case "sunset": return LuSunset;
+    case "castle": return LuCastle;
+    case "bath": return LuBath;
+    case "butler": return LuUser;
+    case "car": return LuCar;
+    default: return LuSparkles;
+  }
+};
 
 interface RoomDetailModalProps {
   isOpen: boolean;
@@ -87,7 +125,7 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailMod
   return (
     <>
       <div
-        className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-sm"
+        className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-[#343434]/60 backdrop-blur-sm"
         onClick={onClose}
       >
         <div
@@ -149,18 +187,15 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailMod
                   </h3>
                   <div className="grid grid-cols-3 gap-y-6 gap-x-4">
                     {amenitiesList &&
-                      amenitiesList.map((item: any, idx: number) => {
-                        const AmenityIcon =
-                          typeof item.icon === "string"
-                            ? LuSparkles
-                            : item.icon;
+                      amenitiesList.map((item, idx) => {
+                        const AmenityIcon = getAmenityIcon(item.icon);
                         return (
                           <div
                             key={idx}
                             className="flex flex-col items-center text-center gap-2.5 group"
                           >
-                            <div className="text-gray-800 transition-colors">
-                              <AmenityIcon className="w-6 h-6 stroke-[1.6]" />
+                            <div className="w-11 h-11 rounded-full bg-[#CAA664]/10 border border-[#CAA664]/30 flex items-center justify-center text-[#343434] transition-colors group-hover:bg-[#CAA664]/20">
+                              <AmenityIcon className="w-5 h-5 stroke-[1.8]" />
                             </div>
                             <span className="text-[11px] font-medium text-gray-600 leading-snug max-w-[95px]">
                               {item.label}
@@ -200,7 +235,7 @@ export default function RoomDetailModal({ isOpen, onClose, room }: RoomDetailMod
               {/* WIRED: Clicking this opens the production grade checkout form modal directly */}
               <button
                 onClick={() => setIsCheckoutOpen(true)}
-                className="w-full bg-[#4A0A15] hover:bg-[#36070E] text-white py-3 px-8 rounded-full font-bold text-sm uppercase tracking-widest transition-colors shadow-sm duration-200 cursor-pointer"
+                className="w-full bg-[#343434] hover:bg-[#CAA664] text-white py-3 px-8 rounded-full font-bold text-sm uppercase tracking-widest transition-colors shadow-sm duration-200 cursor-pointer"
               >
                 Book Now
               </button>

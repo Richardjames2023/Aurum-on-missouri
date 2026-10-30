@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function CorporateContactPage() {
 
   return (
-    <main className="min-h-screen bg-[#FCFBF9] w-full flex flex-col overflow-x-hidden relative">
+    <main className="min-h-screen bg-[#ffffff] w-full flex flex-col overflow-x-hidden relative">
 
       {/* 1. Production Stateful Corporate Form Section Grid Block */}
       <CorporateFormSection />

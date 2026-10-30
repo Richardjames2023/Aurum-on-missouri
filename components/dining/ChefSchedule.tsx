@@ -26,7 +26,7 @@ export const ChefSchedule: React.FC = () => {
   }, []);
 
   return (
-    <section className="w-full bg-black py-14 md:py-20 border-b border-stone-900 flex flex-col items-center text-white">
+    <section className="w-full bg-[#343434] py-14 md:py-20 border-b border-stone-900 flex flex-col items-center text-white">
       <div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-16">
         
         {/* MAIN COMPONENT GRID: items-stretch forces both columns to share identical height */}
@@ -37,11 +37,11 @@ export const ChefSchedule: React.FC = () => {
             
             {/* Top Section: Chef Profile Text */}
             <div className="flex flex-col items-start mb-8 lg:mb-6">
-              <h3 className="text-3xl font-serif font-normal text-[#cba865] tracking-tight leading-tight mb-5">
+              <h3 className="text-3xl font-serif font-normal text-[#CAA664] tracking-tight leading-tight mb-5">
                 Discover Aurum Through <br />
                 Chef Tunde Okoro
               </h3>
-              <div className="flex flex-col space-y-4 text-stone-300 text-sm font-medium leading-relaxed tracking-wide border-l-2 border-[#cba865] pl-4 max-w-xl">
+              <div className="flex flex-col space-y-4 text-stone-300 text-sm font-medium leading-relaxed tracking-wide border-l-2 border-[#CAA664] pl-4 max-w-xl">
                 <p>
                   Indulge in the exceptional flavors of Aurum On Missouri, where Chef Tunde Okoro, mentored by the industry's most esteemed culinary masters, crafts a menu that redefines modern gastronomy.
                 </p>
@@ -56,10 +56,10 @@ export const ChefSchedule: React.FC = () => {
               <h3 className="text-lg font-bold font-serif text-white tracking-wide mb-3">
                 Opening hours
               </h3>
-              <div className="w-full max-w-xl bg-stone-900 border border-white/5 p-5 shadow-2xl flex flex-col items-start gap-3 rounded-xl relative overflow-hidden">
+              <div className="w-full max-w-xl bg-[#343434] border border-white/5 p-5 shadow-2xl flex flex-col items-start gap-3 rounded-xl relative overflow-hidden">
                 <span className="text-xs font-black uppercase tracking-widest text-[#caa664]">Restaurant</span>
                 <div className="flex items-center text-xs font-bold text-stone-200 tracking-wide mt-1">
-                  <LuClock className="w-4 h-4 text-[#cba865] mr-2.5 flex-shrink-0" />
+                  <LuClock className="w-4 h-4 text-[#CAA664] mr-2.5 flex-shrink-0" />
                   <span>Daily 12:00 pm - 12:00 am</span>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export const ChefSchedule: React.FC = () => {
           </div>
 
           {/* RIGHT COLUMN: Slider dynamically tracks and scales to the exact height of the left column */}
-          <div className="lg:col-span-5 order-1 lg:order-2 w-full h-[380px] md:h-[450px] lg:h-full relative overflow-hidden rounded-xl border border-white/10 shadow-xl bg-stone-950 group">
+          <div className="lg:col-span-5 order-1 lg:order-2 w-full h-[380px] md:h-[450px] lg:h-full relative overflow-hidden rounded-xl border border-white/10 shadow-xl bg-[#343434] group">
             {CHEF_IMAGES.map((image, index) => (
               <div
                 key={index}
@@ -85,13 +85,13 @@ export const ChefSchedule: React.FC = () => {
             ))}
 
             {/* Pagination Indicators */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-[#343434]/40 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
               {CHEF_IMAGES.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
                   className={`h-1.5 rounded-full transition-all duration-300 ${
-                    index === currentSlide ? "w-5 bg-[#cba865]" : "w-1.5 bg-white/40"
+                    index === currentSlide ? "w-5 bg-[#CAA664]" : "w-1.5 bg-white/40"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />

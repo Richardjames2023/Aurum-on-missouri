@@ -39,7 +39,7 @@ export const BookingWidget: React.FC<BookingWidgetProps> = ({ pricePerNight, cur
           Start Booking
         </span>
         <div className="flex items-baseline space-x-1">
-          <span className="text-3xl font-black text-[#4A0A15] font-serif">
+          <span className="text-3xl font-black text-[#343434] font-serif">
             {currencySymbol}{pricePerNight.toLocaleString()}
           </span>
           <span className="text-xs text-gray-400 font-bold uppercase tracking-wider">per night</span>
@@ -78,7 +78,7 @@ export const BookingWidget: React.FC<BookingWidgetProps> = ({ pricePerNight, cur
           Pick a Date
         </label>
         <div className="w-full relative h-11 border border-gray-200 bg-gray-50/50 flex items-center px-4 shadow-xs">
-          <LuCalendar className="w-4 h-4 text-[#4A0A15] mr-3 flex-shrink-0" />
+          <LuCalendar className="w-4 h-4 text-[#343434] mr-3 flex-shrink-0" />
           <span className="text-xs font-bold text-stone-800 tracking-wide">
             {getCheckInDateFormatted()} – {getCheckoutDateString()}
           </span>
@@ -93,11 +93,11 @@ export const BookingWidget: React.FC<BookingWidgetProps> = ({ pricePerNight, cur
 
       {/* Statement Calculation Summary Paragraph */}
       <p className="text-xs md:text-[13px] font-medium text-gray-400 tracking-wide mb-8 leading-relaxed text-center">
-        You will pay <span className="text-[#4A0A15] font-black">{currencySymbol}{baseCost.toLocaleString()} {currency}</span> for <span className="text-stone-900 font-bold">{nights} {nights === 1 ? 'night' : 'nights'}</span>.
+        You will pay <span className="text-[#343434] font-black">{currencySymbol}{baseCost.toLocaleString()} {currency}</span> for <span className="text-stone-900 font-bold">{nights} {nights === 1 ? 'night' : 'nights'}</span>.
       </p>
 
       {/* Transaction Action Call-To-Action Button */}
-      <button className="w-full bg-[#4A0A15] hover:bg-[#36070E] text-white font-extrabold text-xs tracking-widest uppercase py-4 shadow-md transition-colors focus:outline-none transform active:scale-98">
+      <button className="w-full bg-[#343434] hover:bg-[#CAA664] text-white font-extrabold text-xs tracking-widest uppercase py-4 shadow-md transition-colors focus:outline-none transform active:scale-98">
         Continue to Book
       </button>
 

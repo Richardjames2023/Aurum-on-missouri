@@ -28,7 +28,7 @@ export default function HomePage() {
     <main>
       <HeroSectionTwo />
       <PopularDestinations />
-          <Suspense fallback={<div className="h-40 bg-stone-900 animate-pulse" />}>
+          <Suspense fallback={<div className="h-40 bg-[#343434] animate-pulse" />}>
       <RoomShowcaseMatrix />
       </Suspense>
       <FacilitiesShowcase/>

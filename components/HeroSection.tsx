@@ -57,10 +57,10 @@ export const HeroSection: React.FC = () => {
   }, [isAnimating]);
 
   return (
-    <section className="w-full bg-[#1E110E] p-0 relative overflow-hidden font-sans flex flex-col items-center">
+    <section className="w-full bg-[#343434] p-0 relative overflow-hidden font-sans flex flex-col items-center">
       
       {/* MAIN HERO STAGE CONTAINER */}
-      <div className="w-full max-w-none h-[740px] rounded-none relative overflow-hidden bg-stone-900 shadow-2xl group/stage flex flex-col items-center">
+      <div className="w-full max-w-none h-[740px] rounded-none relative overflow-hidden bg-[#343434] shadow-2xl group/stage flex flex-col items-center">
         
         <div className="absolute inset-0 z-0">
           <img 
@@ -69,7 +69,7 @@ export const HeroSection: React.FC = () => {
             className={`w-full h-full object-cover object-center scale-105 filter brightness-[0.45] contrast-[1.05] transition-all duration-700 ease-in-out ${isAnimating ? 'opacity-40 blur-sm scale-100' : 'opacity-100'}`}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1E110E]/40 via-transparent to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#343434]/40 via-transparent to-black/20" />
         </div>
 
         {/* CONTROLS AREA: Slide Counter Indicator Block */}
@@ -79,7 +79,7 @@ export const HeroSection: React.FC = () => {
           </span>
           <div className="w-24 h-[1px] bg-white/30 relative">
             <div 
-              className="absolute top-0 left-0 h-full bg-[#D4AF37] transition-all duration-500 ease-out" 
+              className="absolute top-0 left-0 h-full bg-[#CAA664] transition-all duration-500 ease-out"
               style={{ width: `${((currentIdx + 1) / SLIDES_DATABASE.length) * 100}%` }}
             />
           </div>
@@ -107,7 +107,7 @@ export const HeroSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
                 
                 <div className="absolute bottom-5 left-4 right-4 flex flex-col justify-end text-white">
-                  <h6 className="font-serif text-sm md:text-[15px] font-normal leading-tight tracking-wide text-gray-100 group-hover/card:text-[#D4AF37] transition-colors">
+                  <h6 className="font-serif text-sm md:text-[15px] font-normal leading-tight tracking-wide text-gray-100 group-hover/card:text-[#CAA664] transition-colors">
                     {card.title}
                   </h6>
                   {card.subtitle && (
@@ -123,7 +123,7 @@ export const HeroSection: React.FC = () => {
           <div className="lg:col-span-1 hidden lg:flex flex-col items-center justify-end h-full pb-14 space-y-3 lg:opacity-0 lg:group-hover/stage:opacity-100 transition-opacity duration-300">
             <button 
               onClick={handlePrevSlide}
-              className="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#D4AF37] hover:border-[#D4AF37] hover:text-black transition-all transform hover:scale-105 active:scale-95 bg-black/10 backdrop-blur-sm shadow-md cursor-pointer"
+              className="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#CAA664] hover:border-[#CAA664] hover:text-[#343434] transition-all transform hover:scale-105 active:scale-95 bg-[#343434]/10 backdrop-blur-sm shadow-md cursor-pointer"
               aria-label="Previous Slide"
             >
               <svg className="w-4 h-4 transform rotate-180 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,7 +132,7 @@ export const HeroSection: React.FC = () => {
             </button>
             <button 
               onClick={handleNextSlide}
-              className="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#D4AF37] hover:border-[#D4AF37] hover:text-black transition-all transform hover:scale-105 active:scale-95 bg-black/10 backdrop-blur-sm shadow-md cursor-pointer"
+              className="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#CAA664] hover:border-[#CAA664] hover:text-[#343434] transition-all transform hover:scale-105 active:scale-95 bg-[#343434]/10 backdrop-blur-sm shadow-md cursor-pointer"
               aria-label="Next Slide"
             >
               <svg className="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,12 +150,12 @@ export const HeroSection: React.FC = () => {
                   {activeSlide.titleBold}
                 </span>
               </h1>
-              <p className="text-gray-300 text-sm md:text-base font-normal tracking-wide leading-relaxed max-w-md mb-8 pl-1 border-l-2 border-[#D4AF37]/60">
+              <p className="text-gray-300 text-sm md:text-base font-normal tracking-wide leading-relaxed max-w-md mb-8 pl-1 border-l-2 border-[#CAA664]/60">
                 {activeSlide.subtitle}
               </p>
               <Link 
                 href={activeSlide.ctaHref}
-                className="inline-flex items-center justify-center bg-white text-black font-semibold text-sm px-10 py-4 rounded-full shadow-xl hover:bg-[#D4AF37] hover:text-black transition-all transform hover:-translate-y-0.5 active:translate-y-0 duration-200 tracking-wide hover:shadow-2xl"
+                className="inline-flex items-center justify-center bg-white text-[#343434] font-semibold text-sm px-10 py-4 rounded-full shadow-xl hover:bg-[#CAA664] hover:text-[#343434] transition-all transform hover:-translate-y-0.5 active:translate-y-0 duration-200 tracking-wide hover:shadow-2xl"
               >
                 <span>{activeSlide.ctaText}</span>
               </Link>
@@ -169,13 +169,13 @@ export const HeroSection: React.FC = () => {
       <div className="flex lg:hidden items-center justify-center space-x-4 mt-6">
         <button 
           onClick={handlePrevSlide}
-          className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white bg-[#3B0E17]/40 hover:bg-[#DCD286] hover:text-black transition-all active:scale-95"
+          className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white bg-[#343434]/40 hover:bg-[#CAA664] hover:text-[#343434] transition-all active:scale-95"
         >
           <svg className="w-4 h-4 transform rotate-180 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
         </button>
         <button 
           onClick={handleNextSlide}
-          className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white bg-[#3B0E17]/40 hover:bg-[#DCD286] hover:text-black transition-all active:scale-95"
+          className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white bg-[#343434]/40 hover:bg-[#CAA664] hover:text-[#343434] transition-all active:scale-95"
         >
           <svg className="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
         </button>

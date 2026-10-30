@@ -8,7 +8,7 @@ import { ExclusiveBenefitsSection } from './ExclusiveBenefitsSection';
 export const StackedBenefitsWrapper: React.FC = () => {
   return (
 
-    <div className="w-full bg-[#1E110E] px-0 pb-3 pt-1 md:px-0 md:pb-0 md:pt-0 font-sans flex flex-col items-center">
+    <div className="w-full bg-[#343434] px-0 pb-3 pt-1 md:px-0 md:pb-0 md:pt-0 font-sans flex flex-col items-center">
       
       <div className="w-full max-w-none flex flex-col relative space-y-1 md:space-y-0">
         

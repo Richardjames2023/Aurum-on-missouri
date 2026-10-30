@@ -24,13 +24,13 @@ const RedemptionIconRenderer: React.FC<{ category: string }> = ({
 }) => {
   switch (category) {
     case "Stay":
-      return <LuBed className="w-5 h-5 text-[#4A0A15]" />;
+      return <LuBed className="w-5 h-5 text-[#343434]" />;
     case "Dining":
-      return <LuUtensils className="w-5 h-5 text-[#4A0A15]" />;
+      return <LuUtensils className="w-5 h-5 text-[#343434]" />;
     case "Upgrade":
-      return <LuSparkles className="w-5 h-5 text-[#4A0A15]" />;
+      return <LuSparkles className="w-5 h-5 text-[#343434]" />;
     default:
-      return <LuSparkles className="w-5 h-5 text-[#4A0A15]" />;
+      return <LuSparkles className="w-5 h-5 text-[#343434]" />;
   }
 };
 
@@ -59,20 +59,20 @@ export const RewardsDashboard: React.FC = () => {
     100;
 
   return (
-    <section className="w-full bg-[#1E110E] font-sans flex flex-col items-center">
+    <section className="w-full bg-[#343434] font-sans flex flex-col items-center">
       <div className="w-full bg-white pt-8 md:pt shadow-2xl rounded-none">
         {/* UPPER TITLE HEADER LINE */}
         <div className="max-w-[1440px] mx-auto w-full border-b border-gray-100 pb-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4 px-6 md:px-12">
           <div>
-            <span className="text-[11px] font-extrabold text-[#cba865] uppercase tracking-[0.25em] block mb-2">
+            <span className="text-[11px] font-extrabold text-[#CAA664] uppercase tracking-[0.25em] block mb-2">
               Aurum On MMissouri Rewards Core
             </span>
             <h1 className="text-2xl md:text-4xl font-bold tracking-tight text-stone-900 font-serif leading-none">
               Membership Portal Dashboard
             </h1>
           </div>
-          <div className="bg-amber-50 border border-amber-200/60 rounded-none px-4 py-2.5 text-xs font-bold text-amber-900 flex items-center space-x-2 w-fit">
-            <LuShieldAlert className="w-4 h-4 text-amber-700" />
+          <div className="bg-white border border-[#CAA664]/60 rounded-none px-4 py-2.5 text-xs font-bold text-[#343434] flex items-center space-x-2 w-fit">
+            <LuShieldAlert className="w-4 h-4 text-[#CAA664]" />
             <span>Tier Status Active: {userTier.name} Member</span>
           </div>
         </div>
@@ -80,7 +80,7 @@ export const RewardsDashboard: React.FC = () => {
         {/* METRICS & STATUS DATA MATRIX SPLIT */}
         <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 items-start px-6 md:px-12">
           {/* Left Column: Radial Progress Gauge Track Box */}
-          <div className="lg:col-span-5 bg-[#FCFBF9] border border-gray-100 rounded-none p-6 md:p-8 flex flex-col items-center text-center shadow-xs">
+          <div className="lg:col-span-5 bg-[#ffffff] border border-gray-100 rounded-none p-6 md:p-8 flex flex-col items-center text-center shadow-xs">
             <h3 className="text-sm font-extrabold text-stone-800 uppercase tracking-wider mb-6">
               Tier Progression
             </h3>
@@ -103,7 +103,7 @@ export const RewardsDashboard: React.FC = () => {
                   cx="50"
                   cy="50"
                   r="42"
-                  stroke="#4A0A15"
+                  stroke="#343434"
                   strokeWidth="7"
                   fill="transparent"
                   strokeDasharray="263"
@@ -112,7 +112,7 @@ export const RewardsDashboard: React.FC = () => {
                 />
               </svg>
               <div className="absolute flex flex-col items-center justify-center">
-                <span className="text-3xl font-black text-[#4A0A15] font-serif">
+                <span className="text-3xl font-black text-[#343434] font-serif">
                   {userTier.pointsAccrued.toLocaleString()}
                 </span>
                 <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-0.5">
@@ -123,20 +123,20 @@ export const RewardsDashboard: React.FC = () => {
 
             <p className="text-xs md:text-[13px] font-bold text-gray-500 leading-relaxed max-w-xs">
               You are exactly{" "}
-              <span className="text-[#4A0A15] font-extrabold">
+              <span className="text-[#343434] font-extrabold">
                 {userTier.pointsToNextTier.toLocaleString()} points
               </span>{" "}
               away from upgrading your status to{" "}
               <span className="text-stone-900 font-extrabold">VIP Tier</span>.
             </p>
-            <span className="mt-4 text-[11px] text-amber-800 bg-amber-50 px-3 py-1 rounded-none font-bold uppercase tracking-wide">
+            <span className="mt-4 text-[11px] text-[#343434] bg-white px-3 py-1 rounded-none font-bold uppercase tracking-wide">
               {userTier.multiplier}
             </span>
           </div>
 
           {/* Right Column: Corporate Benefits & Quick Reference Fields */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 h-full">
-            <div className="bg-[#cba865] text-white rounded-none p-6 md:p-8 flex flex-col justify-between shadow-md h-56 transform transition-all duration-300 lg:hover:-translate-y-1">
+            <div className="bg-[#CAA664] text-white rounded-none p-6 md:p-8 flex flex-col justify-between shadow-md h-56 transform transition-all duration-300 lg:hover:-translate-y-1">
               <div>
                 <span className="text-[10px] text-white/60 font-bold uppercase tracking-widest">
                   Active Multipliers
@@ -156,7 +156,7 @@ export const RewardsDashboard: React.FC = () => {
               </span>
             </div>
 
-            <div className="bg-[#FCFBF9] border border-gray-100 text-stone-900 rounded-none p-6 md:p-8 flex flex-col justify-between shadow-xs h-56 transform transition-all duration-300 lg:hover:-translate-y-1">
+            <div className="bg-[#ffffff] border border-gray-100 text-stone-900 rounded-none p-6 md:p-8 flex flex-col justify-between shadow-xs h-56 transform transition-all duration-300 lg:hover:-translate-y-1">
               <div>
                 <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">
                   Digital Operations
@@ -170,7 +170,7 @@ export const RewardsDashboard: React.FC = () => {
                   localized spa entries.
                 </p>
               </div>
-              <span className="text-xs font-bold text-[#cba865] inline-flex items-center space-x-1 cursor-pointer hover:opacity-80 w-fit">
+              <span className="text-xs font-bold text-[#CAA664] inline-flex items-center space-x-1 cursor-pointer hover:opacity-80 w-fit">
                 <span>How It Works</span>
                 <LuArrowUpRight className="w-3.5 h-3.5" />
               </span>
@@ -196,7 +196,7 @@ export const RewardsDashboard: React.FC = () => {
                   onClick={() => setActiveFilter(filter)}
                   className={`px-4 py-2 border transition-colors focus:outline-none rounded-none ${
                     activeFilter === filter
-                      ? "bg-stone-900 border-stone-900 text-white"
+                      ? "bg-[#343434] border-stone-900 text-white"
                       : "border-gray-200 text-gray-500 bg-gray-50/50 hover:border-gray-400 hover:text-stone-900"
                   }`}
                 >
@@ -214,7 +214,7 @@ export const RewardsDashboard: React.FC = () => {
                 className="w-full bg-white border border-gray-100 rounded-none p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all duration-300 lg:hover:shadow-md lg:hover:border-gray-200/80"
               >
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-[#FCFBF9] border border-gray-100 flex items-center justify-center shadow-inner select-none flex-shrink-0 rounded-none">
+                  <div className="w-12 h-12 bg-[#ffffff] border border-gray-100 flex items-center justify-center shadow-inner select-none flex-shrink-0 rounded-none">
                     {/* Render matching Lucide vectors dynamically */}
                     <RedemptionIconRenderer category={perk.category} />
                   </div>
@@ -230,7 +230,7 @@ export const RewardsDashboard: React.FC = () => {
 
                 <div className="flex items-center justify-between sm:justify-end gap-6 flex-wrap sm:flex-nowrap">
                   <div className="flex flex-col sm:items-end">
-                    <span className="text-sm font-extrabold text-[#4A0A15] font-serif">
+                    <span className="text-sm font-extrabold text-[#343434] font-serif">
                       {perk.pointsRequired.toLocaleString()}
                     </span>
                     <span className="text-[9px] text-gray-400 font-bold uppercase tracking-widest -mt-0.5">
@@ -246,7 +246,7 @@ export const RewardsDashboard: React.FC = () => {
                     className={`px-5 py-2.5 text-[11px] font-extrabold uppercase tracking-widest transition-all rounded-none ${
                       perk.isAvailable &&
                       userTier.pointsAccrued >= perk.pointsRequired
-                        ? "bg-[#cba865] text-white lg:hover:bg-[#36070E] shadow-sm cursor-pointer"
+                        ? "bg-[#CAA664] text-white lg:hover:bg-[#CAA664] shadow-sm cursor-pointer"
                         : "bg-gray-100 text-gray-400 cursor-not-allowed border border-gray-200/30"
                     }`}
                   >

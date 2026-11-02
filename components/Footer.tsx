@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
               />             
               </div>
           </Link>
-          <span className="text-[10px] tracking-[0.25em] uppercase text-gray-400 font-extrabold sm:self-end sm:mb-1">
+          <span className="text-[12px] tracking-[0.25em] uppercase text-gray-400 font-extrabold sm:self-end sm:mb-1">
             8 Missouri St, Maitama, Abuja (Hotels & Apartments)
           </span>
          </div>

@@ -57,6 +57,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Aurum on Missouri - Luxury Hotel in Abuja",
   description: "Experience premium hospitality sanctuary spaces in Abuja.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

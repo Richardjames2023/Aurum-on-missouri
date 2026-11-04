@@ -62,7 +62,7 @@ export const RegisterForm: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero-bg.jpg"
-            alt="Azusa Luxury Hotel Suite Entrance"
+            alt="Aurum Luxury Hotel Suite Entrance"
             className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.05]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#343434]/40 via-transparent to-black/80" />

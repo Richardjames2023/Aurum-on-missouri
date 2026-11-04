@@ -1,5 +1,5 @@
 // types/faq.ts
-export type FaqCategory = 'General hotel information' | 'Reservations' | 'Azusa Rewards' | 'Voucher Codes (e-certs)' | 'Best Rate Guarantee (BRG)' | 'Gift cards';
+export type FaqCategory = 'General hotel information' | 'Reservations' | 'Aurum Rewards' | 'Voucher Codes (e-certs)' | 'Best Rate Guarantee (BRG)' | 'Gift cards';
 
 export interface FaqItem {
   id: string;

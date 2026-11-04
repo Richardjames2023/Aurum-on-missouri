@@ -149,7 +149,7 @@ export const DealsRowGrid: React.FC = () => {
                       </span>
                       
                       <Link 
-                        href={deal.ctaHref}
+                        href="/rooms"
                         className="inline-flex items-center justify-center bg-[#343434] text-white font-bold text-xs uppercase tracking-widest rounded-full px-8 py-3.5 hover:bg-[#CAA664] transition-all transform active:scale-95 shadow-md hover:shadow-lg"
                       >
                         Claim Offer

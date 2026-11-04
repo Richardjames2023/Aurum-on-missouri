@@ -68,14 +68,70 @@ export const BookingFormModal: React.FC<BookingFormModalProps> = ({
     if (!validateForm()) return;
 
     setIsSubmitting(true);
-    // Simulate industrial API payment authorization gateway delay hooks safely
-    await new Promise(resolve => setTimeout(resolve, 1800));
+    // Simulate payment authorization gateway delay
+    await new Promise(resolve => setTimeout(resolve, 1500));
     setIsSubmitting(false);
-    
+
+    // Generate random booking reference format AUR-YYYY-XXXXX
+    const randomHex = Math.random().toString(36).substring(2, 7).toUpperCase();
+    const currentYear = new Date().getFullYear();
+    const bookingReference = `AUR-${currentYear}-${randomHex}`;
+
+    // Calculate check-in & check-out dates formatted
+    const now = new Date();
+    const checkInDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    const checkOutDate = new Date(checkInDate);
+    checkOutDate.setDate(checkOutDate.getDate() + nights);
+
+    const formatDateStr = (date: Date) => {
+      return date.toLocaleDateString('en-US', {
+        weekday: 'short',
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
+    };
+
+    const bookingPayload = {
+      bookingReference,
+      guestName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      roomType: roomTitle,
+      checkIn: formatDateStr(checkInDate),
+      checkOut: formatDateStr(checkOutDate),
+      nights,
+      totalPaid: totalPrice.toString(),
+      currency,
+      airportTransfer: formData.airportTransfer
+    };
+
+    // Store in localStorage for persistence across reloads / offline access
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('latest_booking', JSON.stringify(bookingPayload));
+      } catch (err) {
+        console.error('Failed to save booking to localStorage', err);
+      }
+    }
+
     onClose();
-    
-    // REDIRECTS CLIENT SECURELY TO THE SEO-FRIENDLY THANK YOU PAGE
-    router.push('/booking-confirmation');
+
+    // Pass details via search parameters to booking-confirmation page
+    const params = new URLSearchParams({
+      ref: bookingReference,
+      guest: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      room: roomTitle,
+      checkIn: formatDateStr(checkInDate),
+      checkOut: formatDateStr(checkOutDate),
+      nights: nights.toString(),
+      total: totalPrice.toString(),
+      currency
+    });
+
+    router.push(`/booking-confirmation?${params.toString()}`);
   };
 
   const currencySymbol = currency === 'NGN' ? '₦' : '$';

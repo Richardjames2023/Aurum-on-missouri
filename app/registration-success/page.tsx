@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import { RegistrationThankYou } from '@/components/auth/RegistrationThankYou';
 
 export const metadata: Metadata = {
-  title: 'Welcome to Azusa | Registration Confirmed',
-  description: 'Your premium boutique membership account creation is finalized successfully at Azusa Hotels & Apartments.',
-  robots: { index: false, follow: true }, // Disables index visibility crawler leaks of onboarding endpoints
+  title: 'Welcome to Aurum Elite | Aurum on Missouri, Maitama, Abuja',
+  description: 'Your Aurum Elite membership account creation has been confirmed at Aurum on Missouri, Maitama, Abuja.',
+  robots: { index: false, follow: true },
   alternates: { canonical: '/registration-success' }
 };
 

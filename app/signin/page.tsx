@@ -3,9 +3,9 @@ import { SignInForm } from '@/components/auth/SignInForm';
 
 // PRODUCTION PORTAL ACCOUNT SEO ACCESS ENGINE
 export const metadata: Metadata = {
-  title: 'Guest Sign-In Portal | Azusa Hotels & Luxury Apartments',
-  description: 'Log in to your secure client workspace dashboard at Azusa Hotels. Manage room suites configurations, reward points balances, and private concierge pipelines.',
-  robots: { index: false, follow: true }, // Disables index visibility leaks of dashboard pages while preserving authority lines
+  title: 'Guest Sign-In | Aurum on Missouri, Maitama, Abuja',
+  description: 'Log in to your guest account at Aurum on Missouri to manage your bookings and Aurum Elite benefits.',
+  robots: { index: false, follow: true },
   alternates: { canonical: '/signin' }
 };
 

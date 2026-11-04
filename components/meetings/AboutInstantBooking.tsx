@@ -19,7 +19,7 @@ export const AboutInstantBooking: React.FC = () => {
         <div className="lg:col-span-6 w-full aspect-[16/10] bg-[#343434] relative rounded-2xl overflow-hidden shadow-md flex items-center justify-center group isolate select-none">
           <img 
             src="https://unsplash.com" 
-            alt="Azusa Smart Venues Presentation Guide Video Preview" 
+            alt="Aurum Smart Venues Presentation Guide Video Preview" 
             className="absolute inset-0 w-full h-full object-cover filter brightness-[0.5] group-hover:scale-102 transition-transform duration-700"
           />
           {/* Floating Native SVG Circular Play Trigger */}

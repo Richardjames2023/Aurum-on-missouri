@@ -1,7 +1,7 @@
 [
   {
     "id": "slide-01",
-    "titleLight": "Azusa Hotel",
+    "titleLight": "Aurum Hotel",
     "titleBold": "Apartments",
     "subtitle": "by Sonder-Living",
     "ctaText": "Book Now",
@@ -10,19 +10,19 @@
     "cards": [
       {
         "id": "card-1",
-        "title": "Azusa",
+        "title": "Aurum",
         "subtitle": "Grand Suite",
         "image": "/img/A2.webp"
       },
       {
         "id": "card-2",
-        "title": "Azusa",
+        "title": "Aurum",
         "subtitle": "Signature Studio",
         "image": "/img/A7.webp"
       },
       {
         "id": "card-3",
-        "title": "Azusa",
+        "title": "Aurum",
         "subtitle": "Deluxe Suite",
         "image": "/img/MAP13600.webp"
       }
@@ -39,19 +39,19 @@
     "cards": [
       {
         "id": "card-4",
-        "title": "Azusa",
+        "title": "Aurum",
         "subtitle": "Premier Royal",
         "image": "/img/MAP13626(1).webp"
       },
       {
         "id": "card-5",
-        "title": "Azusa",
+        "title": "Aurum",
         "subtitle": "Vista Rio",
         "image": "/img/A13.webp"
       },
       {
         "id": "card-6",
-        "title": "Azusa",
+        "title": "Aurum",
         "subtitle": "Cafe Rio",
         "image": "/img/A14.webp"
       }

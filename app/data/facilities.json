@@ -2,11 +2,11 @@
   {
     "id": "fac-1",
     "title": "Experience modern comfort",
-    "tagline": "CHIC ACCOMMODATIONS & LOCAL FLAVORS",
-    "description": "Plan your next getaway to the vibrant city of Abuja and make Aurum, Abuja your ultimate destination! With its chic accommodations, exceptional dining experiences infused with local flavors, and state-of-the-art amenities, our hotel invites you to immerse yourself in a world of indulgence and relaxation.",
+    "tagline": "CHIC ACCOMMODATION & LOCAL FLAVOURS",
+    "description": "Plan your next stay in Abuja and make Aurum on Missouri your base in the city.",
     "image": "/img/SUPER-DELUXE-18.webp",
-    "ctaHref": "/about",
-    "highlights": ["Local Flavors", "Chic Accommodations"]
+    "ctaHref": "/rooms",
+    "highlights": ["Local Flavours", "Chic Accommodation"]
   },
   {
     "id": "fac-2",

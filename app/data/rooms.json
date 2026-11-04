@@ -1,7 +1,76 @@
 [
   {
     "id": "room-01",
-    "title": "Executive (one bedroom)",
+    "title": "Standard Room",
+    "category": "Rooms",
+    "image": "/img/A5.webp",
+    "images": [
+      "/img/STANDARD-.webp",
+      "/img/STANDARD--2.webp",
+      "/img/STANDARD--38.webp"
+    ],
+    "size": "23 m²",
+    "occupancy": "Max 2 Guests",
+    "pricePerNight": "120,000",
+    "currency": "NGN",
+    "features": [
+      { "label": "King Bed", "icon": "bed" },
+      { "label": "Wi-Fi", "icon": "wifi" },
+      { "label": "Breakfast", "icon": "chef" },
+      { "label": "Smart TV", "icon": "tv" }
+    ],
+    "href": "/rooms",
+    "delay": 0
+  },
+  {
+    "id": "room-02",
+    "title": "Deluxe Room (Studio)",
+    "category": "Studios",
+    "image": "/img/DELUXE--14.webp",
+    "images": [
+      "/img/DELUXE--14.webp",
+      "/img/DELUXE.webp",
+      "/img/DELUXE--10.webp"
+    ],
+    "size": "32 m²",
+    "occupancy": "Max 2 Guests",
+    "pricePerNight": "200,000",
+    "currency": "NGN",
+    "features": [
+      { "label": "King Bed", "icon": "bed" },
+      { "label": "City View", "icon": "view" },
+      { "label": "Free Wi-Fi", "icon": "wifi" },
+      { "label": "Smart TV", "icon": "tv" }
+    ],
+    "href": "/rooms",
+    "delay": 1000
+  },
+  {
+    "id": "room-03",
+    "title": "Super Deluxe Room (One Bedroom)",
+    "category": "Suites",
+    "image": "/img/A1.webp",
+    "images": [
+      "/img/SUPER-DELUXE-9.webp",
+      "/img/SUPER-DELUXE-18.webp",
+      "/img/SUPER-DELUXE-25.webp"
+    ],
+    "size": "48 m²",
+    "occupancy": "Max 3 Guests",
+    "pricePerNight": "250,000",
+    "currency": "NGN",
+    "features": [
+      { "label": "1 Bedroom", "icon": "key" },
+      { "label": "Kitchenette", "icon": "chef" },
+      { "label": "Free Wi-Fi", "icon": "wifi" },
+      { "label": "Smart TV", "icon": "tv" }
+    ],
+    "href": "/rooms",
+    "delay": 2000
+  },
+  {
+    "id": "room-04",
+    "title": "Executive Room (One Bedroom)",
     "category": "Luxury Suites",
     "image": "/img/A15.webp",
     "images": [
@@ -15,129 +84,12 @@
     "pricePerNight": "300,000",
     "currency": "NGN",
     "features": [
-      {
-        "label": "King Bed",
-        "icon": "bed"
-      },
-      {
-        "label": "City View",
-        "icon": "view"
-      },
-      {
-        "label": "Free Wi-Fi",
-        "icon": "wifi"
-      },
-      {
-        "label": "Smart TV",
-        "icon": "tv"
-      }
+      { "label": "King Bed", "icon": "bed" },
+      { "label": "City View", "icon": "view" },
+      { "label": "Free Wi-Fi", "icon": "wifi" },
+      { "label": "Smart TV", "icon": "tv" }
     ],
-    "href": "/rooms/executive-sovereign-suite",
-    "delay": 0
-  },
-  {
-    "id": "room-02",
-    "title": "Super deluxe (one bedroom)",
-    "category": "Apartments",
-    "image": "/img/A1.webp",
-    "images": [
-      "/img/SUPER-DELUXE-9.webp",
-      "/img/SUPER-DELUXE-18.webp",
-      "/img/SUPER-DELUXE-25.webp"
-    ],
-    "size": "98 m²",
-    "occupancy": "Max 5 Guests",
-    "pricePerNight": "250,000",
-    "currency": "NGN",
-    "features": [
-      {
-        "label": "1 Bedroom",
-        "icon": "key"
-      },
-      {
-        "label": "Kitchenette",
-        "icon": "chef"
-      },
-      {
-        "label": "Balcony",
-        "icon": "sunset"
-      },
-      {
-        "label": "PS5 Opt.",
-        "icon": "gamepad"
-      }
-    ],
-    "href": "/rooms/premium-diplomatic-apartment",
-    "delay": 2000
-  },
-  {
-    "id": "room-03",
-    "title": "Standard room",
-    "category": "Penthouse",
-    "image": "/img/A5.webp",
-    "images": [
-      "/img/STANDARD--2.webp",
-      "/img/STANDARD--38.webp",
-      "/img/STANDARD-.webp"
-    ],
-    "size": "145 m²",
-    "occupancy": "Max 6 Guests",
-    "pricePerNight": "120,000",
-    "currency": "NGN",
-    "features": [
-      {
-        "label": "Grand Terrace",
-        "icon": "castle"
-      },
-      {
-        "label": "Private Jacuzzi",
-        "icon": "bath"
-      },
-      {
-        "label": "24/7 Butler",
-        "icon": "butler"
-      },
-      {
-        "label": "Airport Transfer",
-        "icon": "car"
-      }
-    ],
-    "href": "/rooms/signature-royal-penthouse",
-    "delay": 4000
-  },
-  {
-    "id": "room-04",
-    "title": "Deluxe room (big studio)",
-    "category": "Luxury Suites",
-    "image": "/img/DELUXE--14.webp",
-    "images": [
-      "/img/DELUXE--14.webp",
-      "/img/DELUXE.webp",
-      "/img/DELUXE--10.webp"
-    ],
-    "size": "27 m²",
-    "occupancy": "Max 3 Guests",
-    "pricePerNight": "200,000",
-    "currency": "NGN",
-    "features": [
-      {
-        "label": "King Bed",
-        "icon": "bed"
-      },
-      {
-        "label": "City View",
-        "icon": "view"
-      },
-      {
-        "label": "Free Wi-Fi",
-        "icon": "wifi"
-      },
-      {
-        "label": "Smart TV",
-        "icon": "tv"
-      }
-    ],
-    "href": "/rooms/deluxe-room",
-    "delay": 1000
+    "href": "/rooms",
+    "delay": 3000
   }
 ]

@@ -16,7 +16,7 @@ export const AboutIntro: React.FC = () => {
         </p>
         
         <p className="text-stone-600 text-xs md:text-sm font-medium leading-relaxed tracking-wide">
-          We aim to offer the most dynamic, flexible, and functional solutions in the modern meetings and events marketplace—making sure every M&E planner enjoys peace of mind when they partner with Azusa Meetings, whether they are co-creating truly impactful meetings & events or arranging group accommodation.
+          We aim to offer the most dynamic, flexible, and functional solutions in the modern meetings and events marketplace—making sure every M&E planner enjoys peace of mind when they partner with Aurum Meetings, whether they are co-creating truly impactful meetings & events or arranging group accommodation.
         </p>
 
       </div>

@@ -89,13 +89,15 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
                     <h3 className="text-xl lg:text-[22px] font-bold text-[#2d3748] tracking-tight leading-snug line-clamp-2 mb-2">
                         {room.title}
                     </h3>
-                    <p className="text-sm font-bold text-[#343434] mb-3">
-                        {room.currency === "NGN" ? "₦" : "$"}
-                        {(room.pricePerNight + calculateVat(room.pricePerNight, room.currency)).toLocaleString()}
-                        <span className="ml-1 text-xs font-semibold text-gray-400">
-                            / night{room.currency === "NGN" ? " incl. VAT" : ""}
-                        </span>
-                    </p>
+                    <div className="mb-3">
+                        <p className="text-base sm:text-lg font-bold leading-tight text-[#343434]">
+                            {room.currency === "NGN" ? "₦" : "$"}
+                            {(room.pricePerNight + calculateVat(room.pricePerNight, room.currency)).toLocaleString()}
+                        </p>
+                        <p className="mt-1 text-xs font-semibold text-gray-500">
+                            per night, incl. VAT
+                        </p>
+                    </div>
 
                     {/* Specification Pills */}
                     <div className="flex flex-wrap gap-2 mb-3">
@@ -136,7 +138,7 @@ export default function RoomCard({ room, onReadMore }: RoomCardProps) {
             <div className="px-5 lg:px-6 pt-2 pb-5 mt-auto">
                 <button 
                     onClick={onReadMore}
-                    className="w-full bg-[#343434] hover:bg-[#CAA664] text-white py-3.5 px-4 rounded-full font-bold uppercase text-xs tracking-widest transition-colors duration-200 shadow-sm hover:shadow-md"
+                    className="w-full min-h-12 bg-[#343434] hover:bg-[#CAA664] text-white py-3.5 px-4 rounded-full font-bold uppercase text-xs tracking-widest transition-colors duration-200 shadow-sm hover:shadow-md"
                 >
                     Book Now
                 </button>

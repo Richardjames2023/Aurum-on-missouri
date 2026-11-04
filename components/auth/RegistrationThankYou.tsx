@@ -22,7 +22,7 @@ export const RegistrationThankYou: React.FC = () => {
           Account Verified
         </span>
         <h1 className="text-3xl md:text-4xl font-normal tracking-tight text-stone-900 font-serif leading-tight mb-4 max-w-md">
-          Welcome to the Azusa Elite Circle
+          Welcome to the Aurum Elite Circle
         </h1>
         <p className="text-stone-600 text-xs md:text-sm font-medium leading-relaxed tracking-wide max-w-md mb-8">
           Thank you for joining our signature hospitality network. A secure welcome pass containing your member tier credentials and initial reward points matrix has been dispatched to your email inbox.
@@ -32,7 +32,7 @@ export const RegistrationThankYou: React.FC = () => {
         <div className="w-full bg-stone-50 border border-stone-200/60 p-5 rounded-none text-left flex flex-col space-y-2 mb-8 max-w-md">
           <div className="flex justify-between items-center text-xs font-bold border-b border-stone-100 pb-2">
             <span className="text-stone-400 uppercase tracking-wider">Membership Tier</span>
-            <span className="text-[#343434] tracking-wide uppercase font-black">Azusa Classic Elite</span>
+            <span className="text-[#343434] tracking-wide uppercase font-black">Aurum Classic Elite</span>
           </div>
           <div className="flex justify-between items-center text-xs font-bold">
             <span className="text-stone-400 uppercase tracking-wider">Status Reward Bonus</span>

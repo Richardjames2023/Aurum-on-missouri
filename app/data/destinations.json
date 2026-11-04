@@ -3,18 +3,18 @@
     "id": "dest-1",
     "title": "Discovery Museum",
     "image": "/img/museumaaabj.jpg",
-    "href": "/destinations/discovery-museum"
+    "href": "/explore"
   },
   {
     "id": "dest-2",
     "title": "Magicland Park",
     "image": "/img/magiclandimg.webp",
-    "href": "/destinations/magicland-park"
+    "href": "/explore"
   },
   {
     "id": "dest-3",
     "title": "Farm City",
     "image": "/img/farmcity.jpg",
-    "href": "/destinations/farm-city"
+    "href": "/explore"
   }
 ]

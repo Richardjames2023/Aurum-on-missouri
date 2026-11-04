@@ -33,7 +33,7 @@ export default function RoomDetailsPage() {
 
   const alternativeActivitiesList: RecommendedActivity[] = [
     { id: "act-1", title: "Green Lake", category: "Nature", image: "/images/hero-bg.jpg" },
-    { id: "act-2", title: "Dog Clubs", category: "Pool", image: "/images/azusa2.jpg" },
+    { id: "act-2", title: "Dog Clubs", category: "Pool", image: "/img/DELUXE--2.webp" },
     { id: "act-3", title: "Labour and Wait", category: "Shopping", image: "/images/suite_main.png", isPopular: true },
     { id: "act-4", title: "Snorkeling", category: "Beach", image: "/images/hero-bg.jpg" }
   ];
@@ -65,7 +65,7 @@ export default function RoomDetailsPage() {
         title={roomInfo.title}
         location="Bogor, Indonesia"
         mainImage="/images/hero-bg.jpg"
-        galleryImages={["/images/azusa2.jpg", "/images/suite_main.png"]}
+        galleryImages={["/img/DELUXE--2.webp", "/images/suite_main.png"]}
       />
 
       {/* 2. Middle Content Grid Layer: Split Description Text vs Interactive Booking Card */}

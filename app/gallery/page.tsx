@@ -37,7 +37,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     src: "/img/DELUXE--5.webp",
     title: "Main Entrance & Architectural Façade",
     category: "Exterior & Architecture",
-    description: "The striking contemporary architectural design of Azusa Hotels, blending modern engineering with welcoming luxury."
+    description: "The striking contemporary architectural design of Aurum Hotels, blending modern engineering with welcoming luxury."
   },
   {
     id: "ext-2",
@@ -58,13 +58,13 @@ const GALLERY_ITEMS: GalleryItem[] = [
     src: "/img/ANNEXEXEC-13.webp",
     title: "Illuminated Facade - Night View",
     category: "Exterior & Architecture",
-    description: "The glowing architectural silhouette of Azusa Hotels & Apartments illuminating the Abuja night sky."
+    description: "The glowing architectural silhouette of Aurum Hotels & Apartments illuminating the Abuja night sky."
   },
   // Rooms & Suites
   {
     id: "room-1",
     src: "/img/ANNEXEXEC-18.webp",
-    title: "Azusa Premier Royal Suite",
+    title: "Aurum Premier Royal Suite",
     category: "Rooms & Suites",
     description: "Our flagship suite offering unparalleled space, a plush king bed, and panoramic views of the city skyline."
   },
@@ -100,7 +100,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "dining-1",
     src: "/img/RESTAURANT-2.webp",
-    title: "Azusa Gourmet Restaurant",
+    title: "Aurum Gourmet Restaurant",
     category: "Dining & Lounges",
     description: "Experience a culinary journey featuring a mix of local African flavors and international haute cuisine."
   },
@@ -187,7 +187,7 @@ export default function GalleryPage() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/img/AoM-17.webp"
-              alt="Azusa Hotels Architectural Façade"
+              alt="Aurum Hotels Architectural Façade"
               fill
               className="object-cover object-center opacity-40"
               priority

@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
 
   // Social link platform rendering vector icon matrix blocks
   const socialPlatforms = [
-    { id: "fb", href: "https://www.facebook.com/people/Aurum-On-Missouri/61581054107852/#", iconPath: "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" },
+    { id: "fb", href: "https://www.facebook.com/people/Aurum-On-Missouri/61581054107852/", iconPath: "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" },
     { id: "yt", href: "https://www.youtube.com/@AurumonMissouri", iconPath: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" },
     { id: "ig", href: "https://www.instagram.com/aurumonmissouri/", iconPath: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" },
   ];
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
              <div className="relative w-36 h-12 transition-opacity group-hover:opacity-80">
                <Image
                  src="/img/AURUM.png"
-                 alt="Azusa Hotels Logo"
+                 alt="Aurum on Missouri Logo"
                  fill
                  className="object-contain object-left"
                  priority
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
             {hotDestinations.map((dest, index) => (
               <Link 
                 key={index}
-                href={dest.href}
+                href="/explore"
                 className="px-4 py-2 border border-white/30 rounded-full text-xs font-medium text-white/80 hover:text-white hover:border-white/60 transition-all whitespace-nowrap bg-white/5 hover:bg-white/10"
               >
                 {dest.label}
@@ -62,39 +62,35 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* ROW 2: QUICK LINK SYSTEM REVENUE DIRECTORIES */}
-        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-10 mb-12">
+        <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-white/10 pt-10 mb-12">
           
           {/* Column A: Quick Links */}
           <div className="flex flex-col space-y-3">
-            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Quick links</h5>
+            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Quick Links</h5>
             <Link href="/rooms" className="text-xs text-white/70 hover:text-white transition-colors">Rooms</Link>
-            <Link href="/benefits" className="text-xs text-white/70 hover:text-white transition-colors">Benefits</Link>
+            <Link href="/restaurant" className="text-xs text-white/70 hover:text-white transition-colors">Restaurant</Link>
+            <Link href="/deals" className="text-xs text-white/70 hover:text-white transition-colors">Deals</Link>
             <Link href="/terms" className="text-xs text-white/70 hover:text-white transition-colors">Terms and Conditions</Link>
+          </div>
+
+          {/* Column B: Explore */}
+          <div className="flex flex-col space-y-3">
+            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Explore</h5>
+            <Link href="/about" className="text-xs text-white/70 hover:text-white transition-colors">About Us</Link>
+            <Link href="/gallery" className="text-xs text-white/70 hover:text-white transition-colors">Media Gallery</Link>
+            <Link href="/meetings-events" className="text-xs text-white/70 hover:text-white transition-colors">Meetings & Events</Link>
             <Link href="/blog" className="text-xs text-white/70 hover:text-white transition-colors">Blog</Link>
-            <Link href="/safety" className="text-xs text-white/70 hover:text-white transition-colors">Health and Safety</Link>
+            <Link href="/explore" className="text-xs text-white/70 hover:text-white transition-colors">Explore Abuja</Link>
           </div>
 
-          {/* Column B: Corporate */}
-          <div className="flex flex-col space-y-3">
-            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Corporate</h5>
-            <Link href="/careers" className="text-xs text-white/70 hover:text-white transition-colors">Careers</Link>
-          </div>
-
-          {/* Column C: Legal */}
-          <div className="flex flex-col space-y-3">
-            <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Legal</h5>
-            <Link href="/modern-slavery" className="text-xs text-white/70 hover:text-white transition-colors">Modern Slavery Statement</Link>
-          </div>
-
-          {/* Column D: Help Line Center */}
+          {/* Column C: Help Line Center */}
           <div className="flex flex-col space-y-3">
             <h5 className="text-sm font-bold uppercase tracking-wider text-[#CAA664] mb-2">Help</h5>
-            <Link href="/contact" className="text-xs text-white/70 hover:text-white transition-colors">Contact</Link>
+            <Link href="/contact" className="text-xs text-white/70 hover:text-white transition-colors">Contact Us</Link>
             <Link href="/faq" className="text-xs text-white/70 hover:text-white transition-colors">FAQ</Link>
-            <Link href="/sitemap" className="text-xs text-white/70 hover:text-white transition-colors">Sitemap</Link>
-            <a href="tel:+2349160683225" className="text-xs font-semibold text-[#ffffff] hover:underline transition-all mt-1">
-              +234 707 707 1117
-            </a>
+            <p className="text-xs text-white/70 mt-1">
+              Call us: <a href="tel:+2347077071117" className="font-semibold text-[#ffffff] hover:underline">+234 707 707 1117</a>
+            </p>
           </div>
 
         </div>
@@ -110,7 +106,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-white hover:bg-[#CAA664] text-[#343434] flex items-center justify-center transition-all shadow-md transform hover:scale-105"
-                aria-label={`Follow Azusa on ${social.id}`}
+                aria-label={`Follow Aurum on ${social.id}`}
               >
                 <svg className="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
                   <path d={social.iconPath} />
@@ -123,7 +119,7 @@ export const Footer: React.FC = () => {
         {/* ROW 4: COPYRIGHT BASELINE STATEMENT SHEET */}
         <div className="w-full border-t border-white/10 pt-6 text-center md:text-left">
           <p className="text-[11px] text-white/50 font-medium tracking-wide leading-relaxed">
-            &copy; 2026 Aurum On Missouri. All rights reserved. Aurum on Missouri, 8 Missouri St, Maitama, Abuja, Federal Capital Territory.
+            &copy; 2026 Aurum on Missouri. All rights reserved.
           </p>
         </div>
 

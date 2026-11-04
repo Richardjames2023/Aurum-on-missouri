@@ -5,9 +5,9 @@ import { AboutValueProps } from '@/components/meetings/AboutValueProps';
 import SubNav from '@/components/SubNav';
 
 export const metadata: Metadata = {
-  title: 'Luxury Meeting Rooms & Event Venues Booking | Azusa Hotels Abuja',
-  description: 'Host premium corporate summits, luxury weddings, or private board meetings in our state-of-the-art conference halls in Kado, Abuja. Experience flexible planning solutions.',
-  alternates: { canonical: '/meetings-events' }
+  title: 'About Us | Aurum on Missouri, Maitama, Abuja',
+  description: 'A boutique luxury hotel at 8 Missouri Street, Maitama, Abuja. Four room types, an all-day restaurant and a private conference room.',
+  alternates: { canonical: '/about' }
 };
 
 export default function MeetingsEventsPage() {

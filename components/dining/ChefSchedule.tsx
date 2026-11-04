@@ -3,24 +3,23 @@
 import React, { useState, useEffect } from 'react';
 import { LuClock } from 'react-icons/lu';
 
-const CHEF_IMAGES = [
+const DINING_IMAGES = [
   {
-    src: "/img/Aom-15.webp",
-    alt: "Chef Tunde Okoro plating signature cuisine",
+    src: "/img/AoM-15.webp",
+    alt: "Signature cuisine presentation at Aurum on Missouri",
   },
   {
-    src: "/img/Aom-13.webp",
-    alt: "Signature grilled fire steak dish look",
+    src: "/img/AoM-13.webp",
+    alt: "Gourmet dish at The Restaurant at Aurum",
   },
 ];
 
 export const ChefSchedule: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Auto-play engine for the slideshow
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % CHEF_IMAGES.length);
+      setCurrentSlide((prev) => (prev + 1) % DINING_IMAGES.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
@@ -29,47 +28,54 @@ export const ChefSchedule: React.FC = () => {
     <section className="w-full bg-[#343434] py-14 md:py-20 border-b border-stone-900 flex flex-col items-center text-white">
       <div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-16">
         
-        {/* MAIN COMPONENT GRID: items-stretch forces both columns to share identical height */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
           
-          {/* LEFT COLUMN: Now holds both the Profile text AND the Opening Hours */}
+          {/* LEFT COLUMN: Hours & Dining Information */}
           <div className="lg:col-span-7 flex flex-col justify-between text-left order-2 lg:order-1 py-1">
             
-            {/* Top Section: Chef Profile Text */}
             <div className="flex flex-col items-start mb-8 lg:mb-6">
               <h3 className="text-3xl font-serif font-normal text-[#CAA664] tracking-tight leading-tight mb-5">
-                Discover Aurum Through <br />
-                Chef Tunde Okoro
+                Dining at Aurum on Missouri
               </h3>
               <div className="flex flex-col space-y-4 text-stone-300 text-sm font-medium leading-relaxed tracking-wide border-l-2 border-[#CAA664] pl-4 max-w-xl">
                 <p>
-                  Indulge in the exceptional flavors of Aurum On Missouri, where Chef Tunde Okoro, mentored by the industry's most esteemed culinary masters, crafts a menu that redefines modern gastronomy.
+                  From peaceful morning espressos and full breakfast spreads to late-evening private suppers, The Restaurant at Aurum serves a menu crafted with seasonal Nigerian produce and international inspirations.
                 </p>
                 <p className="italic text-stone-400 font-serif">
-                  "Each dish is a journey of taste and innovation," says Chef Okoro, promising an unforgettable dining experience in the heart of Abuja.
+                  "Thoughtful dining, attentive table service, and welcoming hospitality in the heart of Maitama."
                 </p>
               </div>
             </div>
 
-            {/* Bottom Section: Opening Hours (Brought inside to eliminate layout dead space) */}
+            {/* Bottom Section: Real Verified Opening Hours */}
             <div className="w-full flex flex-col items-start text-left">
               <h3 className="text-lg font-bold font-serif text-white tracking-wide mb-3">
-                Opening hours
+                Service Hours
               </h3>
-              <div className="w-full max-w-xl bg-[#343434] border border-white/5 p-5 shadow-2xl flex flex-col items-start gap-3 rounded-xl relative overflow-hidden">
-                <span className="text-xs font-black uppercase tracking-widest text-[#caa664]">Restaurant</span>
-                <div className="flex items-center text-xs font-bold text-stone-200 tracking-wide mt-1">
-                  <LuClock className="w-4 h-4 text-[#CAA664] mr-2.5 flex-shrink-0" />
-                  <span>Daily 12:00 pm - 12:00 am</span>
+              <div className="w-full max-w-xl bg-white/5 border border-white/10 p-5 shadow-2xl flex flex-col items-start gap-3 rounded-xl relative overflow-hidden">
+                <span className="text-xs font-black uppercase tracking-widest text-[#caa664]">The Restaurant & Room Service</span>
+                <div className="flex flex-col space-y-2 text-xs font-medium text-stone-200 tracking-wide mt-1">
+                  <div className="flex items-center">
+                    <LuClock className="w-4 h-4 text-[#CAA664] mr-2.5 flex-shrink-0" />
+                    <span><strong>Breakfast:</strong> 7:00 am – 10:30 am</span>
+                  </div>
+                  <div className="flex items-center">
+                    <LuClock className="w-4 h-4 text-[#CAA664] mr-2.5 flex-shrink-0" />
+                    <span><strong>Lunch & Dinner:</strong> 12:00 pm – 11:00 pm</span>
+                  </div>
+                  <div className="flex items-center">
+                    <LuClock className="w-4 h-4 text-[#CAA664] mr-2.5 flex-shrink-0" />
+                    <span><strong>Room Service:</strong> 24 hours daily</span>
+                  </div>
                 </div>
               </div>
             </div>
 
           </div>
 
-          {/* RIGHT COLUMN: Slider dynamically tracks and scales to the exact height of the left column */}
+          {/* RIGHT COLUMN: Slideshow */}
           <div className="lg:col-span-5 order-1 lg:order-2 w-full h-[380px] md:h-[450px] lg:h-full relative overflow-hidden rounded-xl border border-white/10 shadow-xl bg-[#343434] group">
-            {CHEF_IMAGES.map((image, index) => (
+            {DINING_IMAGES.map((image, index) => (
               <div
                 key={index}
                 className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
@@ -86,7 +92,7 @@ export const ChefSchedule: React.FC = () => {
 
             {/* Pagination Indicators */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-[#343434]/40 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
-              {CHEF_IMAGES.map((_, index) => (
+              {DINING_IMAGES.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}

@@ -55,8 +55,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Aurum on Missouri - Luxury Hotel in Abuja",
-  description: "Experience premium hospitality sanctuary spaces in Abuja.",
+  metadataBase: new URL("https://www.aurumonmissouri.com"),
+  title: "Aurum on Missouri - Boutique Luxury Hotel in Maitama, Abuja",
+  description: "A boutique luxury hotel at 8 Missouri Street, Maitama, Abuja. Four room types, an all-day restaurant and a private conference room.",
   icons: {
     icon: "/icon.svg",
   },

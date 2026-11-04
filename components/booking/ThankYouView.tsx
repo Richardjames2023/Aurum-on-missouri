@@ -34,7 +34,7 @@ export const ThankYouView: React.FC<ThankYouViewProps> = ({ details }) => {
             Reservation Confirmed
           </span>
           <h1 className="text-3xl md:text-4xl font-normal tracking-tight text-stone-900 font-serif leading-tight max-w-xl">
-            Thank you for choosing Azusa
+            Thank you for choosing Aurum
           </h1>
           <p className="text-gray-500 text-xs md:text-sm font-medium mt-2 max-w-md">
             A confirmation email containing your secure digital check-in passes has been delivered to your inbox.
@@ -59,6 +59,18 @@ export const ThankYouView: React.FC<ThankYouViewProps> = ({ details }) => {
                 <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-0.5">Accommodation</span>
                 <span className="text-xs font-bold text-stone-900">{details.roomType}</span>
               </div>
+              {details.email && (
+                <div className="flex flex-col">
+                  <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-0.5">Email</span>
+                  <span className="text-xs font-bold text-stone-900 truncate">{details.email}</span>
+                </div>
+              )}
+              {details.phone && (
+                <div className="flex flex-col">
+                  <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-0.5">Phone</span>
+                  <span className="text-xs font-bold text-stone-900">{details.phone}</span>
+                </div>
+              )}
               <div className="flex flex-col">
                 <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-0.5">Booking Reference</span>
                 <span className="text-xs font-mono font-bold text-[#343434] uppercase tracking-wide flex items-center gap-1.5">
@@ -85,7 +97,7 @@ export const ThankYouView: React.FC<ThankYouViewProps> = ({ details }) => {
               <div className="flex flex-col">
                 <span className="text-xs font-bold text-stone-800 leading-tight">Property Location Address</span>
                 <span className="text-[11px] text-gray-500 font-medium mt-0.5 leading-relaxed">
-                  Azusa Hotels & Apartments, Central Business District, Abuja, Nigeria.
+                  Aurum Hotels & Apartments, Central Business District, Abuja, Nigeria.
                 </span>
               </div>
             </div>
@@ -161,7 +173,7 @@ export const ThankYouView: React.FC<ThankYouViewProps> = ({ details }) => {
           <span className="text-[#343434] font-bold underline inline-flex items-center gap-1 cursor-pointer">
             +234 916 068 3225
           </span>{" "}
-          or email us at info@azusahotels.com.
+          or email us at info@aurumhotels.com.
         </div>
 
       </div>

@@ -3,7 +3,7 @@ export interface BrandItem {
   id: string;
   name: string;
   isCustomLogo?: boolean;
-  logoType: 'vitas' | 'caferio' | 'azusa' | 'sonder' | 'marriott' | 'lamall';
+  logoType: 'vitas' | 'caferio' | 'Aurum' | 'sonder' | 'marriott' | 'lamall';
   href: string;
 }
 

@@ -5,9 +5,9 @@ import React, { useState, useEffect } from 'react';
 export const DiningHero: React.FC = () => {
   // Array of images for the slider
   const images = [
-    { src: "/img/RESTAURANT-11.webp", alt: "Vitas Rio Dining Atmosphere Experience" },
-    { src: "/img/AURUM_-40.webp", alt: "Signature Culinary Delights" },
-    { src: "/img/RESTAURANT-2.webp", alt: "Premium Lounge Ambience" }
+    { src: "/img/RESTAURANT-11.webp", alt: "Restaurant dining room, Aurum on Missouri" },
+    { src: "/img/AURUM_-40.webp", alt: "Signature dishes, Aurum on Missouri" },
+    { src: "/img/RESTAURANT-2.webp", alt: "The Restaurant at Aurum Lounge Ambience" }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,21 +87,24 @@ export const DiningHero: React.FC = () => {
           <div className="flex items-center space-x-2 mb-3 select-none">
             <span className="text-xl text-[#343434]">🍽️</span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-stone-900 font-serif leading-none">
-              Aurum Restaurant
+              The Restaurant at Aurum
             </h1>
           </div>
           
           <div className="flex flex-col space-y-1 text-xs font-bold text-stone-500 uppercase tracking-wider mb-6">
-            <span>Type of cuisine: <strong className="text-stone-800">International Cuisine · Local Cuisine · Signature Cuisine </strong></span>
+            <span>Type of cuisine: <strong className="text-stone-800">International Cuisine · Local Cuisine · Signature Cuisine</strong></span>
           </div>
 
           <p className="text-stone-600 text-sm font-medium leading-relaxed tracking-wide mb-8 pl-4 border-l-2 border-stone-200 max-w-xl">
-            Taste your way across the map. Explore a curated menu of traditional Nigerian favourites and other rich flavours from around the world.
+            Taste your way across the map with a menu that moves easily between Nigerian favourites and international classics.
           </p>
 
-          <button className="bg-[#CAA664] hover:bg-[#343434] text-white font-extrabold text-xs tracking-widest uppercase px-10 py-4 shadow-sm transition-all focus:outline-none rounded-none cursor-pointer">
-            Explore Our Menus
-          </button>
+          <a 
+            href="tel:+2347077071117"
+            className="bg-[#CAA664] hover:bg-[#343434] text-white font-extrabold text-xs tracking-widest uppercase px-10 py-4 shadow-sm transition-all focus:outline-none rounded-none cursor-pointer inline-block"
+          >
+            Reserve a Table: +234 707 707 1117
+          </a>
         </div>
 
       </div>

@@ -40,7 +40,7 @@ export const SignInForm: React.FC = () => {
     await new Promise((resolve) => setTimeout(resolve, 1800));
     setIsSubmitting(false);
 
-    alert(`Welcome back to Azusa Portal! Session authorized successfully.`);
+    alert(`Welcome back to Aurum Portal! Session authorized successfully.`);
   };
 
   return (
@@ -51,7 +51,7 @@ export const SignInForm: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero-bg.jpg"
-            alt="Azusa Luxury Hotel Executive Lounge Interior"
+            alt="Aurum Luxury Hotel Executive Lounge Interior"
             className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.05]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#343434]/40 via-transparent to-black/80" />
@@ -99,7 +99,7 @@ export const SignInForm: React.FC = () => {
               Guest Portal
             </span>
             <h1 className="text-2xl font-serif font-normal text-stone-900 tracking-tight">
-              Sign In to Azusa
+              Sign In to Aurum
             </h1>
           </div>
 

@@ -106,7 +106,7 @@ export const CorporateFormSection: React.FC = () => {
                   <LuBuilding className="absolute left-3 w-4 h-4 text-gray-400" />
                   <input 
                     type="text" 
-                    placeholder="e.g. Azusa Enterprise"
+                    placeholder="e.g. Aurum Enterprise"
                     value={formData.companyName}
                     onChange={(e) => setFormData({...formData, companyName: e.target.value})}
                     className="w-full h-11 pl-10 pr-4 border border-gray-200 bg-gray-50/50 text-xs font-medium focus:outline-none focus:border-stone-800"

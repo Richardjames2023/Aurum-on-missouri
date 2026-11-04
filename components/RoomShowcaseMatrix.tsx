@@ -241,7 +241,7 @@ export const RoomShowcaseMatrix: React.FC = () => {
                 </div>
 
                 {/* Text Information Panel Area */}
-                <div className="p-6 md:p-8 flex flex-col justify-between flex-grow border-t border-gray-50">
+                <div className="p-5 sm:p-6 md:p-8 flex flex-col justify-between flex-grow border-t border-gray-50">
                   <div>
                     <h3 className="text-lg md:text-xl font-bold font-serif text-stone-900 mb-4 leading-snug tracking-tight group-hover:text-[#343434] transition-colors">
                       {room.title}
@@ -257,26 +257,26 @@ export const RoomShowcaseMatrix: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="pt-5 border-t border-gray-100 flex items-center justify-between mt-auto">
+                  <div className="pt-5 border-t border-gray-100 flex flex-col gap-4 mt-auto">
                     <div className="flex flex-col">
                       <span className="text-[10px] text-gray-400 font-extrabold uppercase tracking-widest">From</span>
-                      <div className="flex items-baseline space-x-1">
-                        <span className="text-xl font-extrabold text-[#CAA664]">
+                      <div className="flex flex-col gap-1">
+                        <span className="text-lg sm:text-xl font-extrabold text-[#CAA664] leading-tight">
                             {room.currency === 'NGN' ? '₦' : '$'}{(
                               parseRoomPrice(room.pricePerNight) +
                               calculateVat(parseRoomPrice(room.pricePerNight), room.currency)
                             ).toLocaleString()}
-                          </span>
-                          <span className="text-xs text-gray-400 font-bold">
-                            / night{room.currency === 'NGN' ? ' incl. VAT' : ''}
-                          </span>
+                        </span>
+                        <span className="text-xs sm:text-sm text-gray-400 font-bold">
+                          per night, incl. VAT
+                        </span>
                       </div>
                     </div>
 
                     {/* WIRED INTERACTIVE HOOK TRIGGERS */}
                     <button 
                       onClick={() => handleOpenModal(room)}
-                      className="inline-flex items-center justify-center bg-[#343434] text-white font-bold text-[11px] uppercase tracking-widest px-6 py-3 hover:bg-[#CAA664] transition-all transform active:scale-95 shadow-md rounded-full cursor-pointer"
+                      className="inline-flex w-full items-center justify-center bg-[#343434] text-white font-bold text-[11px] uppercase tracking-widest px-4 sm:px-6 py-3 hover:bg-[#CAA664] transition-all transform active:scale-95 shadow-md rounded-full cursor-pointer"
                     >
                       <span>View Suite</span>
                     </button>

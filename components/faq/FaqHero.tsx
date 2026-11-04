@@ -13,7 +13,7 @@ export const FaqHero: React.FC<FaqHeroProps> = ({ activeCategory, onCategoryChan
   const categories: FaqCategory[] = [
     'General hotel information',
     'Reservations',
-    'Azusa Rewards',
+    'Aurum Rewards',
     'Voucher Codes (e-certs)',
     'Best Rate Guarantee (BRG)',
     'Gift cards'

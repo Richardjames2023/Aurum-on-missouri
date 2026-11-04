@@ -11,7 +11,7 @@ export const AboutHero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <Image
           src="/img/_BOB9008.webp"
-          alt="Azusa Luxury Conference Theater Auditorium"
+          alt="Aurum Luxury Conference Theater Auditorium"
           className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
           fill
         />

@@ -10,19 +10,14 @@ export const DiningAbout: React.FC = () => {
         
         {/* Centered Header Panel Title */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal font-serif tracking-tight text-[#CAA664] leading-tight">
-          Enjoy A Culinary Journey <br className="hidden md:inline"/>
-          at Aurum During Your Stay <br className="hidden md:inline"/>
-          in Abuja
+          Enjoy a Culinary Journey at Aurum During Your Stay in Abuja
         </h2>
 
         {/* Centered Meta Narrative Body Copy */}
         <div className="max-w-2xl flex flex-col space-y-5 text-stone-900 text-sm font-medium leading-relaxed tracking-wide">
           <p>
-            Savor vibrant flavors at the all-day restaurant, Aurumm On Missouri. Our wood-fired cooking creates an unforgettable culinary experience with delightful meat, fish, and veggie dishes prepared to perfection.
+            Savour vibrant flavours at our all-day dining venue, The Restaurant at Aurum. Our kitchen crafts a menu that moves easily between Nigerian favourites and international classics, prepared fresh for breakfast, lunch, and dinner.
           </p>
-          {/* <p className="text-gray-400">
-            Unwind and appreciate the sophisticated decor and welcoming atmosphere. With ambient live music and calming window views of the surrounding nature, a visit to Aurum On Missouri ensures memorable moments.
-          </p> */}
         </div>
 
       </div>

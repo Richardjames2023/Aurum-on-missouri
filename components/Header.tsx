@@ -233,7 +233,7 @@
 //           >
 //             <Image
 //               src="/img/AURUM.png"
-//               alt="Azusa Luxury Hotel & Apartments Logo"
+//               alt="Aurum Luxury Hotel & Apartments Logo"
 //               fill
 //               className="object-contain object-left"
 //               priority
@@ -500,7 +500,7 @@ export const Header: React.FC = () => {
         {/* INTERACTIVE COMPONENT DRAWER PANEL */}
         <div
           ref={drawerRef}
-          className={`absolute top-0 left-0 h-full w-[340px] bg-[#343434] shadow-2xl p-8 flex flex-col justify-between transform transition-transform duration-300 ease-out z-[110] text-[#ffffff] ${showDrawer ? 'translate-x-0' : '-translate-x-full'}`}
+          className={`absolute top-0 left-0 h-full w-[min(340px,90vw)] bg-[#343434] shadow-2xl p-8 flex flex-col justify-between transform transition-transform duration-300 ease-out z-[110] text-[#ffffff] ${showDrawer ? 'translate-x-0' : '-translate-x-full'}`}
         >
           <div>
             <div className="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
@@ -531,7 +531,6 @@ export const Header: React.FC = () => {
                   { label: 'Restaurant', href: '/restaurant' },
                   { label: 'Meetings & Events', href: '/meetings-events' },
                   { label: 'Deals', href: '/deals' },
-                  { label: 'Aurum Rewards', href: '/rewards' },
                 ].map((link) => (
                   <Link
                     key={link.label}
@@ -602,7 +601,6 @@ export const Header: React.FC = () => {
           <Link href="/rooms" className="hover:opacity-70 transition-opacity">Rooms</Link>
           <Link href="/restaurant" className="hover:opacity-70 transition-opacity">Restaurant</Link>
           <Link href="/meetings-events" className="hover:opacity-70 transition-opacity">Meetings & Events</Link>
-          <Link href="/rewards" className="hover:opacity-70 transition-opacity">Aurum Rewards</Link>
 
           {/* Managed "More" Dropdown Hook */}
           <div className="relative z-50" ref={moreMenuRef}>

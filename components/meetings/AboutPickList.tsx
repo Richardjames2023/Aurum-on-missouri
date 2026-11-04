@@ -14,7 +14,7 @@ export const AboutPickList: React.FC = () => {
           <div className="md:col-span-5 w-full aspect-[4/3] relative overflow-hidden bg-stone-100 rounded-xl shadow-xs">
             <img 
               src="https://unsplash.com" 
-              alt="Azusa Interactive Picklist Matrix Options" 
+              alt="Aurum Interactive Picklist Matrix Options" 
               className="w-full h-full object-cover"
             />
           </div>
@@ -22,7 +22,7 @@ export const AboutPickList: React.FC = () => {
           {/* Right Side: Information Content Description */}
           <div className="md:col-span-7 flex flex-col items-start text-left">
             <h3 className="text-xl md:text-2xl font-bold text-stone-900 font-serif mb-2">
-              Azusa Meetings Picklist
+              Aurum Meetings Picklist
             </h3>
             
             {/* FIXED: Balanced the opening span tag with its correct matching closing span element to stop the Syntax Error */}
@@ -31,7 +31,7 @@ export const AboutPickList: React.FC = () => {
             </span>
             
             <p className="text-stone-500 text-xs font-medium leading-relaxed tracking-wide mb-6">
-              Find your perfect bundle choice layout at Azusa Hotel and Apartments. Enjoy added value with perks like complimentary parking, extra breakout spaces, or tailored technical assistance vectors when you book your event with us.
+              Find your perfect bundle choice layout at Aurum Hotel and Apartments. Enjoy added value with perks like complimentary parking, extra breakout spaces, or tailored technical assistance vectors when you book your event with us.
             </p>
             
             {/* CTA action trigger */}

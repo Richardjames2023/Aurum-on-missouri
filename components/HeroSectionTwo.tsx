@@ -57,11 +57,15 @@ export default function HeroSection() {
   // --- STATE ENGINES ---
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Booking Engine System States
-  const [checkInDate, setCheckInDate] = useState<Date | null>(new Date(2026, 6, 14)); 
-  const [checkOutDate, setCheckOutDate] = useState<Date | null>(new Date(2026, 6, 15)); 
+  // Booking Engine System States - Default to today and tomorrow
+  const [checkInDate, setCheckInDate] = useState<Date | null>(() => new Date()); 
+  const [checkOutDate, setCheckOutDate] = useState<Date | null>(() => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return tomorrow;
+  }); 
   const [activeCalendarSelector, setActiveCalendarSelector] = useState<'in' | 'out' | null>(null);
-  const [currentCalendarView, setCurrentCalendarView] = useState<Date>(new Date(2026, 6, 1)); 
+  const [currentCalendarView, setCurrentCalendarView] = useState<Date>(() => new Date()); 
 
   // --- REFS FOR OUTSIDE CLICK CLOSURES ---
   const calendarRef = useRef<HTMLDivElement>(null);
@@ -353,7 +357,7 @@ export default function HeroSection() {
                   </div>
                 </div>
                 <span className="text-[10px] uppercase tracking-wider text-white/90 font-medium">
-                  Trusted by 200+ Customer
+                  Maitama's best-kept open secret.
                 </span>
               </motion.div>
 
@@ -366,8 +370,8 @@ export default function HeroSection() {
                   variants={slideUpVariants}
                   className="text-xs uppercase tracking-widest text-white/70 font-medium leading-relaxed border-l-2 border-[#CAA664] pl-4"
                 >
-                  <p>many Exclusive</p>
-                  <p>Benefit for you</p>
+                  <p>Exclusive benefits</p>
+                  <p>for you</p>
                 </motion.div>
 
                 <motion.div

@@ -8,12 +8,12 @@ export const DiningGalleryMap: React.FC = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const horizontalGallery: DiningImageGridItem[] = [
-    { id: "g1", image: "/img/AoM-40.webp", altText: "Vitas Rio Fine Dining Table Arrangement" },
+    { id: "g1", image: "/img/AoM-40.webp", altText: "Restaurant dining room, Aurum on Missouri" },
     { id: "g2", image: "/img/AoM-20.webp", altText: "Luxury Restaurant Seating Architecture Layout" },
-    { id: "g3", image: "/img/AoM-33.webp", altText: "Premium Drinks Lounge Bar Coordinates" },
-    { id: "g4", image: "/img/Aom-15.webp", altText: "Chef Tunde Okoro plating signature cuisine" },
-    { id: "g5", image: "/img/Aom-13.webp", altText: "Signature grilled fire steak dish look" },
-    { id: "g6", image: "/img/Aom-20.webp", altText: "Luxury Resort Accommodations" }
+    { id: "g3", image: "/img/AoM-33.webp", altText: "The Bar at Aurum on Missouri" },
+    { id: "g4", image: "/img/AoM-15.webp", altText: "Signature dishes, Aurum on Missouri" },
+    { id: "g5", image: "/img/AoM-13.webp", altText: "Gourmet plating, The Restaurant at Aurum" },
+    { id: "g6", image: "/img/AoM-20.webp", altText: "Signature dining atmosphere, Aurum on Missouri" }
   ];
 
   // Hardware-Accelerated Dynamic Scroll Engine
@@ -87,13 +87,13 @@ export const DiningGalleryMap: React.FC = () => {
           <div className="w-full bg-[#CAA664] p-5 text-slate-900 flex items-center justify-between shadow-md rounded-t-xl">
             <span className="text-xs font-extrabold uppercase tracking-[0.2em] block pl-2">Follow us on:</span>
             <div className="flex items-center gap-3 mr-2">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all">
+              <a href="https://www.instagram.com/aurumonmissouri/" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all" aria-label="Follow Aurum on Instagram">
                 <LuInstagram className="w-4 h-4" />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all">
+              <a href="https://www.facebook.com/people/Aurum-On-Missouri/61581054107852/" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all" aria-label="Follow Aurum on Facebook">
                 <LuFacebook className="w-4 h-4" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all">
+              <a href="https://www.youtube.com/@AurumonMissouri" target="_blank" rel="noreferrer" className="w-9 h-9 bg-white/10 hover:bg-white/20 text-white flex items-center justify-center rounded-xl transition-all" aria-label="Follow Aurum on YouTube">
                 <LuYoutube className="w-4 h-4" />
               </a>
             </div>

@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { RegisterForm } from '@/components/auth/RegisterForm';
 
 export const metadata: Metadata = {
-  title: 'Create Guest Account Portal | Azusa Hotels & Luxury Apartments',
-  description: 'Join the Azusa Elite Circle. Register your secure guest account profile to unlock premium boutique rewards, preferred custom room tariffs, and priority concierge workflows.',
+  title: 'Join Aurum Elite | Aurum on Missouri, Maitama, Abuja',
+  description: 'Join the Aurum Elite. Register your guest profile to unlock member-only rates and exclusive benefits at Aurum on Missouri, Maitama, Abuja.',
   alternates: { canonical: '/register' }
 };
 

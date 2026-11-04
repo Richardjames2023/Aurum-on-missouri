@@ -15,13 +15,13 @@ export const AboutValueProps: React.FC = () => {
       id: "vp-2",
       title: "Perfect for Travellers",
       description: "At Aurum, we believe that true hospitality lies in the details, a friendly smile, a perfectly prepared meal, a peaceful night’s rest. Our dedicated team is committed to ensuring your experience is effortless, memorable, and distinctly golden. Aurum on Missouri, where every stay is an experience in understated sophistication.",
-      image: "../img/A3.webp"
+      image: "../img/AoM-17.webp"
     },
     {
       id: "vp-3",
       title: "Exceptional Comfort",
       description: "Each space, from our beautifully appointed rooms and apartments to our inviting restaurant, pool, gym, and leisure areas has been thoughtfully curated to reflect a sense of warmth and refined luxury.",
-      image: "../img/A2.webp"
+      image: "../img/AoM-17.webp"
     }
   ];
 

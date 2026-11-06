@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Footer } from '../../components/Footer';
 import { FaqHero } from '../../components/faq/FaqHero';
 import { FaqAccordionList } from '../../components/faq/FaqAccordionList';
 import { FaqCategory, FaqItem } from '../../app/types/faq';
@@ -28,7 +27,6 @@ export default function FaqPage() {
         {/* Lower dynamic accordion policy matrix display list grid */}
         <FaqAccordionList items={filteredFaqs} />
       </main>
-        <Footer />
     </div>
   );
 }

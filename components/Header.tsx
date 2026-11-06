@@ -565,7 +565,7 @@ export const Header: React.FC = () => {
           </div>
 
           <div className="text-[10px] text-[#ffffff]/40 tracking-tight leading-relaxed border-t border-white/10 pt-4 px-4">
-            © 2026 Aurum On Missouri Hotels & Apartments.<br />All rights reserved portal.
+            © 2026 Aurum On Missouri Hotels & Apartments.<br />All rights reserved
           </div>
         </div>
       </div>
